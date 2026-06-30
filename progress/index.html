@@ -6,46 +6,130 @@
 <title>Rex 认字进度</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  background:#f8fafc;color:#1e293b;padding:16px;max-width:500px;margin:0 auto}
-h1{font-size:22px;font-weight:700;margin-bottom:4px}
-.sub{font-size:13px;color:#64748b;margin-bottom:16px}
-.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.row{display:flex;gap:8px}
-.stat{flex:1;text-align:center;padding:8px 0}
-.stat-num{font-size:24px;font-weight:700;color:#0891b2}
-.stat-label{font-size:12px;color:#64748b;margin-top:2px}
-.bar-wrap{background:#e2e8f0;border-radius:99px;height:10px;margin:12px 0;overflow:hidden}
-.bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#06b6d4,#0891b2);transition:width .5s}
-.bar-label{font-size:12px;color:#64748b;text-align:right}
-h2{font-size:15px;font-weight:600;margin-bottom:10px}
-.rank-item{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f1f5f9;font-size:14px}
-.rank-item:last-child{border:none}
-.rank-char{font-weight:600;font-size:15px}
-.rank-freq{color:#64748b;font-size:12px}
-.tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:4px;margin-left:4px}
-.tag-learned{background:#d1fae5;color:#065f46}
-.tag-untouched{background:#f1f5f9;color:#64748b}
-.log-item{font-size:13px;padding:4px 0;color:#475569}
-.log-date{color:#94a3b8;margin-right:6px}
-.book-list{font-size:13px}
-.book-item{display:flex;justify-content:space-between;padding:3px 0;color:#475569}
-.empty{text-align:center;color:#94a3b8;padding:20px;font-size:14px}
-.footer{text-align:center;font-size:11px;color:#94a3b8;padding:16px 0 32px}
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:linear-gradient(135deg,#f0f9ff 0%,#ecfeff 50%,#fefce8 100%);min-height:100vh;padding:0 0 48px}
+.header{padding:32px 20px 0;text-align:center}
+.header h1{font-size:28px;font-weight:800;background:linear-gradient(135deg,#06b6d4,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.header .sub{font-size:13px;color:#94a3b8;margin-top:4px}
+.ring-wrap{display:flex;justify-content:center;margin:16px 0 8px}
+.ring-text{font-size:12px;fill:#64748b}
+.ring-pct{font-size:32px;font-weight:800;fill:#0f172a}
+.ring-label{font-size:13px;fill:#94a3b8}
+.stats{display:flex;gap:8px;padding:0 16px;margin-bottom:16px}
+.stat-card{flex:1;background:#fff;border-radius:14px;padding:12px 8px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.stat-num{font-size:20px;font-weight:700;color:#0f172a}
+.stat-label{font-size:11px;color:#94a3b8;margin-top:2px}
+.section{padding:0 16px;margin-bottom:16px}
+.section-title{font-size:15px;font-weight:600;color:#0f172a;margin-bottom:10px;padding-left:4px}
+.card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.cloud{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:8px 0}
+.cloud-char{font-weight:600;padding:4px 10px;border-radius:99px;background:#f8fafc;transition:transform .2s}
+.cloud-char:active{transform:scale(1.15)}
+.wall{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.wall-char{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#a7f3d0,#6ee7b7);color:#065f46;font-size:18px;font-weight:700;box-shadow:0 2px 6px rgba(16,185,129,.2)}
+.log-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #f1f5f9;font-size:13px}
+.log-row:last-child{border:none}
+.log-date{color:#94a3b8;white-space:nowrap}
+.log-book{color:#475569;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.log-chars{color:#0891b2;font-weight:600}
+.book-row{display:flex;justify-content:space-between;padding:5px 0;font-size:13px;color:#475569;border-bottom:1px solid #f8fafc}
+.book-count{color:#94a3b8;font-size:12px}
+.empty-state{text-align:center;color:#94a3b8;padding:24px 0;font-size:14px;line-height:1.8}
+.footer{text-align:center;font-size:11px;color:#cbd5e1;padding:16px}
 </style>
 </head>
 <body>
-<h1>📊 Rex 认字进度</h1>
-<div class="sub">最后更新：2026-06-30</div>
-
-<div class="card">
-  <div class="row">
-    <div class="stat"><div class="stat-num">984</div><div class="stat-label">总字库</div></div>
-    <div class="stat"><div class="stat-num" style="color:#059669">13</div><div class="stat-label">已认识</div></div>
-    <div class="stat"><div class="stat-num" style="color:#dc2626">971</div><div class="stat-label">未学</div></div>
-    <div class="stat"><div class="stat-num" style="color:#7c3aed">18</div><div class="stat-label">书籍</div></div>
-  </div>
-  <div class="bar-wrap"><div class="bar-fill" style="width:1.3%"></div></div>
-  <div class="bar-label">已认 13/984 字 (1.3%)</div>
+<div class="header">
+  <h1>📖 Rex 认字</h1>
+  <div class="sub">更新于 2026-06-30 · 18 本书</div>
 </div>
-<div class="card"><h2>📝 最近认字</h2><div class="log-item"><span class="log-date">2026-06-29</span>《猜猜我有多爱你》→ 大、小、多</div><div class="log-item"><span class="log-date">2026-06-30</span>《没了就没了》→ 了、没</div><div class="log-item"><span class="log-date">2026-06-28</span>《好饿的毛毛虫》→ 好、饿、虫</div></div><div class="card"><h2>🏆 高频未学</h2><div class="rank-item"><span><span class="rank-char">是</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">15 本书</span></div><div class="rank-item"><span><span class="rank-char">的</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">15 本书</span></div><div class="rank-item"><span><span class="rank-char">子</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">14 本书</span></div><div class="rank-item"><span><span class="rank-char">么</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">14 本书</span></div><div class="rank-item"><span><span class="rank-char">里</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">13 本书</span></div><div class="rank-item"><span><span class="rank-char">上</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">12 本书</span></div><div class="rank-item"><span><span class="rank-char">不</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">12 本书</span></div><div class="rank-item"><span><span class="rank-char">个</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">12 本书</span></div><div class="rank-item"><span><span class="rank-char">来</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">12 本书</span></div><div class="rank-item"><span><span class="rank-char">有</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">12 本书</span></div><div class="rank-item"><span><span class="rank-char">这</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">12 本书</span></div><div class="rank-item"><span><span class="rank-char">在</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">11 本书</span></div><div class="rank-item"><span><span class="rank-char">天</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">11 本书</span></div><div class="rank-item"><span><span class="rank-char">得</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">11 本书</span></div><div class="rank-item"><span><span class="rank-char">到</span><span class="tag tag-untouched">未学</span></span><span class="rank-freq">11 本书</span></div></div><div class="card"><h2>✅ 已学汉字</h2><div class="rank-item"><span>一</span><span class="rank-freq">2026-06-30</span></div><div class="rank-item"><span>了</span><span class="rank-freq">None</span></div><div class="rank-item"><span>好</span><span class="rank-freq">2026-06-28</span></div><div class="rank-item"><span>小</span><span class="rank-freq">None</span></div><div class="rank-item"><span>多</span><span class="rank-freq">2026-06-29</span></div><div class="rank-item"><span>大</span><span class="rank-freq">2026-06-29</span></div><div class="rank-item"><span>没</span><span class="rank-freq">2026-06-30</span></div><div class="rank-item"><span>西</span><span class="rank-freq">None</span></div><div class="rank-item"><span>虫</span><span class="rank-freq">2026-06-28</span></div><div class="rank-item"><span>饿</span><span class="rank-freq">2026-06-28</span></div><div class="rank-item"><span>林</span><span class="rank-freq">2026-06-30</span></div><div class="rank-item"><span>森</span><span class="rank-freq">2026-06-30</span></div><div class="rank-item"><span>乐</span><span class="rank-freq">None</span></div></div><div class="card"><h2>📚 书籍字库</h2><div class="book-item"><span>小脾气</span><span>355 字</span></div><div class="book-item"><span>玛德琳</span><span>271 字</span></div><div class="book-item"><span>没了就没了</span><span>219 字</span></div><div class="book-item"><span>西游记</span><span>199 字</span></div><div class="book-item"><span>帮帮机器人分清事实和观点</span><span>179 字</span></div><div class="book-item"><span>尿湿了裤子</span><span>165 字</span></div><div class="book-item"><span>森林的绘本</span><span>152 字</span></div><div class="book-item"><span>猜猜我有多爱你</span><span>144 字</span></div><div class="book-item"><span>好饿的毛毛虫</span><span>133 字</span></div><div class="book-item"><span>你眼中的树</span><span>127 字</span></div><div class="book-item"><span>帮帮机器人分清想要和需要</span><span>126 字</span></div><div class="book-item"><span>逃家小兔</span><span>111 字</span></div><div class="book-item"><span>刷牙先生来了</span><span>76 字</span></div><div class="book-item"><span>快来数数吧</span><span>63 字</span></div><div class="book-item"><span>野猫军团吃蛋糕</span><span>53 字</span></div><div class="book-item"><span>野猫军团吃面包</span><span>53 字</span></div><div class="book-item"><span>齐先生妙小姐</span><span>5 字</span></div><div class="book-item"><span>好精彩的一年 (无字)</span><span>0 字</span></div></div><div class="footer">每天 10:00 自动更新 · 数据来源于息流阅读记录</div></body></html>
+
+<div class="ring-wrap">
+<svg width="160" height="160" viewBox="0 0 160 160">
+  <circle cx="80" cy="80" r="68" fill="none" stroke="#e2e8f0" stroke-width="10"/>
+  <circle cx="80" cy="80" r="68" fill="none" stroke="#06b6d4" stroke-width="10" stroke-linecap="round"
+    stroke-dasharray="5.550999999999999 421.449" transform="rotate(-90 80 80)"/>
+  <text x="80" y="68" text-anchor="middle" class="ring-pct">1.3%</text>
+  <text x="80" y="88" text-anchor="middle" class="ring-label">已认识</text>
+  <text x="80" y="104" text-anchor="middle" class="ring-text">13/984</text>
+</svg>
+</div>
+
+<div class="stats">
+  <div class="stat-card"><div class="stat-num">984</div><div class="stat-label">总字库</div></div>
+  <div class="stat-card"><div class="stat-num" style="color:#059669">13</div><div class="stat-label">已认识</div></div>
+  <div class="stat-card"><div class="stat-num" style="color:#dc2626">971</div><div class="stat-label">未学</div></div>
+  <div class="stat-card"><div class="stat-num" style="color:#7c3aed">18</div><div class="stat-label">书籍</div></div>
+</div>
+
+<div class="section">
+  <div class="section-title">🏆 高频未学</div>
+  <div class="card"><div class="cloud"><span class="cloud-char" style="font-size:32px;color:#f59e0b">是</span>
+<span class="cloud-char" style="font-size:32px;color:#ec4899">的</span>
+<span class="cloud-char" style="font-size:30px;color:#06b6d4">子</span>
+<span class="cloud-char" style="font-size:30px;color:#f59e0b">么</span>
+<span class="cloud-char" style="font-size:29px;color:#6366f1">里</span>
+<span class="cloud-char" style="font-size:28px;color:#6366f1">上</span>
+<span class="cloud-char" style="font-size:28px;color:#8b5cf6">不</span>
+<span class="cloud-char" style="font-size:28px;color:#ec4899">个</span>
+<span class="cloud-char" style="font-size:28px;color:#8b5cf6">来</span>
+<span class="cloud-char" style="font-size:28px;color:#ef4444">有</span>
+<span class="cloud-char" style="font-size:28px;color:#ec4899">这</span>
+<span class="cloud-char" style="font-size:27px;color:#06b6d4">在</span>
+<span class="cloud-char" style="font-size:27px;color:#f97316">天</span>
+<span class="cloud-char" style="font-size:27px;color:#6366f1">得</span>
+<span class="cloud-char" style="font-size:27px;color:#6366f1">到</span>
+<span class="cloud-char" style="font-size:27px;color:#6366f1">地</span>
+<span class="cloud-char" style="font-size:27px;color:#ef4444">都</span>
+<span class="cloud-char" style="font-size:26px;color:#6366f1">可</span>
+<span class="cloud-char" style="font-size:26px;color:#06b6d4">要</span>
+<span class="cloud-char" style="font-size:26px;color:#6366f1">还</span></div></div>
+</div>
+
+<div class="section">
+  <div class="section-title">✅ 已认识 (13)</div>
+  <div class="card"><div class="wall"><span class="wall-char">一</span>
+<span class="wall-char">了</span>
+<span class="wall-char">好</span>
+<span class="wall-char">小</span>
+<span class="wall-char">多</span>
+<span class="wall-char">大</span>
+<span class="wall-char">没</span>
+<span class="wall-char">西</span>
+<span class="wall-char">虫</span>
+<span class="wall-char">饿</span>
+<span class="wall-char">林</span>
+<span class="wall-char">森</span>
+<span class="wall-char">乐</span></div></div>
+</div>
+
+<div class="section">
+  <div class="section-title">📝 最近学习</div>
+  <div class="card"><div class="log-row"><span class="log-date">2026-06-29</span><span class="log-book">《猜猜我有多爱你》</span><span class="log-chars">大,小,多</span></div>
+<div class="log-row"><span class="log-date">2026-06-30</span><span class="log-book">《没了就没了》</span><span class="log-chars">了,没</span></div>
+<div class="log-row"><span class="log-date">2026-06-28</span><span class="log-book">《好饿的毛毛虫》</span><span class="log-chars">好,饿,虫</span></div></div>
+</div>
+
+<div class="section">
+  <div class="section-title">📚 绘本书库 (18)</div>
+  <div class="card"><div class="book-row"><span>小脾气</span><span class="book-count">355</span></div>
+<div class="book-row"><span>玛德琳</span><span class="book-count">271</span></div>
+<div class="book-row"><span>没了就没了</span><span class="book-count">219</span></div>
+<div class="book-row"><span>西游记</span><span class="book-count">199</span></div>
+<div class="book-row"><span>帮帮机器人分清事实和观点</span><span class="book-count">179</span></div>
+<div class="book-row"><span>尿湿了裤子</span><span class="book-count">165</span></div>
+<div class="book-row"><span>森林的绘本</span><span class="book-count">152</span></div>
+<div class="book-row"><span>猜猜我有多爱你</span><span class="book-count">144</span></div>
+<div class="book-row"><span>好饿的毛毛虫</span><span class="book-count">133</span></div>
+<div class="book-row"><span>你眼中的树</span><span class="book-count">127</span></div>
+<div class="book-row"><span>帮帮机器人分清想要和需要</span><span class="book-count">126</span></div>
+<div class="book-row"><span>逃家小兔</span><span class="book-count">111</span></div>
+<div class="book-row"><span>刷牙先生来了</span><span class="book-count">76</span></div>
+<div class="book-row"><span>快来数数吧</span><span class="book-count">63</span></div>
+<div class="book-row"><span>野猫军团吃蛋糕</span><span class="book-count">53</span></div>
+<div class="book-row"><span>野猫军团吃面包</span><span class="book-count">53</span></div>
+<div class="book-row"><span>齐先生妙小姐</span><span class="book-count">5</span></div>
+<div class="book-row"><span>好精彩的一年 📄</span><span class="book-count">0</span></div></div>
+</div>
+
+<div class="footer">每天 10:00 自动更新 · 数据来自息流</div>
+</body></html>
