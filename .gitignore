@@ -1,0 +1,5 @@
+.env
+.flowus_progress_state
+sync_log.txt
+__pycache__/
+*.pyc
