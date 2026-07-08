@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Rex 认字</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(135deg,#f0f9ff 0%,#ecfeff 50%,#fefce8 100%);min-height:100vh;padding-bottom:40px}
+.header{text-align:center;padding:20px 16px 8px}
+.header h1{font-size:24px;font-weight:800;background:linear-gradient(135deg,#06b6d4,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tabs{display:flex;max-width:500px;margin:12px auto 0;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.tab-btn{flex:1;padding:14px 8px;border:none;background:#fff;font-size:15px;font-weight:600;color:#94a3b8;cursor:pointer;transition:all .25s}
+.tab-btn.active{background:linear-gradient(135deg,#06b6d4,#0891b2);color:#fff}
+.page{max-width:500px;margin:0 auto;padding:16px;display:none}
+.page.active{display:block}
+.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.04);margin-bottom:16px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:14px;font-weight:600;color:#475569;margin-bottom:6px}
+.field select,.field input{width:100%;padding:14px 12px;font-size:16px;border:2px solid #e2e8f0;border-radius:12px;outline:none;transition:border-color .2s;background:#fff}
+.field select:focus,.field input:focus{border-color:#06b6d4}
+.field input::placeholder{color:#cbd5e1}
+.btn{width:100%;padding:16px;font-size:17px;font-weight:700;border:none;border-radius:14px;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:linear-gradient(135deg,#06b6d4,#0891b2);color:#fff}
+.btn-success{background:linear-gradient(135deg,#10b981,#059669);color:#fff}
+.btn-know{background:linear-gradient(135deg,#10b981,#059669);color:#fff}
+.btn-unknown{background:linear-gradient(135deg,#94a3b8,#64748b);color:#fff}
+.btn-game{background:linear-gradient(135deg,#f59e0b,#f97316);color:#fff}
+.btn-lg{padding:18px;font-size:18px}
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);padding:14px 28px;border-radius:12px;font-size:15px;font-weight:600;z-index:999;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.show{opacity:1}
+.toast-success{background:#d1fae5;color:#065f46}
+.toast-error{background:#fee2e2;color:#991b1b}
+.count-display{text-align:center;padding:20px 0}
+.count-label{font-size:15px;color:#64748b}
+.count-num{font-size:48px;font-weight:800;background:linear-gradient(135deg,#06b6d4,#8b5cf6,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:8px 0}
+.word-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:8px 0}
+.word-tile{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;font-size:22px;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.game-area{text-align:center}
+.game-word{font-size:96px;font-weight:800;color:#0f172a;padding:20px 0;min-height:140px;display:flex;align-items:center;justify-content:center}
+.game-word.show{animation:pop .4s ease}
+@keyframes pop{0%{transform:scale(.3);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+.game-buttons{display:flex;gap:12px;margin-top:12px}
+.game-buttons .btn{flex:1}
+.game-feedback{padding:16px;border-radius:12px;font-size:18px;font-weight:700;margin-top:12px;display:none}
+.game-feedback.show{display:block;animation:pop .3s ease}
+.feedback-know{background:#d1fae5;color:#065f46}
+.feedback-unknown{background:#f1f5f9;color:#475569}
+.stats{background:#f8fafc;border-radius:12px;padding:16px;margin-top:16px}
+.stats-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.stats-label{font-size:14px;color:#64748b}
+.stats-val{font-size:18px;font-weight:700;color:#0f172a}
+.progress-bar{width:100%;height:10px;background:#e2e8f0;border-radius:6px;overflow:hidden;margin-top:8px}
+.progress-fill{height:100%;border-radius:6px;transition:width .5s ease}
+.empty{text-align:center;color:#94a3b8;padding:32px 0;font-size:15px}
+.pass-label{font-size:12px;color:#94a3b8;margin-top:8px;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Rex 认字</h1>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('input')">📝 录入</button>
+  <button class="tab-btn" onclick="switchTab('mine')">📖 我的字</button>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<!-- 录入页 -->
+<div id="page-input" class="page active">
+  <div class="card">
+    <div class="field">
+      <label>书名</label>
+      <select id="f_book">
+        <option value="刷牙先生来了">刷牙先生来了</option>
+        <option value="好精彩的一年">好精彩的一年</option>
+        <option value="其他">其他</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>新认的字（空格隔开）</label>
+      <input type="text" id="f_words" placeholder="如：大 小 上 下" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>录入人</label>
+      <select id="f_who">
+        <option value="爸爸">爸爸</option>
+        <option value="妈妈">妈妈</option>
+        <option value="奶奶">奶奶</option>
+        <option value="爷爷">爷爷</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>密码</label>
+      <input type="password" id="f_pass" placeholder="四位数字密码" inputmode="numeric" maxlength="4" autocomplete="off">
+    </div>
+    <button class="btn btn-primary btn-lg" onclick="submitWords()">提交</button>
+    <div class="pass-label">仅限家庭成员使用</div>
+  </div>
+</div>
+
+<!-- 我的字页 -->
+<div id="page-mine" class="page">
+  <div class="card">
+    <div class="count-display">
+      <div class="count-label">Rex 小朋友，你已经认识了</div>
+      <div class="count-num" id="total-count">0</div>
+      <div class="count-label">个字啦！</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="word-list" class="word-grid"></div>
+  </div>
+
+  <div class="card">
+    <div class="game-area">
+      <button class="btn btn-game btn-lg" onclick="pickRandom()">🎲 随机抽认</button>
+      <div class="game-word" id="game-word"></div>
+      <div class="game-buttons" id="game-buttons" style="display:none">
+        <button class="btn btn-know" onclick="gameResult('know')">✅ 认识</button>
+        <button class="btn btn-unknown" onclick="gameResult('unknown')">❌ 不认识</button>
+      </div>
+      <div class="game-feedback" id="game-feedback"></div>
+      <div class="stats" id="game-stats" style="display:none">
+        <div class="stats-row">
+          <span class="stats-label">今日自测</span>
+          <span class="stats-val" id="stat-total">0 次</span>
+        </div>
+        <div class="stats-row">
+          <span class="stats-label">正确率</span>
+          <span class="stats-val" id="stat-rate">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="stat-bar" style="width:0%;background:linear-gradient(90deg,#10b981,#059669)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// ╔══════════════════════════════════════════════╗
+// ║  请替换 SUPABASE_URL 和 SUPABASE_ANON_KEY     ║
+// ║  anon key 是公开安全的，受 RLS 策略保护        ║
+// ╚══════════════════════════════════════════════╝
+const SUPABASE_URL = "https://vlmodbuyhsrtnbvxczsy.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_jXz-hXs8GIHWW9zSmp-m1g_mgeL5oK4";
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+const COLORS = ["#fca5a5","#fdba74","#fde68a","#bef264","#86efac","#6ee7b7","#67e8f9","#7dd3fc","#a5b4fc","#c4b5fd","#f0abfc","#f9a8d4"];
+let allWords = [];
+
+function switchTab(tab) {
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+  event.target.classList.add("active");
+  document.getElementById("page-" + tab).classList.add("active");
+  if (tab === "mine") { loadWords(); loadStats(); }
+}
+
+function toast(msg, type) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.className = "toast show toast-" + (type || "success");
+  setTimeout(() => t.classList.remove("show"), 2000);
+}
+
+async function submitWords() {
+  const book = document.getElementById("f_book").value;
+  const raw = document.getElementById("f_words").value.trim();
+  const who = document.getElementById("f_who").value;
+  const pass = document.getElementById("f_pass").value;
+
+  if (pass !== "2026") { toast("密码错误，请重试", "error"); return; }
+  if (!raw) { toast("请输入新认的字", "error"); return; }
+
+  const chars = raw.split(/\s+/).filter(c => c.length > 0);
+  const today = new Date().toISOString().split("T")[0];
+  const rows = chars.map(c => ({ book_name: book, new_words: c, recorder: who, date: today }));
+
+  const { error } = await sb.from("words").insert(rows);
+  if (error) { toast("录入失败：" + error.message, "error"); return; }
+
+  toast("✅ 录入成功（" + chars.length + " 个字）", "success");
+  document.getElementById("f_words").value = "";
+  document.getElementById("f_pass").value = "";
+}
+
+async function loadWords() {
+  const { data } = await sb.from("words").select("new_words,date").order("date", { ascending: false });
+  allWords = (data || []).map(r => r.new_words);
+  const unique = [...new Set(allWords)];
+
+  document.getElementById("word-list").innerHTML = unique.length
+    ? unique.map((c, i) => `<div class="word-tile" style="background:${COLORS[i % COLORS.length]}22;color:${COLORS[i % COLORS.length]}">${c}</div>`).join("")
+    : `<div class="empty">还没有认字记录<br>去「录入」添加吧 📝</div>`;
+
+  animateCount(unique.length);
+}
+
+function animateCount(target) {
+  const el = document.getElementById("total-count");
+  let cur = 0;
+  const step = Math.max(1, Math.ceil(target / 30));
+  const timer = setInterval(() => {
+    cur += step;
+    if (cur >= target) { cur = target; clearInterval(timer); }
+    el.textContent = cur;
+  }, 30);
+}
+
+async function pickRandom() {
+  if (allWords.length === 0) { toast("还没有字可以抽认", "error"); return; }
+  const word = allWords[Math.floor(Math.random() * allWords.length)];
+  const el = document.getElementById("game-word");
+  el.textContent = word;
+  el.classList.remove("show");
+  void el.offsetWidth;
+  el.classList.add("show");
+  document.getElementById("game-buttons").style.display = "flex";
+  document.getElementById("game-feedback").classList.remove("show");
+}
+
+async function gameResult(result) {
+  const word = document.getElementById("game-word").textContent.trim();
+  if (!word) return;
+  const today = new Date().toISOString().split("T")[0];
+  await sb.from("game_records").insert({ word: word, result: result, game_date: today });
+
+  const fb = document.getElementById("game-feedback");
+  fb.className = "game-feedback show " + (result === "know" ? "feedback-know" : "feedback-unknown");
+  fb.textContent = result === "know" ? "太棒了！🎉" : "再练练吧！💪";
+
+  document.getElementById("game-buttons").style.display = "none";
+  document.getElementById("game-word").textContent = "";
+  loadStats();
+}
+
+async function loadStats() {
+  const today = new Date().toISOString().split("T")[0];
+  const { data } = await sb.from("game_records").select("result").eq("game_date", today);
+  const total = (data || []).length;
+  const correct = (data || []).filter(r => r.result === "know").length;
+  const rate = total ? Math.round(correct / total * 100) : 0;
+
+  if (total === 0) { document.getElementById("game-stats").style.display = "none"; return; }
+
+  document.getElementById("game-stats").style.display = "block";
+  document.getElementById("stat-total").textContent = total + " 次";
+  document.getElementById("stat-rate").textContent = rate + "%";
+  document.getElementById("stat-bar").style.width = rate + "%";
+}
+
+loadWords();
+</script>
+</body>
+</html>
