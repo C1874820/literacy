@@ -100,7 +100,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:linear-g
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./supabase.min.js"></script>
 <script>
 const SUPABASE_URL = 'https://vlmodbuyhsrtnbvxczsy.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_jXz-hXs8GIHWW9zSmp-m1g_mgeL5oK4';
@@ -108,7 +108,9 @@ const INTERVALS = [1, 2, 4, 7, 15, 30];
 const COLORS = ['#f97316','#8b5cf6','#06b6d4','#ec4899','#10b981','#f59e0b','#6366f1','#14b8a6','#ef4444','#84cc16'];
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let sb = null;
+try { sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY); }
+catch(e) { console.warn('Supabase 初始化失败（离线模式）', e); }
 
 let S = { learned:[], charMeta:{}, progress:{}, words:[], reviews:{}, knownSet:new Set(),
           reviewIdx:0, reviewQueue:[], reviewResult:{ok:0,fail:0}, reviewing:false,
@@ -148,6 +150,7 @@ async function safeFetch(url) {
 }
 
 async function fetchSupabase() {
+  if (!sb) return;
   const [w, r] = await Promise.all([
     sb.from('words').select('new_words,date,recorder,book_name').order('date', {ascending:false}),
     sb.from('reviews').select('*')
@@ -357,18 +360,21 @@ async function reviewChar(know) {
     const lastReview = TODAY;
     const nextReview = daysLater(TODAY, INTERVALS[stage]);
     S.reviews[c] = { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now };
-    await sb.from('reviews').upsert(
+    if (sb) sb.from('reviews').upsert(
       { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now },
       { onConflict: 'char' }
     ).then(() => {}).catch(() => {});
   } else {
     S.reviewResult.fail++;
     S.reviews[c] = { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now };
-    await sb.from('reviews').upsert(
+    if (sb) sb.from('reviews').upsert(
       { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now },
       { onConflict: 'char' }
     ).then(() => {}).catch(() => {});
   }
+  S.reviewIdx++;
+  showCard();
+}
   S.reviewIdx++;
   showCard();
 }
@@ -408,6 +414,7 @@ function renderEntry() {
 async function renderRecentEntries() {
   const el = document.getElementById('entry-recent');
   if (!el) return;
+  if (!sb) { el.innerHTML = '<div class="section-title">📋 最近录入</div><div class="empty-state">离线模式，无法加载</div>'; return; }
   const { data } = await sb.from('words')
     .select('new_words,date,recorder,book_name')
     .order('id', { ascending: false })
@@ -428,6 +435,7 @@ async function renderRecentEntries() {
 }
 
 async function submitEntry() {
+  if (!sb) { toast('录入功能暂不可用（Supabase 离线）', 'error'); return; }
   const raw = document.getElementById('entry-chars').value.trim();
   if (!raw) { toast('请输入汉字', 'error'); return; }
   const chars = [...new Set(extractChars(raw))];
