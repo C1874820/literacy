@@ -7,10 +7,7 @@ from datetime import datetime
 
 CHAR_BANK_PATH = "/mnt/d/rex-识字系统/character_bank.json"
 OUTPUT_DIR = "/mnt/d/rex-识字系统/progress"
-OUTPUT_HTML = f"{OUTPUT_DIR}/index.html"
 OUTPUT_DATA = f"{OUTPUT_DIR}/data.json"
-
-COLORS = ["#f97316","#8b5cf6","#06b6d4","#ec4899","#10b981","#f59e0b","#6366f1","#14b8a6","#ef4444","#84cc16"]
 
 
 def load_bank():
@@ -165,6 +162,14 @@ def generate_learned_json(bank):
                       ensure_ascii=False, indent=2)
 
 
+def generate_char_meta_json(bank):
+    return json.dumps({
+        "last_updated": bank.get("last_updated", ""),
+        "total_chars": len(bank["chars"]),
+        "chars": bank["chars"]
+    }, ensure_ascii=False, indent=2)
+
+
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     if not os.path.exists(CHAR_BANK_PATH):
@@ -172,17 +177,18 @@ def main():
         return
     with open(CHAR_BANK_PATH, "r", encoding="utf-8") as f:
         bank = json.load(f)
-    html = generate_html(bank)
-    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
-        f.write(html)
+
     with open(OUTPUT_DATA, "w", encoding="utf-8") as f:
         f.write(generate_data_json(bank))
 
-    learned_path = f"{OUTPUT_DIR}/learned.json"
-    with open(learned_path, "w", encoding="utf-8") as f:
+    with open(f"{OUTPUT_DIR}/learned.json", "w", encoding="utf-8") as f:
         f.write(generate_learned_json(bank))
 
-    print(f"progress/index.html → {bank['progress']['total_books']}本 | {bank['progress']['total_unique_chars']}字 | 已学{bank['progress']['learned']}")
+    with open(f"{OUTPUT_DIR}/char_meta.json", "w", encoding="utf-8") as f:
+        f.write(generate_char_meta_json(bank))
+
+    p = bank["progress"]
+    print(f"data.json + learned.json + char_meta.json → {p['total_books']}本 | {p['total_unique_chars']}字 | 已学{p['learned']}")
 
 
 if __name__ == "__main__":

@@ -3,11 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Rex 认字进度</title>
+<title>Rex 识字系统</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:linear-gradient(135deg,#f0f9ff 0%,#ecfeff 50%,#fefce8 100%);min-height:100vh;padding:0 0 48px}
-.header{padding:32px 20px 0;text-align:center}
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:linear-gradient(135deg,#f0f9ff 0%,#ecfeff 50%,#fefce8 100%);min-height:100vh;padding:0 0 80px;color:#0f172a}
+.tab-bar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.88);backdrop-filter:blur(8px);display:flex;border-bottom:1px solid #e2e8f0}
+.tab-btn{flex:1;padding:14px 0;text-align:center;font-size:14px;font-weight:600;color:#94a3b8;cursor:pointer;transition:all .2s;border:none;background:none}
+.tab-btn.active{color:#06b6d4;border-bottom:2px solid #06b6d4}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.header{text-align:center;padding:28px 20px 0}
 .header h1{font-size:28px;font-weight:800;background:linear-gradient(135deg,#06b6d4,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .header .sub{font-size:13px;color:#94a3b8;margin-top:4px}
 .ring-wrap{display:flex;justify-content:center;margin:16px 0 8px}
@@ -22,8 +27,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:linear-g
 .section-title{font-size:15px;font-weight:600;color:#0f172a;margin-bottom:10px;padding-left:4px}
 .card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
 .cloud{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:8px 0}
-.cloud-char{font-weight:600;padding:4px 10px;border-radius:99px;background:#f8fafc;transition:transform .2s}
-.cloud-char:active{transform:scale(1.15)}
+.cloud-char{font-weight:600;padding:4px 10px;border-radius:99px;background:#f8fafc}
 .wall{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .wall-char{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#a7f3d0,#6ee7b7);color:#065f46;font-size:18px;font-weight:700;box-shadow:0 2px 6px rgba(16,185,129,.2)}
 .log-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #f1f5f9;font-size:13px}
@@ -32,109 +36,448 @@ body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:linear-g
 .log-book{color:#475569;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .log-chars{color:#0891b2;font-weight:600}
 .book-row{display:flex;justify-content:space-between;padding:5px 0;font-size:13px;color:#475569;border-bottom:1px solid #f8fafc}
-.book-count{color:#94a3b8;font-size:12px}
+.book-count{color:#94a3b8}
 .empty-state{text-align:center;color:#94a3b8;padding:24px 0;font-size:14px;line-height:1.8}
 .footer{text-align:center;font-size:11px;color:#cbd5e1;padding:16px}
+
+.game-card{text-align:center;padding:24px 0}
+.game-char{font-size:72px;font-weight:800;color:#0f172a;margin:16px 0 8px;padding:24px}
+.game-context{font-size:13px;color:#94a3b8;margin-bottom:24px}
+.game-btns{display:flex;gap:16px;justify-content:center;margin:16px 0}
+.btn-know{background:linear-gradient(135deg,#a7f3d0,#34d399);border:none;color:#065f46;font-size:18px;font-weight:700;padding:16px 32px;border-radius:16px;cursor:pointer;box-shadow:0 4px 12px rgba(52,211,153,.3)}
+.btn-not{background:linear-gradient(135deg,#fecaca,#f87171);border:none;color:#991b1b;font-size:18px;font-weight:700;padding:16px 32px;border-radius:16px;cursor:pointer;box-shadow:0 4px 12px rgba(248,113,113,.3)}
+.btn-know:active,.btn-not:active{transform:scale(.95)}
+.btn-start{background:linear-gradient(135deg,#38bdf8,#06b6d4);border:none;color:#fff;font-size:16px;font-weight:700;padding:14px 40px;border-radius:14px;cursor:pointer;box-shadow:0 4px 12px rgba(6,182,212,.3)}
+.game-due{font-size:18px;font-weight:700;color:#06b6d4;margin-bottom:8px}
+.game-progress{margin-top:16px;font-size:13px;color:#94a3b8}
+.game-summary{text-align:center;padding:32px 0}
+.game-summary h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.game-summary p{font-size:14px;color:#64748b;margin-bottom:4px}
+
+.entry-form{padding:16px 0}
+.entry-input{width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:16px;outline:none;transition:border .2s}
+.entry-input:focus{border-color:#06b6d4}
+.entry-options{display:flex;gap:8px;margin:12px 0}
+.entry-opt{flex:1}
+.entry-opt select,.entry-opt input{padding:10px;border:2px solid #e2e8f0;border-radius:10px;font-size:14px;width:100%;outline:none}
+.entry-opt select:focus,.entry-opt input:focus{border-color:#06b6d4}
+.entry-submit{width:100%;padding:14px;background:linear-gradient(135deg,#06b6d4,#059669);border:none;color:#fff;font-size:16px;font-weight:700;border-radius:14px;cursor:pointer;box-shadow:0 4px 12px rgba(6,182,212,.25)}
+.entry-submit:active{transform:scale(.97)}
+.entry-submit:disabled{opacity:.5;cursor:default}
+.entry-recent{margin-top:16px}
+.entry-recent-item{display:flex;gap:8px;padding:8px 0;border-bottom:1px solid #f1f5f9;font-size:13px;align-items:center}
+.entry-recent-item:last-child{border:none}
+.entry-rec-char{font-size:18px;font-weight:700;color:#065f46;min-width:24px;text-align:center}
+.entry-rec-meta{color:#64748b;flex:1}
+.entry-rec-date{color:#94a3b8;white-space:nowrap}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:12px;font-size:14px;font-weight:600;z-index:99;text-align:center;max-width:90vw}
+.toast-success{background:#065f46;color:#fff}
+.toast-error{background:#991b1b;color:#fff}
+.toast-info{background:#0f172a;color:#fff}
+.mode-toggle{display:flex;gap:8px;justify-content:center;margin-bottom:16px}
+.mode-btn{padding:8px 20px;border-radius:99px;border:2px solid #e2e8f0;background:#fff;color:#64748b;font-size:13px;font-weight:600;cursor:pointer}
+.mode-btn.active{border-color:#06b6d4;color:#06b6d4;background:#ecfeff}
+.page-loading{text-align:center;padding:60px 20px;color:#94a3b8;font-size:15px}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;background:#ecfeff;color:#06b6d4;margin-left:6px}
 </style>
 </head>
 <body>
-<div class="header">
-  <h1>📖 Rex 认字</h1>
-  <div class="sub">更新于 2026-07-14 · 20 本书</div>
+<div class="tab-bar">
+  <div class="tab-btn active" data-tab="dashboard">📊 进度</div>
+  <div class="tab-btn" data-tab="review">🎮 复习</div>
+  <div class="tab-btn" data-tab="entry">📝 录入</div>
 </div>
 
-<div class="ring-wrap">
-<svg width="160" height="160" viewBox="0 0 160 160">
-  <circle cx="80" cy="80" r="68" fill="none" stroke="#e2e8f0" stroke-width="10"/>
-  <circle cx="80" cy="80" r="68" fill="none" stroke="#06b6d4" stroke-width="10" stroke-linecap="round"
-    stroke-dasharray="6.832 420.168" transform="rotate(-90 80 80)"/>
-  <text x="80" y="68" text-anchor="middle" class="ring-pct">1.6%</text>
-  <text x="80" y="88" text-anchor="middle" class="ring-label">已认识</text>
-  <text x="80" y="104" text-anchor="middle" class="ring-text">16/984</text>
-</svg>
+<div id="tab-dashboard" class="tab-content active"></div>
+<div id="tab-review" class="tab-content">
+  <div class="section" style="padding-top:20px">
+    <div class="card" id="review-content"><div class="page-loading">正在准备复习...</div></div>
+  </div>
+</div>
+<div id="tab-entry" class="tab-content">
+  <div class="section" style="padding-top:20px">
+    <div class="card" id="entry-content"></div>
+  </div>
 </div>
 
-<div class="stats">
-  <div class="stat-card"><div class="stat-num">984</div><div class="stat-label">总字库</div></div>
-  <div class="stat-card"><div class="stat-num" style="color:#059669">16</div><div class="stat-label">已认识</div></div>
-  <div class="stat-card"><div class="stat-num" style="color:#dc2626">968</div><div class="stat-label">未学</div></div>
-  <div class="stat-card"><div class="stat-num" style="color:#7c3aed">20</div><div class="stat-label">书籍</div></div>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = 'https://vlmodbuyhsrtnbvxczsy.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_jXz-hXs8GIHWW9zSmp-m1g_mgeL5oK4';
+const INTERVALS = [1, 2, 4, 7, 15, 30];
+const COLORS = ['#f97316','#8b5cf6','#06b6d4','#ec4899','#10b981','#f59e0b','#6366f1','#14b8a6','#ef4444','#84cc16'];
+const TODAY = new Date().toISOString().slice(0, 10);
 
-<div class="section">
-  <div class="section-title">🏆 高频未学</div>
-  <div class="card"><div class="cloud"><span class="cloud-char" style="font-size:32px;color:#f59e0b">是</span>
-<span class="cloud-char" style="font-size:32px;color:#6366f1">的</span>
-<span class="cloud-char" style="font-size:30px;color:#ef4444">子</span>
-<span class="cloud-char" style="font-size:30px;color:#ef4444">么</span>
-<span class="cloud-char" style="font-size:29px;color:#8b5cf6">里</span>
-<span class="cloud-char" style="font-size:28px;color:#f59e0b">上</span>
-<span class="cloud-char" style="font-size:28px;color:#6366f1">个</span>
-<span class="cloud-char" style="font-size:28px;color:#f59e0b">来</span>
-<span class="cloud-char" style="font-size:28px;color:#6366f1">有</span>
-<span class="cloud-char" style="font-size:28px;color:#f97316">这</span>
-<span class="cloud-char" style="font-size:27px;color:#6366f1">在</span>
-<span class="cloud-char" style="font-size:27px;color:#84cc16">天</span>
-<span class="cloud-char" style="font-size:27px;color:#10b981">得</span>
-<span class="cloud-char" style="font-size:27px;color:#f97316">到</span>
-<span class="cloud-char" style="font-size:27px;color:#6366f1">地</span>
-<span class="cloud-char" style="font-size:27px;color:#84cc16">都</span>
-<span class="cloud-char" style="font-size:26px;color:#ef4444">可</span>
-<span class="cloud-char" style="font-size:26px;color:#f59e0b">要</span>
-<span class="cloud-char" style="font-size:26px;color:#06b6d4">还</span>
-<span class="cloud-char" style="font-size:26px;color:#f59e0b">也</span></div></div>
-</div>
+const supabase = supabaseJs.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-<div class="section">
-  <div class="section-title">✅ 已认识 (16)</div>
-  <div class="card"><div class="wall"><span class="wall-char">一</span>
-<span class="wall-char">了</span>
-<span class="wall-char">好</span>
-<span class="wall-char">小</span>
-<span class="wall-char">不</span>
-<span class="wall-char">多</span>
-<span class="wall-char">大</span>
-<span class="wall-char">没</span>
-<span class="wall-char">西</span>
-<span class="wall-char">虫</span>
-<span class="wall-char">朵</span>
-<span class="wall-char">饿</span>
-<span class="wall-char">林</span>
-<span class="wall-char">森</span>
-<span class="wall-char">乐</span>
-<span class="wall-char">云</span></div></div>
-</div>
+let S = { learned:[], charMeta:{}, progress:{}, words:[], reviews:{}, knownSet:new Set(),
+          reviewIdx:0, reviewQueue:[], reviewResult:{ok:0,fail:0}, reviewing:false,
+          dueCount:0, loaded:false };
 
-<div class="section">
-  <div class="section-title">📝 最近学习</div>
-  <div class="card"><div class="log-row"><span class="log-date">2026-06-29</span><span class="log-book">《猜猜我有多爱你》</span><span class="log-chars">大,小,多</span></div>
-<div class="log-row"><span class="log-date">2026-06-30</span><span class="log-book">《没了就没了》</span><span class="log-chars">了,没</span></div>
-<div class="log-row"><span class="log-date">2026-06-28</span><span class="log-book">《好饿的毛毛虫》</span><span class="log-chars">好,饿,虫</span></div></div>
-</div>
+async function init() {
+  try {
+    await Promise.all([fetchData(), fetchSupabase()]);
+    computeKnownSet();
+    renderDashboard();
+    precomputeReview();
+    renderEntry();
+    initTabs();
+    S.loaded = true;
+  } catch(e) {
+    document.querySelector('#tab-dashboard').innerHTML = '<div class="page-loading">加载失败，请刷新重试</div>';
+  }
+}
 
-<div class="section">
-  <div class="section-title">📚 绘本书库 (20)</div>
-  <div class="card"><div class="book-row"><span>小脾气</span><span class="book-count">355</span></div>
-<div class="book-row"><span>玛德琳</span><span class="book-count">271</span></div>
-<div class="book-row"><span>没了就没了</span><span class="book-count">219</span></div>
-<div class="book-row"><span>西游记</span><span class="book-count">199</span></div>
-<div class="book-row"><span>帮帮机器人分清事实和观点</span><span class="book-count">179</span></div>
-<div class="book-row"><span>尿湿了裤子</span><span class="book-count">165</span></div>
-<div class="book-row"><span>森林的绘本</span><span class="book-count">152</span></div>
-<div class="book-row"><span>猜猜我有多爱你</span><span class="book-count">144</span></div>
-<div class="book-row"><span>好饿的毛毛虫</span><span class="book-count">133</span></div>
-<div class="book-row"><span>你眼中的树</span><span class="book-count">127</span></div>
-<div class="book-row"><span>帮帮机器人分清想要和需要</span><span class="book-count">126</span></div>
-<div class="book-row"><span>逃家小兔</span><span class="book-count">111</span></div>
-<div class="book-row"><span>刷牙先生来了</span><span class="book-count">76</span></div>
-<div class="book-row"><span>快来数数吧</span><span class="book-count">63</span></div>
-<div class="book-row"><span>野猫军团吃蛋糕</span><span class="book-count">53</span></div>
-<div class="book-row"><span>野猫军团吃面包</span><span class="book-count">53</span></div>
-<div class="book-row"><span>齐先生妙小姐</span><span class="book-count">5</span></div>
-<div class="book-row"><span>好精彩的一年 📄</span><span class="book-count">0</span></div>
-<div class="book-row"><span>考拉做得到</span><span class="book-count">0</span></div>
-<div class="book-row"><span>云朵怪兽</span><span class="book-count">0</span></div></div>
-</div>
+async function fetchData() {
+  const [data, learned, meta] = await Promise.all([
+    safeFetch('./data.json').then(r => r ? r.json() : {progress:{}}),
+    safeFetch('./learned.json').then(r => r ? r.json() : {learned:[]}),
+    safeFetch('./char_meta.json').then(r => r ? r.json() : {chars:{}})
+  ]);
+  S.progress = data.progress || {};
+  S.learned = learned.learned || [];
+  S.charMeta = meta.chars || {};
+}
 
-<div class="footer">每天 10:00 自动更新 · 数据来自息流</div>
-</body></html>
+async function safeFetch(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return r;
+  } catch { return null; }
+}
+
+async function fetchSupabase() {
+  const [w, r] = await Promise.all([
+    supabase.from('words').select('new_words,date,recorder,book_name').order('date', {ascending:false}),
+    supabase.from('reviews').select('*')
+  ]);
+  if (!w.error) S.words = w.data || [];
+  if (!r.error) {
+    const m = {};
+    for (const row of r.data || []) m[row.char] = row;
+    S.reviews = m;
+  }
+}
+
+function computeKnownSet() {
+  const set = new Set();
+  for (const item of S.learned) set.add(item.char);
+  for (const item of S.words) if (item.new_words) set.add(item.new_words);
+  S.knownSet = set;
+}
+
+function initTabs() {
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      if (btn.dataset.tab === 'review' && S.loaded) { showReviewTab(); }
+      if (btn.dataset.tab === 'entry' && S.loaded) { renderRecentEntries(); }
+    });
+  });
+}
+
+function renderDashboard() {
+  const p = S.progress;
+  const total = p.total_unique_chars || 0;
+  const learned = p.learned || 0;
+  const untouched = p.untouched || 0;
+  const books = p.total_books || 0;
+  const pct = total ? ((learned / total) * 100).toFixed(1) : 0;
+  const lastUp = (p.last_updated || '').slice(0,10) || TODAY;
+
+  const chars = S.charMeta;
+  const topUntouched = Object.entries(chars)
+    .filter(([,v]) => v.status === '未学')
+    .sort(([,a],[,b]) => b.freq - a.freq)
+    .slice(0, 20);
+  const maxFreq = Math.max(...topUntouched.map(([,v]) => v.freq), 1);
+  const cloudHTML = topUntouched.length ? topUntouched.map(([c,info]) =>
+    `<span class="cloud-char" style="font-size:${14 + info.freq/maxFreq*18}px;color:${COLORS[hashStr(c)%COLORS.length]}">${c}</span>`
+  ).join('\n') : '<div class="empty-state">所有字都已认识 🎉</div>';
+
+  const knownChars = Array.from(S.knownSet);
+  const wallHTML = knownChars.length ? knownChars.map(c =>
+    `<span class="wall-char">${c}</span>`
+  ).join('\n') : '<div class="empty-state">还没有已学汉字</div>';
+
+  const logEntries = (S.learned || []).filter(l => l.date).slice(-10).reverse();
+  const logHTML = logEntries.length ? logEntries.map(l =>
+    `<div class="log-row"><span class="log-date">${l.date}</span><span class="log-book">息流</span><span class="log-chars">${l.char}</span></div>`
+  ).join('\n') : '<div class="empty-state">还没有学习记录</div>';
+
+  const bookRows = Object.entries(chars).length ? (() => {
+    const freq = {};
+    for (const c of Object.keys(chars)) {
+      for (const b of chars[c].books || []) { freq[b] = (freq[b]||0) + 1; }
+    }
+    return Object.entries(freq).sort(([,a],[,b]) => b-a).map(([t,n]) =>
+      `<div class="book-row"><span>${t}</span><span class="book-count">${n}字</span></div>`
+    ).join('\n');
+  })() : '';
+
+  const totalKnown = knownChars.length;
+  const dueToday = S.dueCount;
+
+  document.querySelector('#tab-dashboard').innerHTML = `
+    <div class="header">
+      <h1>📖 Rex 认字</h1>
+      <div class="sub">更新于 ${lastUp} · ${books} 本书</div>
+    </div>
+    <div class="ring-wrap">
+      <svg width="160" height="160" viewBox="0 0 160 160">
+        <circle cx="80" cy="80" r="68" fill="none" stroke="#e2e8f0" stroke-width="10"/>
+        <circle cx="80" cy="80" r="68" fill="none" stroke="#06b6d4" stroke-width="10" stroke-linecap="round"
+          stroke-dasharray="${(pct*4.27).toFixed(3)} ${(427-pct*4.27).toFixed(3)}" transform="rotate(-90 80 80)"/>
+        <text x="80" y="68" text-anchor="middle" class="ring-pct" style="fill:#0f172a">${pct}%</text>
+        <text x="80" y="88" text-anchor="middle" class="ring-label">已认识</text>
+        <text x="80" y="104" text-anchor="middle" class="ring-text">${totalKnown}/${total}</text>
+      </svg>
+    </div>
+    <div class="stats">
+      <div class="stat-card"><div class="stat-num">${total}</div><div class="stat-label">总字库</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:#059669">${totalKnown}</div><div class="stat-label">已认识</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:#dc2626">${untouched}</div><div class="stat-label">未学</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:#7c3aed">${books}</div><div class="stat-label">书籍</div></div>
+    </div>
+    ${dueToday > 0 ? `<div style="text-align:center;padding:0 16px 8px"><span class="tag" style="font-size:13px;padding:4px 14px">🔄 今天 ${dueToday} 字待复习</span></div>` : ''}
+    <div class="section">
+      <div class="section-title">🏆 高频未学</div>
+      <div class="card"><div class="cloud">${cloudHTML}</div></div>
+    </div>
+    <div class="section">
+      <div class="section-title">✅ 已认识 (${totalKnown})</div>
+      <div class="card"><div class="wall">${wallHTML}</div></div>
+    </div>
+    <div class="section">
+      <div class="section-title">📝 最近学习</div>
+      <div class="card">${logHTML}</div>
+    </div>
+    <div class="section">
+      <div class="section-title">📚 绘本书库</div>
+      <div class="card">${bookRows || '<div class="empty-state">暂无书籍</div>'}</div>
+    </div>
+    <div class="footer">每天 10:00 自动更新 · 数据来自息流 + 网页录入</div>
+  `;
+}
+
+function precomputeReview() {
+  let due = [];
+  for (const c of S.knownSet) {
+    const rv = S.reviews[c];
+    const nextReview = rv ? rv.next_review : null;
+    if (!nextReview || nextReview <= TODAY) due.push(c);
+  }
+  due.sort(() => Math.random() - 0.5);
+  if (due.length > 15) due = due.slice(0, 15);
+  S.reviewQueue = due;
+  S.reviewIdx = 0;
+  S.dueCount = calculateDueCount();
+}
+
+function calculateDueCount() {
+  let n = 0;
+  for (const c of S.knownSet) {
+    const rv = S.reviews[c];
+    if (!rv || !rv.next_review || rv.next_review <= TODAY) n++;
+  }
+  return n;
+}
+
+function showReviewTab() {
+  const el = document.getElementById('review-content');
+  if (S.reviewing) return;
+  precomputeReview();
+  const q = S.reviewQueue;
+  if (q.length === 0) {
+    el.innerHTML = `<div class="game-summary"><h3>🎉 今天没有待复习的字</h3><p style="color:#94a3b8">所有已学字都在复习计划内</p></div>`;
+    return;
+  }
+  el.innerHTML = `
+    <div class="game-card">
+      <div class="game-due">今天待复习 ${calculateDueCount()} 字 · 本次 ${q.length} 字</div>
+      <button class="btn-start" onclick="startReview()">开始复习</button>
+    </div>
+  `;
+}
+
+function startReview() {
+  S.reviewIdx = 0;
+  S.reviewResult = {ok:0, fail:0};
+  S.reviewing = true;
+  showCard();
+}
+
+function showCard() {
+  const el = document.getElementById('review-content');
+  if (S.reviewIdx >= S.reviewQueue.length) {
+    S.reviewing = false;
+    const {ok, fail} = S.reviewResult;
+    el.innerHTML = `
+      <div class="game-summary">
+        <h3>✅ 本次复习完成</h3>
+        <p>认识 ${ok} 字 · 不认识 ${fail} 字</p>
+        <p style="font-size:13px;color:#94a3b8;margin-top:12px">明天再来复习吧</p>
+      </div>
+    `;
+    return;
+  }
+  const c = S.reviewQueue[S.reviewIdx];
+  const meta = S.charMeta[c];
+  const context = meta && meta.books && meta.books.length
+    ? (meta.books.length > 3 ? meta.books.slice(0,3).join(' · ') + ' · · ·' : meta.books.join(' · '))
+    : '';
+  const rv = S.reviews[c];
+  const stageStr = rv ? `(${rv.stage+1}/${INTERVALS.length})` : '(首次)';
+  el.innerHTML = `
+    <div class="game-card">
+      <div style="font-size:13px;color:#94a3b8;">
+        ${S.reviewIdx+1}/${S.reviewQueue.length} ${stageStr}
+      </div>
+      <div class="game-char">${c}</div>
+      <div class="game-context">${context ? '📖 ' + context : ''}</div>
+      <div class="game-btns">
+        <button class="btn-know" onclick="reviewChar(true)">认识 ✓</button>
+        <button class="btn-not" onclick="reviewChar(false)">不认识 ✗</button>
+      </div>
+    </div>
+  `;
+}
+
+async function reviewChar(know) {
+  const c = S.reviewQueue[S.reviewIdx];
+  const now = new Date().toISOString();
+  if (know) {
+    S.reviewResult.ok++;
+    const old = S.reviews[c];
+    const stage = old ? Math.min(old.stage + 1, INTERVALS.length - 1) : 0;
+    const lastReview = TODAY;
+    const nextReview = daysLater(TODAY, INTERVALS[stage]);
+    S.reviews[c] = { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now };
+    await supabase.from('reviews').upsert(
+      { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now },
+      { onConflict: 'char' }
+    ).then(() => {}).catch(() => {});
+  } else {
+    S.reviewResult.fail++;
+    S.reviews[c] = { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now };
+    await supabase.from('reviews').upsert(
+      { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now },
+      { onConflict: 'char' }
+    ).then(() => {}).catch(() => {});
+  }
+  S.reviewIdx++;
+  showCard();
+}
+
+function daysLater(date, days) {
+  const d = new Date(date + 'T00:00:00');
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+function renderEntry() {
+  document.getElementById('entry-content').innerHTML = `
+    <div class="section-title">录入 Rex 认识的字</div>
+    <div class="entry-form">
+      <input class="entry-input" id="entry-chars" placeholder="如：大 小 上 下（空格隔开）" autocomplete="off">
+      <div class="entry-options">
+        <div class="entry-opt">
+          <select id="entry-recorder">
+            <option value="爸爸">爸爸</option>
+            <option value="妈妈">妈妈</option>
+            <option value="爷爷">爷爷</option>
+            <option value="奶奶">奶奶</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="entry-opt">
+          <input id="entry-book" placeholder="书名（可选）" autocomplete="off">
+        </div>
+      </div>
+      <button class="entry-submit" id="entry-submit-btn" onclick="submitEntry()">提交录入</button>
+    </div>
+    <div class="entry-recent" id="entry-recent"><div class="section-title">📋 最近录入</div></div>
+  `;
+  renderRecentEntries();
+}
+
+async function renderRecentEntries() {
+  const el = document.getElementById('entry-recent');
+  if (!el) return;
+  const { data } = await supabase.from('words')
+    .select('new_words,date,recorder,book_name')
+    .order('id', { ascending: false })
+    .limit(30)
+    .catch(() => ({ data: null }));
+  if (!data || data.length === 0) {
+    el.innerHTML = '<div class="section-title">📋 最近录入</div><div class="empty-state">还没有录入</div>';
+    return;
+  }
+  el.innerHTML = '<div class="section-title">📋 最近录入</div>' +
+    data.map(r => `
+      <div class="entry-recent-item">
+        <span class="entry-rec-char">${r.new_words}</span>
+        <span class="entry-rec-meta">${r.recorder || '匿名'}${r.book_name ? ' · 《' + r.book_name + '》' : ''}</span>
+        <span class="entry-rec-date">${r.date || ''}</span>
+      </div>
+    `).join('');
+}
+
+async function submitEntry() {
+  const raw = document.getElementById('entry-chars').value.trim();
+  if (!raw) { toast('请输入汉字', 'error'); return; }
+  const chars = [...new Set(extractChars(raw))];
+  if (chars.length === 0) { toast('未识别到有效汉字', 'error'); return; }
+  const recorder = document.getElementById('entry-recorder').value || '匿名';
+  const book = document.getElementById('entry-book').value.trim();
+  const btn = document.getElementById('entry-submit-btn');
+  btn.disabled = true;
+  btn.textContent = '提交中...';
+  const rows = chars.map(c => ({ new_words: c, book_name: book || '其他', recorder, date: TODAY }));
+  const { error } = await supabase.from('words').insert(rows);
+  btn.disabled = false;
+  btn.textContent = '提交录入';
+  if (error) {
+    toast('提交失败: ' + error.message, 'error');
+    return;
+  }
+  document.getElementById('entry-chars').value = '';
+  document.getElementById('entry-book').value = '';
+  toast(`✅ 已录入 ${chars.length} 字`, 'success');
+  renderRecentEntries();
+  loadFreshData();
+}
+
+async function loadFreshData() {
+  await fetchSupabase();
+  computeKnownSet();
+  precomputeReview();
+  renderDashboard();
+}
+
+function extractChars(text) {
+  return text.split('').filter(c => c >= '\u4e00' && c <= '\u9fff');
+}
+
+function hashStr(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; }
+  return Math.abs(h);
+}
+
+function toast(msg, type) {
+  const el = document.createElement('div');
+  el.className = 'toast toast-' + type;
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 2500);
+}
+
+init();
+</script>
+</body>
+</html>

@@ -75,6 +75,42 @@ def extract_chinese(text):
     return [c for c in text if '\u4e00' <= c <= '\u9fff']
 
 
+def merge_supabase_entries(bank):
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_ANON_KEY")
+    if not url or not key:
+        log("WARN: SUPABASE_URL/KEY 未设置，跳过 Supabase 合并")
+        return bank
+    try:
+        req = urllib.request.Request(
+            f"{url}/rest/v1/words?select=new_words,date,recorder,book_name",
+            headers={"apikey": key, "Authorization": f"Bearer {key}"}
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            rows = json.loads(resp.read().decode())
+    except Exception as e:
+        log(f"WARN: Supabase 合并失败（网络/项目不可达）- {e}")
+        return bank
+    sync_count = 0
+    for row in rows:
+        c = (row.get("new_words") or "").strip()
+        if not c or c not in bank["chars"]:
+            continue
+        if bank["chars"][c]["status"] == "未学":
+            bank["chars"][c]["status"] = "已学"
+            bank["chars"][c]["learned_date"] = row.get("date") or datetime.now().strftime("%Y-%m-%d")
+            sync_count += 1
+            bank["log"].append({
+                "date": row.get("date") or datetime.now().strftime("%Y-%m-%d"),
+                "book": row.get("book_name") or "网页录入",
+                "chars": [c],
+                "source": "web"
+            })
+    if sync_count:
+        log(f"Supabase 合并: {sync_count} 字从网页录入汇入字库")
+    return bank
+
+
 def sync():
     log("=" * 40)
     log("自动同步开始")
@@ -140,6 +176,11 @@ def sync():
                 chars_dict[c]["status"] = "已学"
                 chars_dict[c]["learned_date"] = datetime.now().strftime("%Y-%m-%d")
                 sync_count += 1
+
+    # 合并 Supabase 网页录入（best-effort，网络不通跳过）
+    merged = merge_supabase_entries({"chars": chars_dict, "log": bank.get("log", [])})
+    chars_dict = merged["chars"]
+    bank["log"] = merged["log"]
 
     learned = sum(1 for c in chars_dict.values() if c["status"] == "已学")
     bank["chars"] = chars_dict
