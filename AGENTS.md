@@ -9,7 +9,7 @@ Track Rex's Chinese character literacy progress. Data flows: FlowUs (book list +
 - **Sync pipeline**: `scripts/run_sync.sh` → `auto_sync.py` (cron weekdays 10:00)
 - **Web app**: `progress/index.html` — SPA with Supabase-powered review/entry tabs
 - **Generated files**: `progress/data.json`, `progress/learned.json`, `progress/char_meta.json` (all from `generate_progress_html.py`)
-- **Deployment**: GitHub Pages via `scripts/deploy_github.sh`, branch `main`
+- **Deployment**: GitHub Pages via `scripts/deploy_github.sh`, branch `master`
 
 ## Commands
 
@@ -86,6 +86,7 @@ RLS: public select + insert
 - `char` (PK, single CJK char `^[一-龥]$`)
 - `stage` (0-5, Ebbinghaus intervals: 1,2,4,7,15,30 days)
 - `last_review`, `next_review` (dates)
+- `updated_by`, `updated_at` (metadata)
 RLS: public select + insert + update
 
 ## Gotchas
