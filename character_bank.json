@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-07-14T21:07:16Z",
+  "last_updated": "2026-07-14T21:07:53Z",
   "books": {
     "好饿的毛毛虫": {
       "characters": [
@@ -2971,8 +2971,8 @@
         "你眼中的树",
         "没了就没了"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-07-10"
     },
     "得": {
       "freq": 11,
@@ -11944,13 +11944,21 @@
         "小",
         "多"
       ]
+    },
+    {
+      "date": "2026-07-10",
+      "book": "其他",
+      "chars": [
+        "天"
+      ],
+      "source": "web"
     }
   ],
   "progress": {
     "total_books": 20,
     "total_unique_chars": 984,
-    "learned": 16,
+    "learned": 17,
     "learning": 0,
-    "untouched": 968
+    "untouched": 967
   }
 }
