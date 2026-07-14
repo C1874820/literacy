@@ -175,7 +175,7 @@ def sync():
 
     try:
         r = subprocess.run(["git", "-C", BASE_DIR, "push", "origin", "main"],
-                          capture_output=True, text=True, timeout=30)
+                          capture_output=True, text=True, timeout=90)
         if r.returncode == 0:
             log("Git push 成功")
         else:
