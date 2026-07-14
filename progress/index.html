@@ -108,7 +108,7 @@ const INTERVALS = [1, 2, 4, 7, 15, 30];
 const COLORS = ['#f97316','#8b5cf6','#06b6d4','#ec4899','#10b981','#f59e0b','#6366f1','#14b8a6','#ef4444','#84cc16'];
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const supabase = supabaseJs.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 let S = { learned:[], charMeta:{}, progress:{}, words:[], reviews:{}, knownSet:new Set(),
           reviewIdx:0, reviewQueue:[], reviewResult:{ok:0,fail:0}, reviewing:false,
@@ -149,8 +149,8 @@ async function safeFetch(url) {
 
 async function fetchSupabase() {
   const [w, r] = await Promise.all([
-    supabase.from('words').select('new_words,date,recorder,book_name').order('date', {ascending:false}),
-    supabase.from('reviews').select('*')
+    sb.from('words').select('new_words,date,recorder,book_name').order('date', {ascending:false}),
+    sb.from('reviews').select('*')
   ]);
   if (!w.error) S.words = w.data || [];
   if (!r.error) {
@@ -357,14 +357,14 @@ async function reviewChar(know) {
     const lastReview = TODAY;
     const nextReview = daysLater(TODAY, INTERVALS[stage]);
     S.reviews[c] = { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now };
-    await supabase.from('reviews').upsert(
+    await sb.from('reviews').upsert(
       { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now },
       { onConflict: 'char' }
     ).then(() => {}).catch(() => {});
   } else {
     S.reviewResult.fail++;
     S.reviews[c] = { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now };
-    await supabase.from('reviews').upsert(
+    await sb.from('reviews').upsert(
       { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now },
       { onConflict: 'char' }
     ).then(() => {}).catch(() => {});
@@ -408,7 +408,7 @@ function renderEntry() {
 async function renderRecentEntries() {
   const el = document.getElementById('entry-recent');
   if (!el) return;
-  const { data } = await supabase.from('words')
+  const { data } = await sb.from('words')
     .select('new_words,date,recorder,book_name')
     .order('id', { ascending: false })
     .limit(30)
@@ -438,7 +438,7 @@ async function submitEntry() {
   btn.disabled = true;
   btn.textContent = '提交中...';
   const rows = chars.map(c => ({ new_words: c, book_name: book || '其他', recorder, date: TODAY }));
-  const { error } = await supabase.from('words').insert(rows);
+  const { error } = await sb.from('words').insert(rows);
   btn.disabled = false;
   btn.textContent = '提交录入';
   if (error) {
