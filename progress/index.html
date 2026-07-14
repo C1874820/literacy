@@ -375,10 +375,6 @@ async function reviewChar(know) {
   S.reviewIdx++;
   showCard();
 }
-  S.reviewIdx++;
-  showCard();
-}
-
 function daysLater(date, days) {
   const d = new Date(date + 'T00:00:00');
   d.setDate(d.getDate() + days);
@@ -397,6 +393,8 @@ function renderEntry() {
             <option value="妈妈">妈妈</option>
             <option value="爷爷">爷爷</option>
             <option value="奶奶">奶奶</option>
+            <option value="姥姥">姥姥</option>
+            <option value="姥爷">姥爷</option>
             <option value="其他">其他</option>
           </select>
         </div>
