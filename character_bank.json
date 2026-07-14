@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-06-30T15:26:52Z",
+  "last_updated": "2026-07-14T20:17:51Z",
   "books": {
     "好饿的毛毛虫": {
       "characters": [
@@ -2578,6 +2578,22 @@
       "source": "纸质书",
       "wordless": true,
       "text_source": "wordless"
+    },
+    "考拉做得到": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "在读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "云朵怪兽": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
     }
   },
   "chars": {
@@ -2807,8 +2823,8 @@
         "帮帮机器人分清事实和观点",
         "没了就没了"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-07-14"
     },
     "个": {
       "freq": 12,
@@ -5371,8 +5387,8 @@
         "森林的绘本",
         "快来数数吧"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-07-14"
     },
     "枝": {
       "freq": 3,
@@ -11802,8 +11818,8 @@
       "books": [
         "快来数数吧"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-07-14"
     },
     "偶": {
       "freq": 1,
@@ -11931,10 +11947,10 @@
     }
   ],
   "progress": {
-    "total_books": 18,
+    "total_books": 20,
     "total_unique_chars": 984,
-    "learned": 13,
+    "learned": 16,
     "learning": 0,
-    "untouched": 971
+    "untouched": 968
   }
 }

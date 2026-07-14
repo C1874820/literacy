@@ -157,6 +157,14 @@ def generate_data_json(bank):
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
+def generate_learned_json(bank):
+    chars = bank["chars"]
+    learned = [{"char": c, "date": info.get("learned_date", "")}
+               for c, info in sorted(chars.items()) if info["status"] == "已学"]
+    return json.dumps({"last_updated": bank.get("last_updated", ""), "learned": learned},
+                      ensure_ascii=False, indent=2)
+
+
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     if not os.path.exists(CHAR_BANK_PATH):
@@ -169,6 +177,11 @@ def main():
         f.write(html)
     with open(OUTPUT_DATA, "w", encoding="utf-8") as f:
         f.write(generate_data_json(bank))
+
+    learned_path = f"{OUTPUT_DIR}/learned.json"
+    with open(learned_path, "w", encoding="utf-8") as f:
+        f.write(generate_learned_json(bank))
+
     print(f"progress/index.html → {bank['progress']['total_books']}本 | {bank['progress']['total_unique_chars']}字 | 已学{bank['progress']['learned']}")
 
 

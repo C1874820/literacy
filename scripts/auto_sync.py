@@ -157,13 +157,31 @@ def sync():
     p = bank["progress"]
     log(f"字库更新完成 | {p['total_books']}本 | {p['total_unique_chars']}字 | 已学{learned}(+{sync_count})")
 
-    # 自动提交 git 变更
+    # 自动提交 + 推送到 GitHub
     try:
-        subprocess.run(["git", "-C", BASE_DIR, "add", "-A"], capture_output=True, timeout=10)
-        subprocess.run(["git", "-C", BASE_DIR, "commit", "-m", "auto-sync " + datetime.now().strftime("%Y-%m-%d")],
-                      capture_output=True, timeout=10)
-    except Exception:
-        pass
+        r = subprocess.run(["git", "-C", BASE_DIR, "add", "-A"], capture_output=True, text=True, timeout=10)
+        if r.returncode != 0:
+            log(f"WARN: git add 失败 - {r.stderr.strip()}")
+    except Exception as e:
+        log(f"WARN: git add 异常 - {e}")
+
+    try:
+        r = subprocess.run(["git", "-C", BASE_DIR, "commit", "-m", "auto-sync " + datetime.now().strftime("%Y-%m-%d")],
+                          capture_output=True, text=True, timeout=10)
+        if r.returncode != 0 and "nothing to commit" not in r.stderr and "nothing to commit" not in r.stdout:
+            log(f"WARN: git commit 可能失败 - rc={r.returncode} {r.stderr.strip()}")
+    except Exception as e:
+        log(f"WARN: git commit 异常 - {e}")
+
+    try:
+        r = subprocess.run(["git", "-C", BASE_DIR, "push", "origin", "main"],
+                          capture_output=True, text=True, timeout=30)
+        if r.returncode == 0:
+            log("Git push 成功")
+        else:
+            log(f"WARN: git push 失败 - {r.stderr.strip()}")
+    except Exception as e:
+        log(f"WARN: git push 异常 - {e}")
 
     # 生成网页进度 + 息流页面
     for script in ["generate_progress_html.py", "update_flowus_progress.py"]:

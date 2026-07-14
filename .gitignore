@@ -3,3 +3,7 @@
 sync_log.txt
 __pycache__/
 *.pyc
+# 敏感数据，包含 FlowUs 页面 UUID
+books_from_flowus.json
+# Git 凭据缓存（不含在 remote URL 中）
+.git-creds
