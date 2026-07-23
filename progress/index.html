@@ -132,7 +132,7 @@ async function init() {
 
 async function fetchData() {
   const [data, learned, meta] = await Promise.all([
-    safeFetch('./data.json').then(r => r ? r.json() : {progress:{}}),
+    safeFetch('./data.json?v=2').then(r => r ? r.json() : {progress:{}}),
     safeFetch('./learned.json').then(r => r ? r.json() : {learned:[]}),
     safeFetch('./char_meta.json').then(r => r ? r.json() : {chars:{}})
   ]);
