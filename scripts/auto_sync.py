@@ -62,10 +62,12 @@ def fetch_flowus_books():
         if not title or title in seen:
             continue
         seen.add(title)
-        author = "".join(t.get("plain_text", "") for t in props.get("作者", {}).get("rich_text", [])) if props.get("作者") else ""
-        status = props.get("状态", {}).get("select", {}).get("name") if props.get("状态") else None
-        chars_raw = "".join(t.get("plain_text", "") for t in props.get("认字情况", {}).get("rich_text", [])) if props.get("认字情况") else ""
-        source = props.get("书籍来源", {}).get("select", {}).get("name") if props.get("书籍来源") else None
+        author = "".join(t.get("plain_text", "") for t in ((props.get("作者") or {}).get("rich_text") or [])) if props.get("作者") else ""
+        st_prop = props.get("状态") or {}
+        status = (st_prop.get("select") or {}).get("name") if isinstance(st_prop.get("select"), dict) else None
+        chars_raw = "".join(t.get("plain_text", "") for t in ((props.get("认字情况") or {}).get("rich_text") or [])) if props.get("认字情况") else ""
+        src_prop = props.get("书籍来源") or {}
+        source = (src_prop.get("select") or {}).get("name") if isinstance(src_prop.get("select"), dict) else None
         books.append({"title": title, "author": author, "status": status, "learned_chars_raw": chars_raw, "source": source, "page_id": page.get("id")})
     log(f"FlowUs 拉取 {len(books)} 本书")
     return books
