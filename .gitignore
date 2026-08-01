@@ -10,3 +10,5 @@ books_from_flowus.json
 # 批量录入临时输入文件（用后清空，不提交）
 books.txt
 books.txt.bak*
+# 配置变更本地备份（回滚用，不提交）
+*.bak.*
