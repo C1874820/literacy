@@ -59,10 +59,15 @@ python3 scripts/update_flowus_progress.py
 
 | Field | Type | Notes |
 |-------|------|-------|
-| title | title | Book name |
+| 书名 | title | Book name (API key 用 `title`) |
+| 作者 | rich_text | Author |
 | 状态 | select | 未读 / 在读 / 已读 |
-| 认字情况 | rich_text | Learned chars (e.g. 大、小、上、下) |
+| 书籍类型 | multi_select | 地域/传统/文学/科普/无字书/神话故事/桥梁书/艺术/情绪习惯/思维社会 |
 | 书籍来源 | select | 纸质书 / 电子书 |
+| 电子书籍格式 | select | PDF / EPUB |
+| 认字情况 | rich_text | Learned chars (e.g. 大、小、上、下) |
+| 认字字数 | number | 认字情况 字符数（--count-chars 统计） |
+| 读后感 | rich_text | Reading notes |
 
 ### 每周推荐 (ID: `2f45cfb4-a4f2-4271-b1e3-e0a2d94892ab`)
 
