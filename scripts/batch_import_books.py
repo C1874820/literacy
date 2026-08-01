@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """
 批量导入书名+作者到 FlowUs
-读取 books.txt → 去重 → LLM 分类 → 批量创建 FlowUs 页面
+读取输入文件 → 去重 → LLM 分类 → 批量创建 FlowUs 页面
 
-books.txt 格式（每行）：
+用法：
+  python batch_import_books.py                    # 读默认 books.txt（电脑端录入）
+  python batch_import_books.py <输入文件路径>      # 读指定文件（如手机端 OB 的录书.md）
+
+输入文件格式（每行）：
   书名, 作者
   书名（无作者可省略逗号和作者）
 """
@@ -210,23 +214,29 @@ def main():
         log("ERROR: FLOWUS_TOKEN 未设置")
         return
 
-    auto_yes = "--yes" in sys.argv or "-y" in sys.argv
+    # 可选位置参数指定输入文件；缺省用 books.txt
+    input_file = None
+    for arg in sys.argv[1:]:
+        if not arg.startswith("-"):
+            input_file = arg
+            break
+    books_file = input_file or BOOKS_FILE
 
-    if not os.path.exists(BOOKS_FILE):
-        log(f"ERROR: {BOOKS_FILE} 不存在")
-        log("请创建 books.txt，每行格式：书名, 作者")
+    if not os.path.exists(books_file):
+        log(f"ERROR: {books_file} 不存在")
+        log(f"请创建 {books_file}，每行格式：书名, 作者")
         return
 
     log("=" * 50)
     log("批量导入书单到 FlowUs")
     log("=" * 50)
 
-    # 1. 读取 books.txt
-    books = read_books_file(BOOKS_FILE)
-    log(f"\n📖 读取 books.txt: {len(books)} 本书")
+    # 1. 读取书单
+    books = read_books_file(books_file)
+    log(f"\n📖 读取 {books_file}: {len(books)} 本书")
 
     if not books:
-        log("books.txt 为空，无书可导入")
+        log(f"{books_file} 为空，无书可导入")
         return
 
     # 2. 拉取 FlowUs 现有书单
@@ -263,16 +273,9 @@ def main():
     for i, b in enumerate(categorized):
         log(f"  {i+1:2d}. {b['title']}" + (f"  | {b['author']}" if b['author'] else "") + f"  | {', '.join(b['types'])}")
 
-    # 6. 确认
+    # 6. 自动确认
     log("")
-    if auto_yes:
-        log("自动确认模式（--yes），跳过手动确认")
-        ans = "y"
-    else:
-        ans = input("确认导入以上书籍到 FlowUs？(y/n): ").strip().lower()
-    if ans != "y":
-        log("已取消")
-        return
+    log("自动确认模式，直接导入")
 
     # 7. 批量创建
     log("\n📝 开始创建 FlowUs 页面...")

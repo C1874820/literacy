@@ -52,7 +52,10 @@ python3 scripts/update_flowus_progress.py
 - Book status flow: FlowUs select field → `character_bank.json` `status`
 - New books get `text_source: "pending"` until character text is extracted
 - `auto_sync.py` auto-commits and pushes after sync (`auto-sync YYYY-MM-DD`)
-- `books.txt` is the temporary input for `batch_import_books.py` (手机端 OB 录书 → 有电脑时批量导入). 用完清空、已 gitignore、**不提交**
+- 书单批量录入（`batch_import_books.py`），两种输入源：
+  - 电脑端：`rex-识字系统/books.txt`，用后清空、已 gitignore、不提交 → `python scripts/batch_import_books.py`
+  - 手机端 OB：`00_Inbox/录书.md`，导入后**直接删除**（有新书再重建，不归档）→ `python scripts/batch_import_books.py "00_Inbox/录书.md"`
+  - 脚本自动去重 + Ollama 分类书籍类型 + 自动确认，无需 `--yes`
 
 ## FlowUs Database Schema
 
