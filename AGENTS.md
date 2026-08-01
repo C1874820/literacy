@@ -52,6 +52,7 @@ python3 scripts/update_flowus_progress.py
 - Book status flow: FlowUs select field → `character_bank.json` `status`
 - New books get `text_source: "pending"` until character text is extracted
 - `auto_sync.py` auto-commits and pushes after sync (`auto-sync YYYY-MM-DD`)
+- `books.txt` is the temporary input for `batch_import_books.py` (手机端 OB 录书 → 有电脑时批量导入). 用完清空、已 gitignore、**不提交**
 
 ## FlowUs Database Schema
 

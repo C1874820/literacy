@@ -7,3 +7,6 @@ __pycache__/
 books_from_flowus.json
 # Git 凭据缓存（不含在 remote URL 中）
 .git-creds
+# 批量录入临时输入文件（用后清空，不提交）
+books.txt
+books.txt.bak*
