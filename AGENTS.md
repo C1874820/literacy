@@ -20,19 +20,11 @@ scripts/run_sync.sh
 # Manual sync (needs .env)
 source .env && python3 scripts/auto_sync.py
 
-# Rebuild character bank from hardcoded book data + FlowUs import
-python3 scripts/build_character_bank.py
-
 # Generate progress HTML + JSON files
 python3 scripts/generate_progress_html.py
 
-# Record a learning session
-python3 scripts/process_log.py "6/28 大卫不可以 不、可"
-
-# CLI progress report
-python3 scripts/report.py
-python3 scripts/report.py --top 30
-python3 scripts/report.py --book "好饿的毛毛虫"
+# 识字录入入口：网页 progress/index.html（Supabase words 表，auto_sync 自动合并进字库）
+# （已移除 process_log.py / report.py / build_character_bank.py / setup_supabase.sql）
 
 # Update FlowUs progress page
 python3 scripts/update_flowus_progress.py
@@ -100,8 +92,7 @@ RLS: public select + insert + update
 
 ## Gotchas
 
-- `build_character_bank.py` has hardcoded book character lists (`BOOKS_DATA`) — when adding new books, either add them there or rely on the FlowUs sync to pull text
-- `process_log.py` date parsing hardcodes year 2026 for short formats (`6/28` → `2026-06-28`)
+- 识字录入统一走网页 `progress/index.html`（Supabase `words` 表），`auto_sync.py` 的 `merge_supabase_entries()` 自动汇入字库（标记已学 + 写 log）
 - `progress/index.html` embeds Supabase credentials in JS (public anon key, not secret)
 - GitHub Pages: `auto_sync.py` 内建 `git push origin main`（分支为 `main`，旧 `deploy_github.sh` 已删除）
 - FlowUs API: every property must include `type` field in requests
