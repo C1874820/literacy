@@ -9,7 +9,7 @@ Track Rex's Chinese character literacy progress. Data flows: FlowUs (book list +
 - **Sync pipeline**: `scripts/run_sync.sh` → `auto_sync.py` (cron weekdays 10:00)
 - **Web app**: `progress/index.html` — SPA with Supabase-powered review/entry tabs
 - **Generated files**: `progress/data.json`, `progress/learned.json`, `progress/char_meta.json` (all from `generate_progress_html.py`)
-- **Deployment**: GitHub Pages via `scripts/deploy_github.sh`, branch `master`
+- **Deployment**: GitHub Pages via `auto_sync.py` 内建 `git push origin main`（已移除旧 `deploy_github.sh`）
 
 ## Commands
 
@@ -103,7 +103,7 @@ RLS: public select + insert + update
 - `build_character_bank.py` has hardcoded book character lists (`BOOKS_DATA`) — when adding new books, either add them there or rely on the FlowUs sync to pull text
 - `process_log.py` date parsing hardcodes year 2026 for short formats (`6/28` → `2026-06-28`)
 - `progress/index.html` embeds Supabase credentials in JS (public anon key, not secret)
-- GitHub Pages: `deploy_github.sh` pushes to `master` branch (not `main`)
+- GitHub Pages: `auto_sync.py` 内建 `git push origin main`（分支为 `main`，旧 `deploy_github.sh` 已删除）
 - FlowUs API: every property must include `type` field in requests
 
 ## 工作流（必须执行）
