@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-08-02T21:36:46Z",
+  "last_updated": "2026-08-06T10:00:22Z",
   "books": {
     "逃家小兔": {
       "characters": [
@@ -4222,8 +4222,8 @@
         "更高的地面",
         "午夜游乐场"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-07-29"
     },
     "想": {
       "freq": 5,
@@ -12114,13 +12114,21 @@
         "天"
       ],
       "source": "web"
+    },
+    {
+      "date": "2026-07-29",
+      "book": "其他",
+      "chars": [
+        "山"
+      ],
+      "source": "web"
     }
   ],
   "progress": {
     "total_books": 50,
     "total_unique_chars": 991,
-    "learned": 15,
+    "learned": 16,
     "learning": 0,
-    "untouched": 976
+    "untouched": 975
   }
 }
