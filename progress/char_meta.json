@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T10:00:22Z",
+  "last_updated": "2026-08-08T20:44:17Z",
   "total_chars": 991,
   "chars": {
     "的": {
@@ -3226,8 +3226,8 @@
         "图瓦人的木房子",
         "午夜游乐场"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-08"
     },
     "图": {
       "freq": 3,
