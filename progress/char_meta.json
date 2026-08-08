@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T21:36:46Z",
+  "last_updated": "2026-08-06T10:00:22Z",
   "total_chars": 991,
   "chars": {
     "的": {
@@ -1445,8 +1445,8 @@
         "更高的地面",
         "午夜游乐场"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-07-29"
     },
     "想": {
       "freq": 5,

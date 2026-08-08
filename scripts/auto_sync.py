@@ -48,15 +48,25 @@ def fetch_flowus_books():
         "Content-Type": "application/json",
         "Notion-Version": "2022-06-28"
     }
-    req = urllib.request.Request(url, data=b"{}", headers=headers, method="POST")
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode())
-    except Exception as e:
-        log(f"ERROR: FlowUs API 请求失败 - {e}")
-        return []
+    pages, cursor = [], None
+    while True:
+        body = {"page_size": 100}
+        if cursor:
+            body["start_cursor"] = cursor
+        req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode())
+        except Exception as e:
+            log(f"ERROR: FlowUs API 请求失败 - {e}")
+            return []
+        pages.extend(data.get("results", []))
+        if data.get("has_more") and data.get("next_cursor"):
+            cursor = data["next_cursor"]
+        else:
+            break
     books, seen = [], set()
-    for page in data.get("results", []):
+    for page in pages:
         props = page.get("properties", {})
         title = "".join(t.get("plain_text", "") for t in props.get("title", {}).get("title", []))
         if not title or title in seen:

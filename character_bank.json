@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-08-06T10:00:22Z",
+  "last_updated": "2026-08-08T20:44:17Z",
   "books": {
     "逃家小兔": {
       "characters": [
@@ -2774,6 +2774,1294 @@
       "total_chars": 0,
       "status": "未读",
       "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "跟着云朵去旅行": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "企鹅邮轮": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巫婆奶奶的魔戒": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巫婆奶奶的故事": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "别说你快点快点": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "甜蜜的梦": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "樱花明年会再开": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "灯塔": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "大灰狼咕噜怀念的秘密": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "泰迪替我去睡觉": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "莫莉和美美": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "最美的礼物": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "狐狸和兔子": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "是不是你": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巫婆奶奶棋逢对手": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "爸爸的胡子想我吗": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "苹果树上的死神": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "虫子好美味": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "最爱的是我": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "晚安猫头鹰": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "一本关于没有的书": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我的神奇马桶": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巫婆奶奶的魔法课": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "当你睡着以后": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "灯船": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "不可思议的旅程": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "许愿要小心templetion gets his wish": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我是最厉害的大野狼": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "你好灯塔": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "有了问题你怎么做": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "飞吧爸爸": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "中国山河游": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "布鲁斯遇上大暴雨": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巴巴的故事": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "蓝鲸": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "这颗松果是我的": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "安格斯迷路了": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "老鼠牙仙": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "书是完美宠物": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "考拉做得到": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "在读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "冒牌布鲁斯": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "安静的湖": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "小猪的草帽": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巫婆奶奶": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "嘿布鲁斯": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "建筑师的大创造看不见的空间": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "猜猜我有多爱你": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "电子书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "藏在地图里的中国历史史前文明-西晋": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "不一样的卡梅拉": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "城市中的一年": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "五味太郎启蒙系列": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "去沙爷爷小院升国旗": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "建筑师的大创造巧妙地改造方案": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "四季森林": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巴巴的旅行": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "好饿的毛毛虫": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "帽子迷弗雷德": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "你为什么不开花": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "霍金斯的恐龙世界": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "苏菲的杰作一只蜘蛛的故事": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "齐先生妙小姐": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "在读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "布鲁斯大搬家": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "小兔汤姆系列图画书旅行版26册": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "举世无双的地毯": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我的情绪小怪兽": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "贫民窟的世界乐团": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "101个神奇的实验": {
+      "characters": [],
+      "total_chars": 0,
+      "status": null,
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "卡尔的大大惊喜": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "大灰狼咕噜羞耻的秘密": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "喀什寻喵迹": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "玛德琳": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "鹅妈妈布鲁斯": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "嘭一个大大的梨": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "云朵怪兽": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "嘿嘿嘿嘿好像很好吃": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "I feel 儿童情绪表达书": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "龙之说": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "谁在画里捉迷藏": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "大象的花园": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "安静": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "生命的故事": {
+      "characters": [],
+      "total_chars": 0,
+      "status": null,
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巴巴和孩子们": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "青蛙和蟾蜍 好朋友": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "更少得更多": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "有时候我可以拒绝": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "书中相遇": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "雪怪的脚印": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "谁说睡前要数羊": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "穿靴子的猫": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我的橡皮筋不给你": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "阿丽亚找爸爸": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "有了机会你怎么做": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "安格斯和鸭子": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "永远在一起": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "笃笃笃": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "藏在地图里的中国历史东晋-清": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "回家的夜晚": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "小香蕉去看海": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "你眼中的树": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "“地下长城”坎儿井": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "写给亲爱的儿子": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "100层房子": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "野兽国": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "发火": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "颜色的战争": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "一只红手套": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "不可思议的旅程 回归之夜": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "洛克数学启蒙 趣味启蒙图画书共40册": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "乔纳斯与海": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "青少年军事大百科": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "史巴克和南瓜怪": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我是最帅的大野狼": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "青蛙和蟾蜍 快乐时光": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "老鼠娶新娘": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我和野马王子": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "刷牙先生来了": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "超级兔子": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "卡尔的第一次体验": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "权力和义务": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "摘星星": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "建筑师的大创造变化的设计图": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "野猫军团吃蛋糕": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "在读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "哇我不知道的动物奥秘": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "驼背上的梦想": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "不可思议的旅程 彩虹国度": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "卡尔玩游戏": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我还想去博物馆": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "野猫军团吃面包": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "在读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "熊在哪": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "安格斯和猫": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "老鼠的房子": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "好精彩的一年": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "在读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "圣诞老人布鲁斯": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "建筑师的大创造老房子的记忆": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "有了想法你怎么做": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "啊怎么变回来": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "神笔马良": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "听说你家有怪物": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "哪吒闹海": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "巫婆奶奶去度假": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "快来数数吧": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "最聪明的大野狼": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "卡蜜儿情商社交游戏绘本共5辑": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "小狼要回家": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "逃跑吧寻找吧": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "聪明的大自然": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我来帮你打开吧": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我爱你": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "探索火山岛": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "在这个星球上": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "献给了不起的爸爸": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "牙齿大街的新鲜事": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "龟兹奇妙之旅": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "大象巴巴": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "走去深海": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "妈妈说我是她的小老鼠 little mouse": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "森林的绘本": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "在读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "我是一只猫": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "狼狼你来了吗": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "肚子里有个火车站": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "未读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "好喜欢科学": {
+      "characters": [],
+      "total_chars": 0,
+      "status": null,
+      "source": null,
       "wordless": false,
       "text_source": "pending"
     }
@@ -6003,8 +7291,8 @@
         "图瓦人的木房子",
         "午夜游乐场"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-08"
     },
     "图": {
       "freq": 3,
@@ -12125,10 +13413,10 @@
     }
   ],
   "progress": {
-    "total_books": 50,
+    "total_books": 211,
     "total_unique_chars": 991,
-    "learned": 16,
+    "learned": 17,
     "learning": 0,
-    "untouched": 975
+    "untouched": 974
   }
 }
