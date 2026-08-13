@@ -48,6 +48,9 @@ python3 scripts/update_flowus_progress.py
   - 电脑端：`rex-识字系统/books.txt`，用后清空、已 gitignore、不提交 → `python scripts/batch_import_books.py`
   - 手机端 OB：`00_Inbox/录书.md`，导入后**直接删除**（有新书再重建，不归档）→ `python scripts/batch_import_books.py "00_Inbox/录书.md"`
   - 脚本自动去重 + Ollama 分类书籍类型 + 自动确认，无需 `--yes`
+  - 自动填 `存放位置`（书架，按主类型优先序映射 1#~8#）和 `系列`（书名精确映射 + 作者包含映射，限定 36 个已有系列选项）
+  - Ollama 默认模型 `qwen3.5:latest`（本机实际可用模型）；系列/类型选项缺失时自动添加
+  - 详细 SOP 见 playbooks/rex-flowus-book-import.md
 
 ## FlowUs Database Schema
 
@@ -64,6 +67,10 @@ python3 scripts/update_flowus_progress.py
 | 认字情况 | rich_text | Learned chars (e.g. 大、小、上、下) |
 | 认字字数 | number | 认字情况 字符数（--count-chars 统计） |
 | 读后感 | rich_text | Reading notes |
+| 存放位置 | select | 1#~8# / 未上架（按类型数量排布：文学1# 科普2# 情绪习惯3# 艺术4# 思维社会5# 传统6# 地域7# 神话/无字书/桥梁8#） |
+| 适合年龄 | multi_select | 3-4, 4-5, 5-6, 6-7, 7-8, 8-9 |
+| 系列 | select | 36 个系列选项（布鲁斯/巫婆奶奶/吉竹伸介/宫西达也恐龙/这里是新疆/德国精选科学图画书 等） |
+| 读完日期 | date | 阅读完成日期 |
 
 ### 每周推荐 (ID: `2f45cfb4-a4f2-4271-b1e3-e0a2d94892ab`)
 

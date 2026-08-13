@@ -23,10 +23,122 @@ DATABASE_ID = "10df60aa-aee0-4727-adab-f4d99e1cc053"
 FLOWUS_TOKEN = os.environ.get("FLOWUS_TOKEN")
 BOOKS_FILE = os.path.join(BASE_DIR, "books.txt")
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:7b")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3.5:latest")
 
 # 已有的类型选项（LLM 可新增）
 EXISTING_TYPES = ["地域", "传统", "文学", "科普", "无字书", "神话故事", "桥梁书", "艺术", "情绪习惯", "思维社会"]
+
+# 书架映射：主类型优先序 → 书架号（与 Rex阅读记录库存放位置规则一致）
+SHELF_PRIORITY = ["文学", "科普", "情绪习惯", "艺术", "思维社会", "传统", "地域", "神话故事", "无字书", "桥梁书"]
+SHELF_MAP = {
+    "文学": "1#", "科普": "2#", "情绪习惯": "3#", "艺术": "4#",
+    "思维社会": "5#", "传统": "6#", "地域": "7#",
+    "神话故事": "8#", "无字书": "8#", "桥梁书": "8#",
+}
+
+# 系列匹配：书名 → 系列（限定数据库已有 36 个系列选项）
+SERIES_BY_TITLE = {
+    "四季时光 五本": "四季时光",
+    "建筑师的大创造巧妙地改造方案": "建筑师的大创造",
+    "建筑师的大创造看不见的空间": "建筑师的大创造",
+    "建筑师的大创造错位的建筑结构": "建筑师的大创造",
+    "建筑师的大创造变化的设计图": "建筑师的大创造",
+    "建筑师的大创造老房子的记忆": "建筑师的大创造",
+    "小兔汤姆系列图画书旅行版26册": "小兔汤姆",
+    "卡蜜儿情商社交游戏绘本共5辑": "卡蜜儿情商社交",
+    "洛克数学启蒙 趣味启蒙图画书共40册": "洛克数学启蒙",
+    "帮帮机器人分清事实和观点": "帮帮机器人",
+    "帮帮机器人分清想要和需要": "帮帮机器人",
+    "野猫军团吃蛋糕": "野猫军团",
+    "野猫军团吃面包": "野猫军团",
+    "青蛙和蟾蜍 好朋友": "青蛙和蟾蜍",
+    "青蛙和蟾蜍 快乐时光": "青蛙和蟾蜍",
+    "青蛙和蟾蜍 快乐年年": "青蛙和蟾蜍",
+    "藏在地图里的中国历史史前文明-西晋": "藏在地图里的中国历史",
+    "藏在地图里的中国历史东晋-清": "藏在地图里的中国历史",
+    "走进艺术故事": "走进艺术",
+    "走进艺术人物": "走进艺术",
+    "思考世界的孩子想个不停": "思考世界的孩子",
+    "思考世界的孩子问个不停": "思考世界的孩子",
+    "有时候我可以拒绝": "有时候我可以",
+    "有时候我可以生气": "有时候我可以",
+    "写给亲爱的儿子": "写给亲爱的",
+    "写给亲爱的女儿": "写给亲爱的",
+    "超级乌龟": "超级乌龟兔子",
+    "超级兔子": "超级乌龟兔子",
+    "探索火山岛": "探索火山深海",
+    "走去深海": "探索火山深海",
+    "城堡的一年": "一年四季",
+    "建筑工地的一年": "一年四季",
+    "山间的一年": "一年四季",
+    "城市中的一年": "一年四季",
+    "森林里的一年": "一年四季",
+    "有了问题你怎么做": "有了...你怎么做",
+    "有了机会你怎么做": "有了...你怎么做",
+    "有了想法你怎么做": "有了...你怎么做",
+    "西游记绘本": "西游记绘本",
+    "大灰狼咕噜羞耻的秘密": "大灰狼咕噜",
+    "大灰狼咕噜怀念的秘密": "大灰狼咕噜",
+    "巫婆奶奶去度假": "巫婆奶奶系列",
+    "巫婆奶奶的魔戒": "巫婆奶奶系列",
+    "巫婆奶奶棋逢对手": "巫婆奶奶系列",
+    "巫婆奶奶的魔法课": "巫婆奶奶系列",
+    "巫婆奶奶": "巫婆奶奶系列",
+    "巫婆奶奶的故事": "巫婆奶奶系列",
+    "不可思议的旅程 彩虹国度": "不可思议的旅程",
+    "不可思议的旅程 回归之夜": "不可思议的旅程",
+    "不可思议的旅程": "不可思议的旅程",
+    "安格斯迷路了": "安格斯系列",
+    "安格斯和鸭子": "安格斯系列",
+    "安格斯和猫": "安格斯系列",
+    "巴巴和孩子们": "大象巴巴",
+    "巴巴的故事": "大象巴巴",
+    "巴巴的旅行": "大象巴巴",
+    "大象巴巴": "大象巴巴",
+    "最聪明的大野狼": "大野狼系列",
+    "我是最厉害的大野狼": "大野狼系列",
+    "我是最帅的大野狼": "大野狼系列",
+    "狼狼你来了吗": "大野狼系列",
+    "卡尔玩游戏": "卡尔系列",
+    "卡尔的大大惊喜": "卡尔系列",
+    "卡尔的第一次体验": "卡尔系列",
+    "圣诞老人布鲁斯": "布鲁斯系列",
+    "嘿布鲁斯": "布鲁斯系列",
+    "布鲁斯遇上大暴雨": "布鲁斯系列",
+    "布鲁斯大搬家": "布鲁斯系列",
+    "鹅妈妈布鲁斯": "布鲁斯系列",
+    "冒牌布鲁斯": "布鲁斯系列",
+    "安静": "布鲁斯系列",
+    "去沙爷爷小院升国旗": "这里是新疆",
+    "喀什寻喵迹": "这里是新疆",
+    "驼背上的梦想": "这里是新疆",
+    "龟兹奇妙之旅": "这里是新疆",
+    "我和爸爸逛巴扎": "这里是新疆",
+    "艾德莱斯绸布谷鸟的翅膀花": "这里是新疆",
+    "我还想去博物馆": "这里是新疆",
+    "更高的地面": "这里是新疆",
+    "图瓦人的木房子": "这里是新疆",
+    "我和野马王子": "这里是新疆",
+    "举世无双的地毯": "这里是新疆",
+    '"地下长城"坎儿井': "这里是新疆",
+    "阿丽亚找爸爸": "这里是新疆",
+}
+
+# 系列匹配：作者 → 系列（作者名包含匹配）
+SERIES_BY_AUTHOR = [
+    ("宫西达也", "宫西达也恐龙系列"),
+    ("深见春夫", "深见春夫系列"),
+    ("吉竹伸介", "吉竹伸介系列"),
+    ("五味太郎", "五味太郎启蒙"),
+    ("瑞安·T·希金斯", "布鲁斯系列"),
+    ("马里奥·哈默斯", "大野狼系列"),
+    ("安娜·鲁斯曼", "德国精选科学图画书"),
+    ("雷切尔布莱特", "雷切尔·布莱特系列"),
+    ("雷切尔·布莱特", "雷切尔·布莱特系列"),
+    ("郝广才", "郝广才系列"),
+    ("伊戈尔·欧尼科夫", "欧尼科夫系列"),
+    ("大卫·香农", "大卫系列"),
+]
 
 
 def log(msg):
@@ -96,6 +208,52 @@ def ensure_type_exists(type_name):
     except Exception as e:
         log(f"  ⚠ 添加类型「{type_name}」失败: {e}")
         return False
+
+
+def ensure_series_exists(series_name):
+    """确保系列选项存在于数据库，不存在则自动添加（保留现有选项）"""
+    db = flowus_api("GET", f"/databases/{DATABASE_ID}")
+    series_prop = db.get("properties", {}).get("系列", {})
+    options = series_prop.get("select", {}).get("options", [])
+    existing_names = [o.get("name") for o in options]
+
+    if series_name in existing_names:
+        return True
+
+    new_options = [{"name": n} for n in existing_names] + [{"name": series_name}]
+    try:
+        flowus_api("PATCH", f"/databases/{DATABASE_ID}", {
+            "properties": {
+                "系列": {
+                    "type": "select",
+                    "select": {"options": new_options},
+                }
+            }
+        })
+        log(f"  + 新增系列「{series_name}」到数据库")
+        return True
+    except Exception as e:
+        log(f"  ⚠ 添加系列「{series_name}」失败: {e}")
+        return False
+
+
+def calc_shelf(types):
+    """按主类型优先序返回书架号"""
+    for t in SHELF_PRIORITY:
+        if t in types:
+            return SHELF_MAP.get(t, "")
+    return ""
+
+
+def calc_series(title, author):
+    """按书名精确匹配或作者包含匹配返回系列名"""
+    if title in SERIES_BY_TITLE:
+        return SERIES_BY_TITLE[title]
+    if author:
+        for auth, series in SERIES_BY_AUTHOR:
+            if auth in author:
+                return series
+    return ""
 
 
 def read_books_file(path):
@@ -222,7 +380,7 @@ def classify_book(title, author, retries=2):
 
 
 def create_flowus_page(title, author, types):
-    """创建 FlowUs 页面"""
+    """创建 FlowUs 页面（含存放位置、系列）"""
     properties = {
         "title": {
             "type": "title",
@@ -246,6 +404,18 @@ def create_flowus_page(title, author, types):
         properties["书籍类型"] = {
             "type": "multi_select",
             "multi_select": [{"name": t} for t in types],
+        }
+    shelf = calc_shelf(types)
+    if shelf:
+        properties["存放位置"] = {
+            "type": "select",
+            "select": {"name": shelf},
+        }
+    series = calc_series(title, author)
+    if series:
+        properties["系列"] = {
+            "type": "select",
+            "select": {"name": series},
         }
 
     result = flowus_api("POST", "/pages", {
@@ -309,15 +479,21 @@ def main():
         author = book["author"]
         log(f"   [{i+1}/{len(new_books)}] {title}" + (f" ({author})" if author else ""))
         types = classify_book(title, author)
-        categorized.append({"title": title, "author": author, "types": types})
-        log(f"           → {', '.join(types or [])}")
+        categorized.append({"title": title, "author": author, "types": types,
+                            "shelf": calc_shelf(types), "series": calc_series(title, author)})
+        log(f"           → {', '.join(types or [])}" + (f" | 书架 {calc_shelf(types)}" if calc_shelf(types) else "") + (f" | 系列 {calc_series(title, author)}" if calc_series(title, author) else ""))
 
     # 5. 展示预览
     log("\n" + "=" * 50)
     log("📋 导入预览（共 {} 本）：".format(len(categorized)))
     log("=" * 50)
     for i, b in enumerate(categorized):
-        log(f"  {i+1:2d}. {b['title']}" + (f"  | {b['author']}" if b['author'] else "") + f"  | {', '.join(b['types'])}")
+        extra = []
+        if b["shelf"]:
+            extra.append(f"书架 {b['shelf']}")
+        if b["series"]:
+            extra.append(f"系列 {b['series']}")
+        log(f"  {i+1:2d}. {b['title']}" + (f"  | {b['author']}" if b['author'] else "") + f"  | {', '.join(b['types'])}" + (f"  | " + " / ".join(extra) if extra else ""))
 
     # 6. 自动确认
     log("")
@@ -333,6 +509,13 @@ def main():
     log(f"   检查类型选项: {', '.join(sorted(all_types))}")
     for t in sorted(all_types):
         ensure_type_exists(t)
+
+    # 收集所有需要的系列，确保它们存在于数据库
+    all_series = {b["series"] for b in categorized if b["series"]}
+    if all_series:
+        log(f"   检查系列选项: {', '.join(sorted(all_series))}")
+        for s in sorted(all_series):
+            ensure_series_exists(s)
 
     success = 0
     fail = 0
@@ -360,10 +543,12 @@ def main():
         log("📚 按类型分组（摆书架参考）：")
         log("=" * 50)
         for t in sorted(type_groups.keys()):
-            log(f"\n【{t}】({len(type_groups[t])}本)")
+            shelf_tag = f" → {SHELF_MAP[t]}" if t in SHELF_MAP else ""
+            log(f"\n【{t}】({len(type_groups[t])}本){shelf_tag}")
             for b in type_groups[t]:
                 author_str = f", {b['author']}" if b['author'] else ""
-                log(f"  - {b['title']}{author_str}")
+                series_str = f"  [系列: {b['series']}]" if b.get("series") else ""
+                log(f"  - {b['title']}{author_str}{series_str}")
 
 
 if __name__ == "__main__":
