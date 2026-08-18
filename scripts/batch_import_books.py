@@ -24,6 +24,15 @@ FLOWUS_TOKEN = os.environ.get("FLOWUS_TOKEN")
 BOOKS_FILE = os.path.join(BASE_DIR, "books.txt")
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3.5:latest")
+DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
+DEEPSEEK_MODEL = "deepseek-chat"
+DEEPSEEK_KEY = ""
+_auth_file = os.path.expanduser("~/.local/share/opencode/auth.json")
+try:
+    with open(_auth_file, "r", encoding="utf-8") as _f:
+        DEEPSEEK_KEY = json.load(_f).get("deepseek", {}).get("key", "")
+except Exception:
+    pass
 
 # 已有的类型选项（LLM 可新增）
 EXISTING_TYPES = ["地域", "传统", "文学", "科普", "无字书", "神话故事", "桥梁书", "艺术", "情绪习惯", "思维社会"]
@@ -279,7 +288,7 @@ def read_books_file(path):
 
 
 def classify_book(title, author, retries=2):
-    """调用 Ollama 分类单本书"""
+    """调用 DeepSeek 云端分类单本书（失败回退 Ollama）"""
     prompt = f"""你是儿童绘本分类专家。根据书名和作者，为这本书选择最合适的类型。可返回多个类型，用逗号分隔。
 
 ## 类型定义（严格遵循）
@@ -313,6 +322,12 @@ def classify_book(title, author, retries=2):
 7. 野兽国（经典情绪类绘本）→ 文学,情绪习惯。老鼠娶新娘 → 传统（民间婚俗故事，不是神话故事）。
 8. 四季时光（找图观察书）→ 文学,科普。不要发明"季节"等新类型。
 
+## 输出约束（必须严格遵守）
+
+- **只能从这 10 个类型中选择**：地域、传统、文学、科普、无字书、神话故事、桥梁书、艺术、情绪习惯、思维社会
+- 绝不输出这 10 个以外的任何词
+- 若不确定，选最接近的，并给故事书补上"文学"
+
 ## 示例（权威标准，学这个）
 
 - 喀什寻喵迹 → 地域,文学
@@ -339,7 +354,6 @@ def classify_book(title, author, retries=2):
 - 帽子迷弗雷德 → 文学
 - 卡尔的大大惊喜 → 文学
 - 野兽国 → 文学,情绪习惯
-- 老鼠娶新娘 → 传统
 - 四季时光 → 文学,科普
 
 书名：{title}
@@ -348,11 +362,60 @@ def classify_book(title, author, retries=2):
 请只返回类型名称，多个用逗号分隔，不要解释。例如：地域 或 文学,科普"""
 
     data = {
+        "model": DEEPSEEK_MODEL,
+        "messages": [
+            {"role": "system", "content": "你是严格的儿童绘本分类器，只能从给定类型集合中选择。"},
+            {"role": "user", "content": prompt},
+        ],
+        "max_tokens": 100,
+        "temperature": 0,
+    }
+
+    def _clean(content):
+        """解析并校验返回的类型，只保留 10 个合法类型"""
+        raw = []
+        for t in content.replace("、", ",").replace("，", ",").split(","):
+            t = t.strip().strip("\"'""''")
+            if t:
+                raw.append(t)
+        # 只保留合法类型，去掉解释性杂词
+        valid = [t for t in raw if t in EXISTING_TYPES]
+        return valid if valid else (raw[:1] if raw else [])
+
+    # 优先 DeepSeek 云端
+    if DEEPSEEK_KEY:
+        for attempt in range(retries + 1):
+            try:
+                body = json.dumps(data).encode()
+                req = urllib.request.Request(
+                    DEEPSEEK_URL, data=body,
+                    headers={
+                        "Content-Type": "application/json",
+                        "Authorization": f"Bearer {DEEPSEEK_KEY}",
+                    },
+                    method="POST",
+                )
+                with urllib.request.urlopen(req, timeout=90) as resp:
+                    result = json.loads(resp.read().decode())
+                    content = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+                    types = _clean(content)
+                    if types:
+                        return types
+                    # 返回了但全是非法值 → 修正为文学（故事类默认）
+                    log(f"    ⚠ DeepSeek 返回非法类型「{content}」，回退文学")
+                    return ["文学"]
+            except Exception as e:
+                if attempt < retries:
+                    log(f"  ⚠ DeepSeek 调用失败，重试... ({e})")
+                else:
+                    log(f"  ✗ DeepSeek 分类失败: {e}")
+
+    # 回退：Ollama
+    data = {
         "model": OLLAMA_MODEL,
         "messages": [{"role": "user", "content": prompt}],
         "stream": False,
     }
-
     for attempt in range(retries + 1):
         try:
             body = json.dumps(data).encode()
@@ -364,12 +427,7 @@ def classify_book(title, author, retries=2):
             with urllib.request.urlopen(req, timeout=60) as resp:
                 result = json.loads(resp.read().decode())
                 content = result.get("message", {}).get("content", "").strip()
-                # 解析返回的类型
-                types = []
-                for t in content.replace("、", ",").replace("，", ",").split(","):
-                    t = t.strip().strip("\"'""''")
-                    if t:
-                        types.append(t)
+                types = _clean(content)
                 return types if types else ["文学"]
         except Exception as e:
             if attempt < retries:
