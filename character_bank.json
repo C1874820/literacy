@@ -11076,14 +11076,14 @@
       "status": "已读",
       "source": "纸质书",
       "wordless": false,
-      "text_source": "none"
+      "text_source": "pending"
     },
     "生活场景认字": {
       "characters": [],
       "total_chars": 0,
       "status": "已读",
       "source": "纸质书",
-      "wordless": false,
+      "wordless": true,
       "text_source": "none"
     }
   },
