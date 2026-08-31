@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "last_updated": "2026-08-08T20:56:44Z",
+  "last_updated": "2026-08-31T10:00:06Z",
   "progress": {
-    "total_books": 211,
-    "total_unique_chars": 1514,
-    "learned": 18,
+    "total_books": 338,
+    "total_unique_chars": 1811,
+    "learned": 17,
     "learning": 0,
-    "untouched": 1496
+    "untouched": 1794
   }
 }
