@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-08-31T16:57:42Z",
+  "last_updated": "2026-08-31T17:09:24Z",
   "books": {
     "逃家小兔": {
       "characters": [
@@ -11069,6 +11069,22 @@
       "source": "纸质书",
       "wordless": false,
       "text_source": "pending"
+    },
+    "狼宝上学记": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
+    },
+    "生活场景认字": {
+      "characters": [],
+      "total_chars": 0,
+      "status": "已读",
+      "source": "纸质书",
+      "wordless": false,
+      "text_source": "pending"
     }
   },
   "chars": {
@@ -11475,8 +11491,8 @@
         "哪吒闹海",
         "肚子里有个火车站"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "好": {
       "freq": 39,
@@ -13724,8 +13740,8 @@
         "哪吒闹海",
         "肚子里有个火车站"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "最": {
       "freq": 19,
@@ -13851,8 +13867,8 @@
         "快来数数吧",
         "肚子里有个火车站"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "用": {
       "freq": 18,
@@ -15386,8 +15402,8 @@
         "哪吒闹海",
         "肚子里有个火车站"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "鸟": {
       "freq": 12,
@@ -17095,8 +17111,8 @@
         "龟兹奇妙之旅",
         "肚子里有个火车站"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "金": {
       "freq": 9,
@@ -18128,8 +18144,8 @@
         "野猫军团吃蛋糕",
         "野猫军团吃面包"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "青": {
       "freq": 7,
@@ -18562,8 +18578,8 @@
         "野猫军团吃面包",
         "哪吒闹海"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "古": {
       "freq": 7,
@@ -19453,8 +19469,8 @@
         "快来数数吧",
         "龟兹奇妙之旅"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "怪": {
       "freq": 6,
@@ -20537,8 +20553,8 @@
         "野猫军团吃蛋糕",
         "野猫军团吃面包"
       ],
-      "status": "未学",
-      "learned_date": null
+      "status": "已学",
+      "learned_date": "2026-08-31"
     },
     "娘": {
       "freq": 5,
@@ -32159,10 +32175,10 @@
     }
   ],
   "progress": {
-    "total_books": 338,
+    "total_books": 340,
     "total_unique_chars": 1811,
-    "learned": 17,
+    "learned": 26,
     "learning": 0,
-    "untouched": 1794
+    "untouched": 1785
   }
 }
