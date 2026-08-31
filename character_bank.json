@@ -11076,7 +11076,7 @@
       "status": "已读",
       "source": "纸质书",
       "wordless": false,
-      "text_source": "pending"
+      "text_source": "none"
     },
     "生活场景认字": {
       "characters": [],
@@ -11084,7 +11084,7 @@
       "status": "已读",
       "source": "纸质书",
       "wordless": false,
-      "text_source": "pending"
+      "text_source": "none"
     }
   },
   "chars": {
