@@ -44,6 +44,12 @@ python3 scripts/update_flowus_progress.py
 - **systemd（user）**：`rex-observe-watch.service`（90s 轮询自动整理）+ `rex-observe-monthly.timer`（每月1日09:00 生成上月报告）。管理：`systemctl --user status|restart`
 - **git**：脚本已入识字系统仓库（`scripts/rex_observe.py` 等）
 
+## 文档录入规则（双轨，2026-09-01 定）
+
+改动内容、规划、规则的落笔记方式按系统分轨，互不混写：
+- **识字系统**（书单/识字/字库/FlowUs/Supabase/进度页）→ 只在 `孩子成长/识字系统-项目文档.md` 录入
+- **观察记录**（周观察/月报/情绪行为等）→ 只在 `孩子成长/Rex观察记录-项目文档.md` 录入（单独笔记，不写入识字系统文档）
+
 ## Environment
 
 - **Python 3** — no requirements, stdlib only (no pip packages)
