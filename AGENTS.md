@@ -30,6 +30,20 @@ python3 scripts/generate_progress_html.py
 python3 scripts/update_flowus_progress.py
 ```
 
+## Rex 观察记录系统（2026-08-31 新增）
+
+- **位置**：`/mnt/d/Onedrive/个人仓库/01_Areas/孩子成长/rex观察记录/`
+- **命名**：周观察 `YY年-幼儿园-第X周-观察记录.md` / 月度 `YY年-幼儿园-M月-月度报告.md`
+- **周次**：按德阳市 2026-2027 秋季校历，9/1 行课周=第1周（共20周）；第1周=9/1(周二)~9/6(周日)，其后每7天。FlowUs「本周主力」与观察记录共用此周次
+- **手机录入**：手机 Obsidian 语音转文字 → 观察记录文件「原始记录」段落（`#### 时间 标题`），电脑端自动整理
+- **脚本**（识字系统 `scripts/`）：
+  - `rex_observe.py once|watch|show` — 扫描带`（待本地模型整理）`占位的段落，调本地 Ollama 整理到「整理」区（原文保留）
+  - `rex_monthly.py [year month]` — 聚合指定月教学周记录，生成四部分（闪光点/优化/性格/下月）月度报告；保留"是否移动脚本"提示
+  - `ollama_host.py` — 动态解析 WSL 默认网关（Windows 宿主）IP，供上面脚本访问 Windows Ollama
+- **Ollama 关键环境**：WSL 内 Ollama 无 GPU 仅 0.5 tok/s 不可用；Windows 侧装 Ollama（`OLLAMA_HOST=0.0.0.0:11434`）用 Arc iGPU 加速（实测 7-16s 整理一条）。模型：`qwen3:0.6b`
+- **systemd（user）**：`rex-observe-watch.service`（90s 轮询自动整理）+ `rex-observe-monthly.timer`（每月1日09:00 生成上月报告）。管理：`systemctl --user status|restart`
+- **git**：脚本已入识字系统仓库（`scripts/rex_observe.py` 等）
+
 ## Environment
 
 - **Python 3** — no requirements, stdlib only (no pip packages)
