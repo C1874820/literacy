@@ -30,19 +30,70 @@ python3 scripts/generate_progress_html.py
 python3 scripts/update_flowus_progress.py
 ```
 
-## Rex 观察记录系统（2026-08-31 新增）
+## Rex 观察记录系统（2026-09-05 起 FlowUs 全面接管）
 
-- **位置**：`/mnt/d/Onedrive/个人仓库/01_Areas/孩子成长/rex观察记录/`
-- **命名**：周观察 `YY年-幼儿园-第X周-观察记录.md` / 月度 `YY年-幼儿园-M月-月度报告.md`
-- **周次**：按德阳市 2026-2027 秋季校历，9/1 行课周=第1周（共20周）；第1周=9/1(周二)~9/6(周日)，其后每7天。FlowUs「本周主力」与观察记录共用此周次
-- **手机录入**：手机 Obsidian 语音转文字 → 观察记录文件「原始记录」段落（`#### 时间 标题`），电脑端自动整理
-- **脚本**（识字系统 `scripts/`）：
-  - `rex_observe.py once|watch|show` — 扫描带`（待本地模型整理）`占位的段落，调本地 Ollama 整理到「整理」区（原文保留）
-  - `rex_monthly.py [year month]` — 聚合指定月教学周记录，生成四部分（闪光点/优化/性格/下月）月度报告；保留"是否移动脚本"提示
-  - `ollama_host.py` — 动态解析 WSL 默认网关（Windows 宿主）IP，供上面脚本访问 Windows Ollama
-- **Ollama 关键环境**：WSL 内 Ollama 无 GPU 仅 0.5 tok/s 不可用；Windows 侧装 Ollama（`OLLAMA_HOST=0.0.0.0:11434`）用 Arc iGPU 加速（实测 7-16s 整理一条）。模型：`qwen3:0.6b`
-- **systemd（user）**：`rex-observe-watch.service`（90s 轮询自动整理）+ `rex-observe-monthly.timer`（每月1日09:00 生成上月报告）。管理：`systemctl --user status|restart`
-- **git**：脚本已入识字系统仓库（`scripts/rex_observe.py` 等）
+观察内容**全部落在 FlowUs**，不再用 OB md 周文件。周次沿用德阳 2026-2027 秋季校历：9/1 行课周=第1周（9/1~9/6，共20周），其后每7天；「本周主力」与观察记录共用此周次。
+
+### FlowUs 结构
+
+| 位置 | 类型 | 用途 |
+|------|------|------|
+| `26年秋期-观察记录` 容器（`38a442f6-73a6-455c-8761-70f50992fc94`，实际为 child_database，父页 e8dbd772，标题「成长记录」） | 数据库 | 学期容器；每行=周页（如 `26年秋期9月第1周`，放学校图片+说明）、`家庭观察`页 或 `YY年M月-观察月报` |
+| `家庭观察`页（`d05e88bc-f8c1-41a1-8f41-2924bb597ad1`，学期容器下的 child_page 行） | 普通页面 | 家庭瞬时观察录入入口（手机友好）：正文直接写一行条 `日期 \| 一句话/观察点` |
+| 本周主力页（`d14aa902-...`，Rex阅读成长系统下） | 页面 | 识字计划 + **✍️ 阅读随手记** 区块（双用途） |
+
+**家庭观察页行格式**（与阅读随手记同机制）：`日期 | 一句话/观察点`，新行末尾加 `（待整理）`；脚本按行读取识别"待整理"。无 DB 列、无 `状态` 字段。
+
+### 三通道录入
+
+- **学校/教师成长**：直接写进学期容器周页（图片+说明），现状即此
+- **家庭瞬时观察**：直接写在 `家庭观察` 页正文，行格式 `日期 | 一句话/观察点`，新行末尾加 `（待整理）`
+- **阅读随手记**：写在 本周主力 ✍️ 阅读随手记 区块，格式 `日期 | 书名 | Rex状态/提问/值得记录`；新条目末尾加`（待整理）`
+
+### 脚本（识字系统 `scripts/`）
+
+> 观察系统脚本已隔离到 `observe/`（gitignore，不进公开仓库），见下方「观察脚本」。
+
+| 脚本 | 功能 |
+|------|------|
+| `auto_sync.py` | 全自动同步（cron）：FlowUs 书单 → 字库 → progress JSON → git push |
+| `generate_progress_html.py` | 生成 `progress/index.html` + data/learned/char_meta JSON |
+| `update_flowus_progress.py` | 更新息流识字进度页 |
+| `batch_import_books.py` | 书单批量录入（电脑 `books.txt` / 手机 `00_Inbox/录书.md`） |
+| `fill_book_meta.py` / `fill_book_text.py` | 补全书元数据 / 提取正文文字 |
+| `recommend_pool.py` | 推荐书单素材池 |
+
+### 观察脚本（`observe/`，已 gitignore）
+
+| 脚本 | 功能 |
+|------|------|
+| `flowus_observe.py detect/show` | 检测待整理：家庭观察页含`（待整理）`的行 + 随手记含`（待整理）`的行，写 `.observe/pending_observe.json` |
+| `flowus_observe.py watch [秒]` | 轮询 detect（默认90s，接 systemd watch 服务） |
+| `flowus_observe.py rollup [周] [--force]` | 周汇总：家庭观察页本周行 + 随手记本周行 → 学期容器对应周页「🏠 家庭观察」区；被归并的行去 `（待整理）` 标记 |
+| `flowus_observe.py mark-done <block_id>` / `fix-block <block_id> <text>` | 整理辅助：去块（待整理）标记 / 改块正文 |
+| `rex_monthly.py [year month] [--quick]` | 月度聚合学期容器周页 → 建 `YY年M月-观察月报` 子页（默认只聚合原文+八维度指引，深度分析由 opencode 做；`--quick` 才走 Ollama 四部分） |
+| `ollama_host.py` | Windows Ollama 网关 IP 解析（仅 rex_monthly --quick 用） |
+| `观察整理-playbook.md` | 观察整理 SOP（整理 = opencode 手动触发） |
+
+### 数据与整理约定
+
+- **整理 = opencode 手动触发**（说"整理观察"）：只规范标题/格式/位置，不改写内容；流程见 `observe/观察整理-playbook.md`
+- 学期容器增删改走 `/v2` API：数据库式容器新增子页 = POST /v2/pages 且 `parent.database_id` + title 字段键名用 `标题`
+- 家庭观察页通过 PATCH 块文本更新（无 DB 列）
+- `flowus_observe.py` / `rex_monthly.py` token 从 `.env` 读；**不需开 FlowUs MCP，也不依赖 flowus-cli**
+- **隐私**：`observe/`（观察脚本+SOP，含 FlowUs 页面 ID）与 `.observe/`（pending/state，含观察内容）均已 gitignore，绝不进 GitHub Pages/公开仓库
+
+### systemd（user）
+
+- `rex-observe-watch.service`：90s 轮询 `flowus_observe.py watch`（原 rex_observe.py 已停用）
+- `rex-observe-rollup.timer`：每周日 21:30 `flowus_observe.py rollup`
+- `rex-observe-monthly.timer`：每月1日09:00 `rex_monthly.py`
+- 管理：`systemctl --user status|restart rex-observe-watch` / `systemctl --user list-timers | grep rex`
+
+### 遗留（2026-09-05）
+
+- OB `rex观察记录/` 周文件停用转只读；历史内容迁移按需再补
+- 电子书库 FlowUs 页已于 2026-09 删除（未使用），代码无引用
 
 ## 文档录入规则（双轨，2026-09-01 定）
 
