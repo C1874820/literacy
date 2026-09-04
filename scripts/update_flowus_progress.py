@@ -36,7 +36,7 @@ def flowus(method, url, data=None):
 
 def create_page():
     """Create a top-level page in FlowUs."""
-    return flowus("POST", "https://api.flowus.cn/v1/pages", {
+    return flowus("POST", "https://api.flowus.cn/v2/pages", {
         "properties": {
             "title": {
                 "type": "title",
@@ -98,7 +98,7 @@ def add_content(page_id, bank):
         "data": {"rich_text": [{"type": "text", "text": {"content": "自动更新于 " + last_updated}}]}
     })
 
-    result = flowus("PATCH", "https://api.flowus.cn/v1/blocks/" + page_id + "/children", {"children": children})
+    result = flowus("PATCH", "https://api.flowus.cn/v2/blocks/" + page_id + "/children", {"children": children})
     if result:
         print("息流进度页面已更新内容")
 
@@ -139,7 +139,7 @@ def main():
     else:
         # Update page title icon to reflect latest date
         last_updated = bank.get("last_updated", "")[:10]
-        flowus("PATCH", "https://api.flowus.cn/v1/pages/" + page_id, {
+        flowus("PATCH", "https://api.flowus.cn/v2/pages/" + page_id, {
             "properties": {
                 "title": {
                     "type": "title",
