@@ -16,6 +16,9 @@ books.txt.bak*
 # 观察记录运行时文件（含观察内容，绝不公开/不提交）
 .observe/
 
+# 项目记忆（checkpoint 含 FlowUs 页面 ID 上下文，不进公开仓库）
+.memory/
+
 # 观察系统代码 + SOP（含 FlowUs 页面 ID，绝不进公开仓库）
 observe/
 
