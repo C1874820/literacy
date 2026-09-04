@@ -42,7 +42,7 @@ def fetch_flowus_books():
     if not FLOWUS_TOKEN:
         log("ERROR: FLOWUS_TOKEN 未设置")
         return []
-    url = f"https://api.flowus.cn/v1/databases/{DATABASE_ID}/query"
+    url = f"https://api.flowus.cn/v2/databases/{DATABASE_ID}/query"
     headers = {
         "Authorization": f"Bearer {FLOWUS_TOKEN}",
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ def fetch_flowus_books():
     books, seen = [], set()
     for page in pages:
         props = page.get("properties", {})
-        title = "".join(t.get("plain_text", "") for t in props.get("title", {}).get("title", []))
+        title = "".join(t.get("plain_text", "") for t in props.get("书名", {}).get("title", []))
         if not title or title in seen:
             continue
         seen.add(title)
