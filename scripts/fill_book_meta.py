@@ -19,7 +19,7 @@
 import json, os, sys, time, urllib.request, urllib.error
 from collections import Counter
 
-BASE = "/mnt/d/rex-识字系统"
+BASE = "/mnt/d/rex"
 DB = "10df60aa-aee0-4727-adab-f4d99e1cc053"
 ENV = f"{BASE}/.env"
 AUTH = os.path.expanduser("~/.local/share/opencode/auth.json")

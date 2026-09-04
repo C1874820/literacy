@@ -9,7 +9,7 @@
 """
 import json, os, glob, datetime
 
-BASE = "/mnt/d/rex-识字系统"
+BASE = "/mnt/d/rex"
 BANK = f"{BASE}/character_bank.json"
 TEXT_DIR = f"{BASE}/search_texts"
 

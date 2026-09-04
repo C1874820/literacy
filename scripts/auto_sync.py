@@ -20,7 +20,7 @@ import urllib.error
 from collections import Counter
 from datetime import datetime
 
-BASE_DIR = "/mnt/d/rex-识字系统"
+BASE_DIR = "/mnt/d/rex"
 CHAR_BANK_PATH = f"{BASE_DIR}/character_bank.json"
 SYNC_LOG_PATH = f"{BASE_DIR}/sync_log.txt"
 DATABASE_ID = "10df60aa-aee0-4727-adab-f4d99e1cc053"

@@ -18,7 +18,7 @@ import sys
 import urllib.request
 import urllib.error
 
-BASE_DIR = "/mnt/d/rex-识字系统"
+BASE_DIR = "/mnt/d/rex"
 DATABASE_ID = "10df60aa-aee0-4727-adab-f4d99e1cc053"
 FLOWUS_TOKEN = os.environ.get("FLOWUS_TOKEN")
 BOOKS_FILE = os.path.join(BASE_DIR, "books.txt")

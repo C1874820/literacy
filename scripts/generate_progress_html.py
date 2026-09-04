@@ -5,8 +5,8 @@ import json
 import os
 from datetime import datetime
 
-CHAR_BANK_PATH = "/mnt/d/rex-识字系统/character_bank.json"
-OUTPUT_DIR = "/mnt/d/rex-识字系统/progress"
+CHAR_BANK_PATH = "/mnt/d/rex/character_bank.json"
+OUTPUT_DIR = "/mnt/d/rex/progress"
 OUTPUT_DATA = f"{OUTPUT_DIR}/data.json"
 
 

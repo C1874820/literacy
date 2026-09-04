@@ -15,7 +15,7 @@
 """
 import json, os, sys, datetime, urllib.request, urllib.error
 
-BASE = "/mnt/d/rex-识字系统"
+BASE = "/mnt/d/rex"
 BANK = f"{BASE}/character_bank.json"
 LEARNED = f"{BASE}/progress/learned.json"
 OUT = f"{BASE}/progress/素材池推荐.md"

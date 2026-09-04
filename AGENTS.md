@@ -110,13 +110,13 @@ python3 scripts/update_flowus_progress.py
 
 ## Conventions
 
-- All paths are absolute (`/mnt/d/rex-识字系统/...`) in Python scripts
+- All paths are absolute (`/mnt/d/rex/...`) in Python scripts
 - Character extraction: `'\u4e00' <= c <= '\u9fff'` (CJK Unified Ideographs)
 - Book status flow: FlowUs select field → `character_bank.json` `status`
 - New books get `text_source: "pending"` until character text is extracted
 - `auto_sync.py` auto-commits and pushes after sync (`auto-sync YYYY-MM-DD`)
 - 书单批量录入（`batch_import_books.py`），两种输入源：
-  - 电脑端：`rex-识字系统/books.txt`，用后清空、已 gitignore、不提交 → `python scripts/batch_import_books.py`
+  - 电脑端：`rex/books.txt`，用后清空、已 gitignore、不提交 → `python scripts/batch_import_books.py`
   - 手机端 OB：`00_Inbox/录书.md`，导入后**直接删除**（有新书再重建，不归档）→ `python scripts/batch_import_books.py "00_Inbox/录书.md"`
   - 脚本自动去重 + DeepSeek 云端分类书籍类型（key 从 ~/.local/share/opencode/auth.json 读取，失败回退 Ollama）+ 自动确认，无需 `--yes`
   - 自动填 `存放位置`（书架，按主类型优先序映射 1#~8#）和 `系列`（书名精确映射 + 作者包含映射，限定 36 个已有系列选项）

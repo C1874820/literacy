@@ -1,5 +1,5 @@
 #!/bin/bash
 set -a
-. /mnt/d/rex-识字系统/.env
+. /mnt/d/rex/.env
 set +a
-exec /usr/bin/python3 /mnt/d/rex-识字系统/scripts/auto_sync.py
+exec /usr/bin/python3 /mnt/d/rex/scripts/auto_sync.py
