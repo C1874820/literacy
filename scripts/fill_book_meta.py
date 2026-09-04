@@ -32,18 +32,6 @@ def load_token():
             return line.split("=", 1)[1].strip().strip('"').strip("'")
     raise SystemExit("FLOWUS_TOKEN not found in .env")
 
-def api_v1(token, method, path, data=None):
-    url = f"https://api.flowus.cn/v1{path}"
-    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-               "Notion-Version": "2022-06-28"}
-    body = json.dumps(data).encode() if data is not None else None
-    req = urllib.request.Request(url, data=body, headers=headers, method=method)
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return json.loads(r.read().decode())
-    except urllib.error.HTTPError as e:
-        return {"http_error": e.code, "body": e.read().decode()[:300]}
-
 def api_v2(token, method, path, data=None):
     url = f"https://api.flowus.cn/v2{path}"
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
@@ -112,7 +100,7 @@ def query_all(token):
         data = {"page_size": 100}
         if cursor:
             data["start_cursor"] = cursor
-        d = api_v1(token, "POST", f"/databases/{DB}/query", data)
+        d = api_v2(token, "POST", f"/databases/{DB}/query", data)
         records.extend(d.get("results", []))
         cursor = d.get("next_cursor")
         if not cursor:
@@ -123,7 +111,7 @@ def normalize(records):
     out = []
     for r in records:
         p = r.get("properties", {})
-        title = (p.get("title", {}).get("title") or [{}])[0].get("plain_text", "")
+        title = (p.get("书名", {}).get("title") or [{}])[0].get("plain_text", "")
         author = "".join(t.get("plain_text", "") for t in p.get("作者", {}).get("rich_text", [])) if p.get("作者", {}).get("rich_text") else ""
         series = (p.get("系列", {}).get("select") or {}).get("name", "") if p.get("系列", {}).get("select") else ""
         types = [o["name"] for o in p.get("书籍类型", {}).get("multi_select", []) or []]

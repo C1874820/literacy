@@ -155,7 +155,7 @@ def log(msg):
 
 
 def flowus_api(method, path, data=None):
-    url = f"https://api.flowus.cn/v1{path}"
+    url = f"https://api.flowus.cn/v2{path}"
     headers = {
         "Authorization": f"Bearer {FLOWUS_TOKEN}",
         "Content-Type": "application/json",
@@ -440,7 +440,7 @@ def classify_book(title, author, retries=2):
 def create_flowus_page(title, author, types):
     """创建 FlowUs 页面（含存放位置、系列）"""
     properties = {
-        "title": {
+        "书名": {
             "type": "title",
             "title": [{"type": "text", "text": {"content": title}}],
         },

@@ -39,7 +39,7 @@ def flowus_books():
     if not TOKEN:
         return {}
     def api(method, path, data=None):
-        url = f"https://api.flowus.cn/v1{path}"
+        url = f"https://api.flowus.cn/v2{path}"
         headers = {"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json",
                    "Notion-Version": "2022-06-28"}
         body = json.dumps(data).encode() if data else None
@@ -55,7 +55,7 @@ def flowus_books():
         d = api("POST", f"/databases/{DB}/query", body)
         for p in d.get("results", []):
             props = p.get("properties", {})
-            tr = props.get("title") or {}
+            tr = props.get("书名") or props.get("title") or {}
             t = "".join(x.get("plain_text", "") for x in tr.get(tr.get("type", "title"), []))
             status = (props.get("状态", {}).get("select") or {}).get("name", "")
             shelf = (props.get("存放位置", {}).get("select") or {}).get("name", "")
