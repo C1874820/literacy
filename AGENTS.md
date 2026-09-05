@@ -30,29 +30,7 @@ python3 scripts/generate_progress_html.py
 python3 scripts/update_flowus_progress.py
 ```
 
-## Rex 观察记录系统（2026-09-05 起 FlowUs 全面接管）
-
-观察内容**全部落在 FlowUs**，不再用 OB md 周文件。周次沿用德阳 2026-2027 秋季校历：9/1 行课周=第1周（9/1~9/6，共20周），其后每7天；「本周主力」与观察记录共用此周次。
-
-### FlowUs 结构
-
-| 位置 | 类型 | 用途 |
-|------|------|------|
-| `26年秋期-观察记录` 容器（`38a442f6-73a6-455c-8761-70f50992fc94`，实际为 child_database，父页 e8dbd772，标题「成长记录」） | 数据库 | 学期容器；每行=周页（如 `26年秋期9月第1周`，放学校图片+说明）、`家庭观察`页 或 `YY年M月-观察月报` |
-| `家庭观察`页（`d05e88bc-f8c1-41a1-8f41-2924bb597ad1`，学期容器下的 child_page 行） | 普通页面 | 家庭瞬时观察录入入口（手机友好）：正文直接写一行条 `日期 \| 一句话/观察点` |
-| 本周主力页（`d14aa902-...`，Rex阅读成长系统下） | 页面 | 识字计划 + **✍️ 阅读随手记** 区块（双用途） |
-
-**家庭观察页行格式**（与阅读随手记同机制）：`日期 | 一句话/观察点`，新行末尾加 `（待整理）`；脚本按行读取识别"待整理"。无 DB 列、无 `状态` 字段。
-
-### 三通道录入
-
-- **学校/教师成长**：直接写进学期容器周页（图片+说明），现状即此
-- **家庭瞬时观察**：直接写在 `家庭观察` 页正文，行格式 `日期 | 一句话/观察点`，新行末尾加 `（待整理）`
-- **阅读随手记**：写在 本周主力 ✍️ 阅读随手记 区块，格式 `日期 | 书名 | Rex状态/提问/值得记录`；新条目末尾加`（待整理）`
-
-### 脚本（识字系统 `scripts/`）
-
-> 观察系统脚本已隔离到 `observe/`（gitignore，不进公开仓库），见下方「观察脚本」。
+### 识字系统脚本（`scripts/`）
 
 | 脚本 | 功能 |
 |------|------|
@@ -63,37 +41,48 @@ python3 scripts/update_flowus_progress.py
 | `fill_book_meta.py` / `fill_book_text.py` | 补全书元数据 / 提取正文文字 |
 | `recommend_pool.py` | 推荐书单素材池 |
 
-### 观察脚本（`observe/`，已 gitignore）
+## Rex 观察记录系统（v2.0 回退，2026-09-05）
 
-| 脚本 | 功能 |
-|------|------|
-| `flowus_observe.py detect/show` | 检测待整理：家庭观察页含`（待整理）`的行 + 随手记含`（待整理）`的行，写 `.observe/pending_observe.json` |
-| `flowus_observe.py watch [秒]` | 轮询 detect（默认90s，接 systemd watch 服务） |
-| `flowus_observe.py rollup [周] [--force]` | 周汇总：家庭观察页本周行 + 随手记本周行 → 学期容器对应周页「🏠 家庭观察」区；被归并的行去 `（待整理）` 标记 |
-| `flowus_observe.py mark-done <block_id>` / `fix-block <block_id> <text>` | 整理辅助：去块（待整理）标记 / 改块正文 |
-| `rex_monthly.py [year month] [--quick]` | 月度聚合学期容器周页 → 建 `YY年M月-观察月报` 子页（默认只聚合原文+八维度指引，深度分析由 opencode 做；`--quick` 才走 Ollama 四部分） |
-| `ollama_host.py` | Windows Ollama 网关 IP 解析（仅 rex_monthly --quick 用） |
-| `观察整理-playbook.md` | 观察整理 SOP（整理 = opencode 手动触发） |
+**文字类观察回 OB**，FlowUs **只存图片**（学校图片+教师简短说明）。OB `rex观察记录/` 周文件为文字观察主载体。
+周次沿用德阳 2026-2027 秋季校历：9/1 行课周=第1周（9/1~9/6，共20周），其后每7天；「本周主力」与观察记录共用此周次。
 
-### 数据与整理约定
+### 红线（观察内容绝不公开发布）
 
-- **整理 = opencode 手动触发**（说"整理观察"）：只规范标题/格式/位置，不改写内容；流程见 `observe/观察整理-playbook.md`
-- 学期容器增删改走 `/v2` API：数据库式容器新增子页 = POST /v2/pages 且 `parent.database_id` + title 字段键名用 `标题`
-- 家庭观察页通过 PATCH 块文本更新（无 DB 列）
-- `flowus_observe.py` / `rex_monthly.py` token 从 `.env` 读；**不需开 FlowUs MCP，也不依赖 flowus-cli**
-- **隐私**：`observe/`（观察脚本+SOP，含 FlowUs 页面 ID）与 `.observe/`（pending/state，含观察内容）均已 gitignore，绝不进 GitHub Pages/公开仓库
+- 观察内容只存两处：**OB**（→Gitee **私有**仓库 `yulei890/C1874820.git`，obsidian-git 自动 commit）+ **FlowUs 云端**（私有）
+- 公开仓库（GitHub Pages `C1874820/literacy`）**零观察内容**——`observe/`、`.observe/` 已 gitignore 永不提交
+- 整理/移动观察内容后必须推进到 Gitee 私库；**绝不**经任何公开发布流程
 
-### systemd（user）
+### 录入与整理（v2.0）
 
-- `rex-observe-watch.service`：90s 轮询 `flowus_observe.py watch`（原 rex_observe.py 已停用）
-- `rex-observe-rollup.timer`：每周日 21:30 `flowus_observe.py rollup`
-- `rex-observe-monthly.timer`：每月1日09:00 `rex_monthly.py`
-- 管理：`systemctl --user status|restart rex-observe-watch` / `systemctl --user list-timers | grep rex`
+| 流 | 落点 | 说明 |
+|----|------|------|
+| 家庭瞬时观察 | OB `rex观察记录/YY年-幼儿园-第X周-观察记录.md` | 行格式 `日期 \| 一句话/观察点`，按周文件分节 |
+| 阅读随手记 | 同上 | 格式 `日期 \| 书名 \| Rex状态/提问/值得记录` |
+| 学校/教师成长 | FlowUs 学期容器周页（**仅图片+简短说明**） | 手动操作，文字不进 OB |
+| OB → Gitee 版本控制 | obsidian-git 每 5 分钟自动 commit + 手动 `git push` | **Rollback 利用 git 历史** |
 
-### 遗留（2026-09-05）
+整理 = opencode 手动触发（说"整理观察"）：只用 OB 周文件内容，只规范标题/格式/位置，**不改写内容**。
 
-- OB `rex观察记录/` 周文件停用转只读；历史内容迁移按需再补
-- 电子书库 FlowUs 页已于 2026-09 删除（未使用），代码无引用
+### FlowUs 结构（图片容器）
+
+| 位置 | ID | 类型 |
+|------|----|------|
+| `26年秋期-观察记录` 学期容器 | `38a442f6-73a6-455c-8761-70f50992fc94` | child_database：每行=周页（放学校图片+说明） |
+| 本周主力页 | `d14aa902-707b-4b1b-b443-0eaa15ed4cd6` | 页面（Rex阅读成长系统下，识字计划用） |
+
+> `家庭观察`页（`d05e88bc...`）已于 2026-09-05 **手动删除**（当时为空页）。观察文字已全部移至 OB。
+
+### 已停用脚本（`/mnt/d/rex/observe/`，后续重新设计）
+
+以下脚本仍保留（gitignore 不进公开仓库），**已停用**，待后续重新设计：
+
+- `flowus_observe.py` detect/show/watch/rollup/mark-done/fix-block
+- `rex_monthly.py` / `ollama_host.py`
+- `观察整理-playbook.md`
+
+### systemd（user，已 disable）
+
+- `rex-observe-watch.service`、`rex-observe-rollup.timer`、`rex-observe-monthly.timer/.service`：全部 `systemctl --user disable --now`（2026-09-05）
 
 ## 文档录入规则（双轨，2026-09-01 定）
 
