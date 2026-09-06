@@ -4,12 +4,14 @@ Track Rex's Chinese character literacy progress. Data flows: FlowUs (book list +
 
 ## Architecture
 
-- **Data source**: FlowUs database (`DATABASE_ID` in scripts) + Supabase `words` table (web entry)
+- **Data source**: FlowUs database (`DATABASE_ID` in scripts) — 唯一数据源（书单 + 认字情况），已删 Supabase
 - **Central data file**: `character_bank.json` — books, chars, freq, learning status, log
 - **Sync pipeline**: `scripts/run_sync.sh` → `auto_sync.py` (cron weekdays 10:00)
-- **Web app**: `progress/index.html` — SPA with Supabase-powered review/entry tabs
-- **Generated files**: `progress/data.json`, `progress/learned.json`, `progress/char_meta.json` (all from `generate_progress_html.py`)
-- **Deployment**: GitHub Pages via `auto_sync.py` 内建 `git push origin main`（已移除旧 `deploy_github.sh`）
+- **Web app**: `progress/index.html` — 纯静态 SPA（进度/认字字源卡片/复习），无后端，复习进度存 localStorage
+- **Generated files**: `progress/data.json`, `progress/learned.json`, `progress/char_meta.json`（`generate_progress_html.py`）、`progress/char_etymology.json`（`build_etymology.py`，字源数据）
+- **字源数据**: Make Me a Hanzi `dictionary.txt`（MIT，存 `data/makemeahanzi/`，gitignore）→ 每字 type(象形/会意/形声) + hint_cn(造字提示，DeepSeek 翻译)
+- **每周主力**: `week_roster.json`（周次书单状态）+ `update_weekly_focus.py` 写 FlowUs 本周主力页
+- **Deployment**: GitHub Pages via `auto_sync.py` 内建 `git push origin main`
 
 ## Commands
 
@@ -20,11 +22,21 @@ scripts/run_sync.sh
 # Manual sync (needs .env)
 source .env && python3 scripts/auto_sync.py
 
+# 补全手动新加书的元数据（豆瓣作者/年份 + 本地模型分类10类 + 书架/系列）
+python3 scripts/enrich_books.py            # 扫描+补全
+python3 scripts/enrich_books.py --dry-run  # 只预览
+
+# 生成字源数据 char_etymology.json（下载 dictionary.txt + DeepSeek 翻译 hint）
+python3 scripts/build_etymology.py
+
+# 每周主力书单（周次计算 + 素材池 + 顺延/剔除）
+python3 scripts/week_roster.py --apply
+
+# 写 FlowUs 本周主力页（读 week_roster.json）
+python3 scripts/update_weekly_focus.py
+
 # Generate progress HTML + JSON files
 python3 scripts/generate_progress_html.py
-
-# 识字录入入口：网页 progress/index.html（Supabase words 表，auto_sync 自动合并进字库）
-# （已移除 process_log.py / report.py / build_character_bank.py / setup_supabase.sql）
 
 # Update FlowUs progress page
 python3 scripts/update_flowus_progress.py
@@ -34,12 +46,15 @@ python3 scripts/update_flowus_progress.py
 
 | 脚本 | 功能 |
 |------|------|
-| `auto_sync.py` | 全自动同步（cron）：FlowUs 书单 → 字库 → progress JSON → git push |
-| `generate_progress_html.py` | 生成 `progress/index.html` + data/learned/char_meta JSON |
+| `auto_sync.py` | 全自动同步（cron）：FlowUs 书单 → 字库 → 字源/进度 JSON → git push |
+| `enrich_books.py` | 补全手动新加书元数据：豆瓣补作者/年份 + 本地 qwen2.5:7b 分类10类 + 填书架/系列 |
+| `build_etymology.py` | 生成 `char_etymology.json`（字源：象形/会意/形声 + 中文造字提示，DeepSeek 翻译） |
+| `week_roster.py` | 每周主力书单：周次计算 + 素材池筛选 + 顺延/连续两周未读剔除 |
+| `update_weekly_focus.py` | 读 week_roster.json → 生成 markdown → flowus markdown put 写本周主力页 |
+| `generate_progress_html.py` | 生成 data/learned/char_meta JSON |
 | `update_flowus_progress.py` | 更新息流识字进度页 |
-| `batch_import_books.py` | 书单批量录入（电脑 `books.txt` / 手机 `00_Inbox/录书.md`） |
 | `fill_book_meta.py` / `fill_book_text.py` | 补全书元数据 / 提取正文文字 |
-| `recommend_pool.py` | 推荐书单素材池 |
+| `recommend_pool.py` | 推荐书单素材池（旧，可被 week_roster 取代） |
 
 ## Rex 观察记录系统（v2.0 回退，2026-09-05）
 
@@ -87,30 +102,29 @@ python3 scripts/update_flowus_progress.py
 ## 文档录入规则（双轨，2026-09-01 定）
 
 改动内容、规划、规则的落笔记方式按系统分轨，互不混写：
-- **识字系统**（书单/识字/字库/FlowUs/Supabase/进度页）→ 只在 `孩子成长/识字系统-项目文档.md` 录入
+- **识字系统**（书单/识字/字库/FlowUs/字源/进度页）→ 只在 `孩子成长/识字系统-项目文档.md` 录入
 - **观察记录**（周观察/月报/情绪行为等）→ 只在 `孩子成长/Rex观察记录-项目文档.md` 录入（单独笔记，不写入识字系统文档）
 
 ## Environment
 
 - **Python 3** — no requirements, stdlib only (no pip packages)
-- `.env` contains: `FLOWUS_TOKEN`, `GITHUB_TOKEN`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`
+- `.env` contains: `FLOWUS_TOKEN`, `GITHUB_TOKEN`
 - `.env` is gitignored — never commit it
 - `books_from_flowus.json` is also gitignored (contains FlowUs page UUIDs)
 
 ## Conventions
 
-- All paths are absolute (`/mnt/d/rex/...`) in Python scripts
+- All paths are absolute (`/mnt/d/rex/...`) in Python scripts（支持 `REX_BASE` 环境变量覆盖，Windows 端测试用 `REX_BASE=D:/rex`）
 - Character extraction: `'\u4e00' <= c <= '\u9fff'` (CJK Unified Ideographs)
 - Book status flow: FlowUs select field → `character_bank.json` `status`
 - New books get `text_source: "pending"` until character text is extracted
 - `auto_sync.py` auto-commits and pushes after sync (`auto-sync YYYY-MM-DD`)
-- 书单批量录入（`batch_import_books.py`），两种输入源：
-  - 电脑端：`rex/books.txt`，用后清空、已 gitignore、不提交 → `python scripts/batch_import_books.py`
-  - 手机端 OB：`00_Inbox/录书.md`，导入后**直接删除**（有新书再重建，不归档）→ `python scripts/batch_import_books.py "00_Inbox/录书.md"`
-  - 脚本自动去重 + DeepSeek 云端分类书籍类型（key 从 ~/.local/share/opencode/auth.json 读取，失败回退 Ollama）+ 自动确认，无需 `--yes`
-  - 自动填 `存放位置`（书架，按主类型优先序映射 1#~8#）和 `系列`（书名精确映射 + 作者包含映射，限定 36 个已有系列选项）
-  - 分类强约束 10 个类型 + `_clean()` 校验非法值回退文学；Ollama 仅回退用（本机 `qwen3.5:latest`）；系列/类型选项缺失时自动添加
-  - 详细 SOP 见 playbooks/rex-flowus-book-import.md
+- 书单录入（`enrich_books.py`，2026-09 起）：
+  - 手动在 FlowUs「Rex阅读记录」加书名 → 跑 `python3 scripts/enrich_books.py`
+  - 脚本自动：去重检测 → 豆瓣 `subject_suggest` 补作者/年份 → 本地 qwen2.5:7b 分类10类 → 填书架/系列
+  - 分类模型本地 Ollama（`qwen2.5:7b`，热态 ~1.5s/本）；本机无 qwen3.5，qwen3:0.6b 分类质量差勿用
+  - 书架已重构为具名层（见下 FlowUs Schema）；系列精确映射 + 作者包含映射
+  - 已删 `batch_import_books.py`（手动录入替代）
 
 ## FlowUs Database Schema
 
@@ -127,7 +141,7 @@ python3 scripts/update_flowus_progress.py
 | 认字情况 | rich_text | Learned chars (e.g. 大、小、上、下) |
 | 认字字数 | number | 认字情况 字符数（--count-chars 统计） |
 | 读后感 | rich_text | Reading notes |
-| 存放位置 | select | 1#~8# / 未上架（按类型数量排布：文学1# 科普2# 情绪习惯3# 艺术4# 思维社会5# 传统6# 地域7# 神话/无字书/桥梁8#） |
+| 存放位置 | select | 具名书架层：1#文学A·低字量启蒙 / 2#文学B·中篇系列 / 3#文学C·普通绘本 / 4#科普+思维社会 / 5#情绪习惯+传统 / 6#艺术+神话·无字书·桥梁 / 7#流动层（未读文学常住）/ 未上架 |
 | 适合年龄 | multi_select | 3-4, 4-5, 5-6, 6-7, 7-8, 8-9 |
 | 系列 | select | 36 个系列选项（布鲁斯/巫婆奶奶/吉竹伸介/宫西达也恐龙/这里是新疆/德国精选科学图画书 等） |
 | 读完日期 | date | 阅读完成日期 |
@@ -146,23 +160,15 @@ python3 scripts/update_flowus_progress.py
 
 ## Supabase Schema
 
-### words table (web entry)
-Columns: `new_words`, `date`, `recorder`, `book_name`
-RLS: public select + insert
-
-### reviews table (spaced repetition)
-- `char` (PK, single CJK char `^[一-龥]$`)
-- `stage` (0-5, Ebbinghaus intervals: 1,2,4,7,15,30 days)
-- `last_review`, `next_review` (dates)
-- `updated_by`, `updated_at` (metadata)
-RLS: public select + insert + update
+已删除（2026-09-06）。原 `words`（网页录入）+ `reviews`（间隔复习）表随 Supabase 一并移除，认字记录统一走 FlowUs `认字情况` 字段，复习进度存网页 localStorage。
 
 ## Gotchas
 
-- 识字录入统一走网页 `progress/index.html`（Supabase `words` 表），`auto_sync.py` 的 `merge_supabase_entries()` 自动汇入字库（标记已学 + 写 log）
-- `progress/index.html` embeds Supabase credentials in JS (public anon key, not secret)
+- 识字录入统一走 FlowUs「认字情况」字段（网页只读展示，不再有 Supabase 录入入口）
+- 字源数据 `char_etymology.json` 由 `build_etymology.py` 生成（Make Me a Hanzi，MIT）；`data/makemeahanzi/dictionary.txt` 已 gitignore
 - GitHub Pages: `auto_sync.py` 内建 `git push origin main`（分支为 `main`，旧 `deploy_github.sh` 已删除）
 - FlowUs API: every property must include `type` field in requests
+- 本地 Ollama 分类用 `qwen2.5:7b`（翻译/复杂任务本地模型质量差，hint 翻译用 DeepSeek）
 
 ## 工作流（必须执行）
 

@@ -3,484 +3,359 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Rex 识字系统</title>
+<title>Rex 识字</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:linear-gradient(135deg,#f0f9ff 0%,#ecfeff 50%,#fefce8 100%);min-height:100vh;padding:0 0 80px;color:#0f172a}
-.tab-bar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.88);backdrop-filter:blur(8px);display:flex;border-bottom:1px solid #e2e8f0}
-.tab-btn{flex:1;padding:14px 0;text-align:center;font-size:14px;font-weight:600;color:#94a3b8;cursor:pointer;transition:all .2s;border:none;background:none}
-.tab-btn.active{color:#06b6d4;border-bottom:2px solid #06b6d4}
+:root{
+  --blue:#00A8E8;      /* Bluey 蓝 */
+  --deep-blue:#0073C6;
+  --red:#FF3D00;       /* 汪汪队红 */
+  --yellow:#FFD600;    /* 汪汪队黄 */
+  --orange:#FF8C00;
+  --green:#43D17C;
+  --ink:#1b2a41;
+  --muted:#7a8ba0;
+  --bg1:#eaf7ff;
+  --bg2:#fff6e0;
+  --card:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:linear-gradient(160deg,#eaf7ff 0%,#e6f4ff 30%,#fff6e0 100%);min-height:100vh;color:var(--ink);padding-bottom:70px}
+.tab-bar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
+  display:flex;border-bottom:2px solid #e8f0f7;box-shadow:0 2px 10px rgba(0,115,198,.06)}
+.tab-btn{flex:1;padding:14px 0;text-align:center;font-size:15px;font-weight:700;color:var(--muted);
+  cursor:pointer;border:none;background:none;position:relative;transition:color .2s}
+.tab-btn.active{color:var(--deep-blue)}
+.tab-btn.active::after{content:"";position:absolute;bottom:0;left:25%;right:25%;height:3px;
+  border-radius:3px 3px 0 0;background:linear-gradient(90deg,var(--red),var(--yellow),var(--blue))}
 .tab-content{display:none}
-.tab-content.active{display:block}
-.header{text-align:center;padding:28px 20px 0}
-.header h1{font-size:28px;font-weight:800;background:linear-gradient(135deg,#06b6d4,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.header .sub{font-size:13px;color:#94a3b8;margin-top:4px}
-.ring-wrap{display:flex;justify-content:center;margin:16px 0 8px}
-.ring-text{font-size:12px;fill:#64748b}
-.ring-pct{font-size:32px;font-weight:800;fill:#0f172a}
-.ring-label{font-size:13px;fill:#94a3b8}
-.stats{display:flex;gap:8px;padding:0 16px;margin-bottom:16px}
-.stat-card{flex:1;background:#fff;border-radius:14px;padding:12px 8px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.stat-num{font-size:20px;font-weight:700;color:#0f172a}
-.stat-label{font-size:11px;color:#94a3b8;margin-top:2px}
-.section{padding:0 16px;margin-bottom:16px}
-.section-title{font-size:15px;font-weight:600;color:#0f172a;margin-bottom:10px;padding-left:4px}
-.card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
-.cloud{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:8px 0}
-.cloud-char{font-weight:600;padding:4px 10px;border-radius:99px;background:#f8fafc}
+.tab-content.active{display:block;animation:fadeIn .25s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.header{text-align:center;padding:28px 20px 4px}
+.header h1{font-size:30px;font-weight:900;letter-spacing:1px;
+  background:linear-gradient(120deg,var(--deep-blue),var(--red));-webkit-background-clip:text;
+  background-clip:text;-webkit-text-fill-color:transparent}
+.header .sub{font-size:13px;color:var(--muted);margin-top:6px}
+.header .paw{font-size:15px;letter-spacing:2px;margin-top:2px}
+
+.ring-wrap{display:flex;justify-content:center;margin:14px 0 4px}
+.ring-pct{font-size:30px;font-weight:900;fill:var(--deep-blue)}
+.ring-label{font-size:13px;fill:var(--muted)}
+.ring-text{font-size:12px;fill:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 14px;margin-bottom:16px}
+.stat-card{background:var(--card);border-radius:14px;padding:12px 4px;text-align:center;box-shadow:0 2px 10px rgba(0,115,198,.05)}
+.stat-num{font-size:21px;font-weight:800}
+.stat-label{font-size:11px;color:var(--muted);margin-top:3px}
+.section{padding:0 14px;margin-bottom:16px}
+.section-title{font-size:16px;font-weight:800;color:var(--ink);margin-bottom:10px;padding-left:4px;
+  display:flex;align-items:center;gap:6px}
+.section-title .bar{width:4px;height:16px;border-radius:2px;background:linear-gradient(var(--red),var(--yellow))}
+.card{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 2px 12px rgba(0,115,198,.06)}
+
+/* 字云 */
+.cloud{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px 0}
+.cloud-char{font-weight:700;padding:4px 10px;border-radius:12px;background:#f0f8ff;border:1px solid #e0edf7;transition:transform .15s}
+.cloud-char:active{transform:scale(1.12)}
+
+/* 已学字墙 */
 .wall{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.wall-char{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#a7f3d0,#6ee7b7);color:#065f46;font-size:18px;font-weight:700;box-shadow:0 2px 6px rgba(16,185,129,.2)}
-.log-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #f1f5f9;font-size:13px}
-.log-row:last-child{border:none}
-.log-date{color:#94a3b8;white-space:nowrap}
-.log-book{color:#475569;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.log-chars{color:#0891b2;font-weight:600}
-.book-row{display:flex;justify-content:space-between;padding:5px 0;font-size:13px;color:#475569;border-bottom:1px solid #f8fafc}
-.book-count{color:#94a3b8}
-.empty-state{text-align:center;color:#94a3b8;padding:24px 0;font-size:14px;line-height:1.8}
-.footer{text-align:center;font-size:11px;color:#cbd5e1;padding:16px}
+.wall-char{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;
+  border-radius:14px;background:linear-gradient(135deg,#b8ecd0,#43d17c);color:#0d5c2e;font-size:20px;
+  font-weight:800;box-shadow:0 3px 8px rgba(67,209,124,.25)}
 
-.game-card{text-align:center;padding:24px 0}
-.game-char{font-size:72px;font-weight:800;color:#0f172a;margin:16px 0 8px;padding:24px}
-.game-context{font-size:13px;color:#94a3b8;margin-bottom:24px}
-.game-btns{display:flex;gap:16px;justify-content:center;margin:16px 0}
-.btn-know{background:linear-gradient(135deg,#a7f3d0,#34d399);border:none;color:#065f46;font-size:18px;font-weight:700;padding:16px 32px;border-radius:16px;cursor:pointer;box-shadow:0 4px 12px rgba(52,211,153,.3)}
-.btn-not{background:linear-gradient(135deg,#fecaca,#f87171);border:none;color:#991b1b;font-size:18px;font-weight:700;padding:16px 32px;border-radius:16px;cursor:pointer;box-shadow:0 4px 12px rgba(248,113,113,.3)}
-.btn-know:active,.btn-not:active{transform:scale(.95)}
-.btn-start{background:linear-gradient(135deg,#38bdf8,#06b6d4);border:none;color:#fff;font-size:16px;font-weight:700;padding:14px 40px;border-radius:14px;cursor:pointer;box-shadow:0 4px 12px rgba(6,182,212,.3)}
-.game-due{font-size:18px;font-weight:700;color:#06b6d4;margin-bottom:8px}
-.game-progress{margin-top:16px;font-size:13px;color:#94a3b8}
-.game-summary{text-align:center;padding:32px 0}
-.game-summary h3{font-size:20px;font-weight:700;margin-bottom:8px}
-.game-summary p{font-size:14px;color:#64748b;margin-bottom:4px}
+/* 书库 */
+.book-row{display:flex;justify-content:space-between;padding:6px 0;font-size:13px;color:#455a70;border-bottom:1px solid #f3f8fc}
+.book-row:last-child{border:none}
+.book-count{color:var(--muted);font-size:12px}
 
-.entry-form{padding:16px 0}
-.entry-input{width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:16px;outline:none;transition:border .2s}
-.entry-input:focus{border-color:#06b6d4}
-.entry-options{display:flex;gap:8px;margin:12px 0}
-.entry-opt{flex:1}
-.entry-opt select,.entry-opt input{padding:10px;border:2px solid #e2e8f0;border-radius:10px;font-size:14px;width:100%;outline:none}
-.entry-opt select:focus,.entry-opt input:focus{border-color:#06b6d4}
-.entry-submit{width:100%;padding:14px;background:linear-gradient(135deg,#06b6d4,#059669);border:none;color:#fff;font-size:16px;font-weight:700;border-radius:14px;cursor:pointer;box-shadow:0 4px 12px rgba(6,182,212,.25)}
-.entry-submit:active{transform:scale(.97)}
-.entry-submit:disabled{opacity:.5;cursor:default}
-.entry-recent{margin-top:16px}
-.entry-recent-item{display:flex;gap:8px;padding:8px 0;border-bottom:1px solid #f1f5f9;font-size:13px;align-items:center}
-.entry-recent-item:last-child{border:none}
-.entry-rec-char{font-size:18px;font-weight:700;color:#065f46;min-width:24px;text-align:center}
-.entry-rec-meta{color:#64748b;flex:1}
-.entry-rec-date{color:#94a3b8;white-space:nowrap}
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:12px;font-size:14px;font-weight:600;z-index:99;text-align:center;max-width:90vw}
-.toast-success{background:#065f46;color:#fff}
-.toast-error{background:#991b1b;color:#fff}
-.toast-info{background:#0f172a;color:#fff}
-.mode-toggle{display:flex;gap:8px;justify-content:center;margin-bottom:16px}
-.mode-btn{padding:8px 20px;border-radius:99px;border:2px solid #e2e8f0;background:#fff;color:#64748b;font-size:13px;font-weight:600;cursor:pointer}
-.mode-btn.active{border-color:#06b6d4;color:#06b6d4;background:#ecfeff}
-.page-loading{text-align:center;padding:60px 20px;color:#94a3b8;font-size:15px}
-.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;background:#ecfeff;color:#06b6d4;margin-left:6px}
+/* 认字卡片 */
+.ety-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:4px 0}
+.ety-char{width:52px;height:52px;display:inline-flex;align-items:center;justify-content:center;
+  border-radius:14px;font-size:24px;font-weight:800;background:#fff;border:2px solid #e2eef7;
+  cursor:pointer;transition:all .15s;position:relative}
+.ety-char.learned{border-color:#43d17c;background:#f0fdf5}
+.ety-char.picto{border-color:#ffd600;background:#fffbe6}
+.ety-char:active{transform:scale(.92)}
+.ety-char .dot{position:absolute;top:3px;right:4px;width:7px;height:7px;border-radius:50%;background:var(--green)}
+.ety-filter{display:flex;gap:8px;justify-content:center;margin-bottom:12px}
+.ety-filter button{padding:7px 14px;border-radius:99px;border:2px solid #e2eef7;background:#fff;color:var(--muted);
+  font-size:13px;font-weight:700;cursor:pointer}
+.ety-filter button.active{border-color:var(--blue);color:var(--deep-blue);background:#eaf7ff}
+
+/* 字源详情弹层 */
+.modal{position:fixed;inset:0;background:rgba(15,30,50,.5);z-index:50;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-card{background:#fff;border-radius:24px;max-width:360px;width:100%;padding:24px;text-align:center;
+  animation:pop .2s;max-height:85vh;overflow:auto}
+@keyframes pop{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-char{font-size:84px;font-weight:900;line-height:1;color:var(--ink)}
+.modal-type{display:inline-block;margin:10px 0 4px;padding:5px 16px;border-radius:99px;font-size:14px;font-weight:800;
+  background:linear-gradient(120deg,var(--red),var(--orange));color:#fff}
+.modal-type.picto{background:linear-gradient(120deg,var(--yellow),var(--orange));color:#7a4d00}
+.modal-type.ideo{background:linear-gradient(120deg,var(--blue),var(--deep-blue))}
+.modal-type.phon{background:linear-gradient(120deg,var(--green),#0d9e52)}
+.modal-hint{font-size:16px;color:var(--ink);line-height:1.7;margin:14px 0;background:#f6fbff;border-radius:14px;padding:14px}
+.modal-meta{font-size:12px;color:var(--muted);line-height:1.6}
+.modal-close{margin-top:16px;padding:10px 0;width:100%;border:none;border-radius:12px;
+  background:linear-gradient(90deg,var(--blue),var(--deep-blue));color:#fff;font-size:15px;font-weight:700;cursor:pointer}
+
+/* 复习 */
+.game-card{text-align:center;padding:20px 0}
+.game-char{font-size:88px;font-weight:900;color:var(--ink);margin:12px 0 6px}
+.game-context{font-size:13px;color:var(--muted);margin-bottom:20px;min-height:20px}
+.game-btns{display:flex;gap:14px;justify-content:center;margin:14px 0}
+.btn-know{background:linear-gradient(135deg,#b8ecd0,#43d17c);border:none;color:#0d5c2e;font-size:17px;font-weight:800;
+  padding:15px 30px;border-radius:16px;cursor:pointer;box-shadow:0 4px 12px rgba(67,209,124,.3)}
+.btn-not{background:linear-gradient(135deg,#ffc9b8,#ff6b4a);border:none;color:#8a2200;font-size:17px;font-weight:800;
+  padding:15px 30px;border-radius:16px;cursor:pointer;box-shadow:0 4px 12px rgba(255,107,74,.3)}
+.btn-know:active,.btn-not:active{transform:scale(.94)}
+.btn-start{background:linear-gradient(135deg,var(--blue),var(--deep-blue));border:none;color:#fff;font-size:16px;
+  font-weight:800;padding:14px 42px;border-radius:16px;cursor:pointer;box-shadow:0 4px 12px rgba(0,168,232,.3)}
+.game-due{font-size:16px;font-weight:800;color:var(--deep-blue);margin-bottom:10px}
+.game-summary{text-align:center;padding:28px 0}
+.game-summary h3{font-size:20px;font-weight:900;margin-bottom:8px}
+.game-summary p{font-size:14px;color:#55687e;margin-bottom:4px}
+
+.empty-state{text-align:center;color:var(--muted);padding:26px 0;font-size:14px;line-height:1.8}
+.footer{text-align:center;font-size:11px;color:#b0c0d0;padding:16px}
+.page-loading{text-align:center;padding:56px 20px;color:var(--muted);font-size:15px}
 </style>
 </head>
 <body>
 <div class="tab-bar">
-  <div class="tab-btn active" data-tab="dashboard">📊 进度</div>
+  <div class="tab-btn active" data-tab="dashboard">📖 进度</div>
+  <div class="tab-btn" data-tab="learn">🔍 认字</div>
   <div class="tab-btn" data-tab="review">🎮 复习</div>
-  <div class="tab-btn" data-tab="entry">📝 录入</div>
 </div>
 
-<div id="tab-dashboard" class="tab-content active"></div>
-<div id="tab-review" class="tab-content">
-  <div class="section" style="padding-top:20px">
-    <div class="card" id="review-content"><div class="page-loading">正在准备复习...</div></div>
-  </div>
-</div>
-<div id="tab-entry" class="tab-content">
-  <div class="section" style="padding-top:20px">
-    <div class="card" id="entry-content"></div>
-  </div>
-</div>
+<div id="tab-dashboard" class="tab-content active"><div class="page-loading">加载中…</div></div>
+<div id="tab-learn" class="tab-content"><div class="page-loading">加载中…</div></div>
+<div id="tab-review" class="tab-content"><div class="page-loading">加载中…</div></div>
 
-<script src="./supabase.min.js"></script>
 <script>
-const SUPABASE_URL = 'https://vlmodbuyhsrtnbvxczsy.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_jXz-hXs8GIHWW9zSmp-m1g_mgeL5oK4';
-const INTERVALS = [1, 2, 4, 7, 15, 30];
-const COLORS = ['#f97316','#8b5cf6','#06b6d4','#ec4899','#10b981','#f59e0b','#6366f1','#14b8a6','#ef4444','#84cc16'];
-const TODAY = new Date().toISOString().slice(0, 10);
+const INTERVALS=[1,2,4,7,15,30];
+const COLORS=['#FF3D00','#00A8E8','#FFD600','#FF8C00','#43D17C','#0073C6','#FF6B4A','#9B59B6'];
+const TODAY=new Date().toISOString().slice(0,10);
 
-let sb = null;
-try { sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY); }
-catch(e) { console.warn('Supabase 初始化失败（离线模式）', e); }
+let S={progress:{},learned:[],charMeta:{},ety:{},known:new Set(),
+       reviewQueue:[],reviewIdx:0,reviewRes:{ok:0,fail:0},reviewing:false,loaded:false};
 
-let S = { learned:[], charMeta:{}, progress:{}, words:[], reviews:{}, knownSet:new Set(),
-          reviewIdx:0, reviewQueue:[], reviewResult:{ok:0,fail:0}, reviewing:false,
-          dueCount:0, loaded:false };
-
-async function init() {
-  try {
-    await Promise.all([fetchData(), fetchSupabase()]);
-    computeKnownSet();
-    renderDashboard();
-    precomputeReview();
-    renderEntry();
-    initTabs();
-    S.loaded = true;
-  } catch(e) {
-    document.querySelector('#tab-dashboard').innerHTML = '<div class="page-loading">加载失败，请刷新重试</div>';
+async function init(){
+  try{
+    await Promise.all([fetchData(),fetchEty()]);
+    computeKnown();
+    renderDashboard();renderLearn();renderReview();
+    initTabs();S.loaded=true;
+  }catch(e){
+    document.querySelectorAll('.tab-content').forEach(el=>el.innerHTML='<div class="page-loading">加载失败，请刷新重试</div>');
   }
 }
-
-async function fetchData() {
-  const [data, learned, meta] = await Promise.all([
-    safeFetch('./data.json?v=2').then(r => r ? r.json() : {progress:{}}),
-    safeFetch('./learned.json').then(r => r ? r.json() : {learned:[]}),
-    safeFetch('./char_meta.json').then(r => r ? r.json() : {chars:{}})
+async function safeFetch(u){try{const r=await fetch(u);if(!r.ok)return null;return r;}catch(e){return null;}}
+async function fetchData(){
+  const [data,learned,meta]=await Promise.all([
+    safeFetch('./data.json?v=3').then(r=>r?r.json():{progress:{}}),
+    safeFetch('./learned.json').then(r=>r?r.json():{learned:[]}),
+    safeFetch('./char_meta.json').then(r=>r?r.json():{chars:{}})
   ]);
-  S.progress = data.progress || {};
-  S.learned = learned.learned || [];
-  S.charMeta = meta.chars || {};
+  S.progress=data.progress||{};S.learned=learned.learned||[];S.charMeta=meta.chars||{};
 }
-
-async function safeFetch(url) {
-  try {
-    const r = await fetch(url);
-    if (!r.ok) return null;
-    return r;
-  } catch { return null; }
+async function fetchEty(){
+  const e=await safeFetch('./char_etymology.json').then(r=>r?r.json():{chars:{}});
+  S.ety=e.chars||{};
 }
-
-async function fetchSupabase() {
-  if (!sb) return;
-  const [w, r] = await Promise.all([
-    sb.from('words').select('new_words,date,recorder,book_name').order('date', {ascending:false}),
-    sb.from('reviews').select('*')
-  ]);
-  if (!w.error) S.words = w.data || [];
-  if (!r.error) {
-    const m = {};
-    for (const row of r.data || []) m[row.char] = row;
-    S.reviews = m;
-  }
+function computeKnown(){
+  const s=new Set();
+  for(const it of S.learned)s.add(it.char);
+  for(const c of Object.keys(S.charMeta))if(S.charMeta[c].status==='已学')s.add(c);
+  S.known=s;
 }
-
-function computeKnownSet() {
-  const set = new Set();
-  for (const item of S.learned) set.add(item.char);
-  for (const item of S.words) if (item.new_words) set.add(item.new_words);
-  S.knownSet = set;
-}
-
-function initTabs() {
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+function initTabs(){
+  document.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
       btn.classList.add('active');
-      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-      if (btn.dataset.tab === 'review' && S.loaded) { showReviewTab(); }
-      if (btn.dataset.tab === 'entry' && S.loaded) { renderRecentEntries(); }
+      document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+      if(btn.dataset.tab==='review'&&S.loaded)renderReview();
     });
   });
 }
 
-function renderDashboard() {
-  const p = S.progress;
-  const total = p.total_unique_chars || 0;
-  const learned = p.learned || 0;
-  const untouched = p.untouched || 0;
-  const books = p.total_books || 0;
-  const pct = total ? ((learned / total) * 100).toFixed(1) : 0;
-  const lastUp = (p.last_updated || '').slice(0,10) || TODAY;
+/* ===== 进度 ===== */
+function renderDashboard(){
+  const p=S.progress;
+  const total=p.total_unique_chars||Object.keys(S.charMeta).length||0;
+  const known=S.known.size;
+  const pct=total?((known/total)*100).toFixed(1):0;
+  const lastUp=(p.last_updated||'').slice(0,10)||TODAY;
 
-  const chars = S.charMeta;
-  const topUntouched = Object.entries(chars)
-    .filter(([,v]) => v.status === '未学')
-    .sort(([,a],[,b]) => b.freq - a.freq)
-    .slice(0, 20);
-  const maxFreq = Math.max(...topUntouched.map(([,v]) => v.freq), 1);
-  const cloudHTML = topUntouched.length ? topUntouched.map(([c,info]) =>
-    `<span class="cloud-char" style="font-size:${14 + info.freq/maxFreq*18}px;color:${COLORS[hashStr(c)%COLORS.length]}">${c}</span>`
-  ).join('\n') : '<div class="empty-state">所有字都已认识 🎉</div>';
+  const topUntouched=Object.entries(S.charMeta).filter(([,v])=>v.status!=='已学')
+    .sort(([,a],[,b])=>b.freq-a.freq).slice(0,24);
+  const cloud=topUntouched.map(([c,info],i)=>
+    `<span class="cloud-char" style="font-size:${14+(info.freq/50)*14}px;color:${COLORS[i%COLORS.length]}">${c}</span>`).join('');
 
-  const knownChars = Array.from(S.knownSet);
-  const wallHTML = knownChars.length ? knownChars.map(c =>
-    `<span class="wall-char">${c}</span>`
-  ).join('\n') : '<div class="empty-state">还没有已学汉字</div>';
+  const knownArr=Array.from(S.known);
+  const wall=knownArr.map(c=>`<span class="wall-char">${c}</span>`).join('')||'<div class="empty-state">还没有已学汉字，读完绘本去息流记录吧 🐾</div>';
 
-  const logEntries = (S.learned || []).filter(l => l.date).slice(-10).reverse();
-  const logHTML = logEntries.length ? logEntries.map(l =>
-    `<div class="log-row"><span class="log-date">${l.date}</span><span class="log-book">息流</span><span class="log-chars">${l.char}</span></div>`
-  ).join('\n') : '<div class="empty-state">还没有学习记录</div>';
+  const bookFreq={};
+  for(const c of Object.keys(S.charMeta))for(const b of(S.charMeta[c].books||[]))bookFreq[b]=(bookFreq[b]||0)+1;
+  const bookRows=Object.entries(bookFreq).sort(([,a],[,b])=>b-a).slice(0,40)
+    .map(([t,n])=>`<div class="book-row"><span>${t}</span><span class="book-count">${n}字</span></div>`).join('');
 
-  const bookRows = Object.entries(chars).length ? (() => {
-    const freq = {};
-    for (const c of Object.keys(chars)) {
-      for (const b of chars[c].books || []) { freq[b] = (freq[b]||0) + 1; }
-    }
-    return Object.entries(freq).sort(([,a],[,b]) => b-a).map(([t,n]) =>
-      `<div class="book-row"><span>${t}</span><span class="book-count">${n}字</span></div>`
-    ).join('\n');
-  })() : '';
-
-  const totalKnown = knownChars.length;
-  const dueToday = S.dueCount;
-
-  document.querySelector('#tab-dashboard').innerHTML = `
+  document.getElementById('tab-dashboard').innerHTML=`
     <div class="header">
-      <h1>📖 Rex 认字</h1>
-      <div class="sub">更新于 ${lastUp} · ${books} 本书</div>
+      <h1>Rex 认字</h1>
+      <div class="sub">更新于 ${lastUp} · ${p.total_books||0} 本书</div>
+      <div class="paw">🐾 🐾 🐾</div>
     </div>
     <div class="ring-wrap">
-      <svg width="160" height="160" viewBox="0 0 160 160">
-        <circle cx="80" cy="80" r="68" fill="none" stroke="#e2e8f0" stroke-width="10"/>
-        <circle cx="80" cy="80" r="68" fill="none" stroke="#06b6d4" stroke-width="10" stroke-linecap="round"
-          stroke-dasharray="${(pct*4.27).toFixed(3)} ${(427-pct*4.27).toFixed(3)}" transform="rotate(-90 80 80)"/>
-        <text x="80" y="68" text-anchor="middle" class="ring-pct" style="fill:#0f172a">${pct}%</text>
-        <text x="80" y="88" text-anchor="middle" class="ring-label">已认识</text>
-        <text x="80" y="104" text-anchor="middle" class="ring-text">${totalKnown}/${total}</text>
+      <svg width="150" height="150" viewBox="0 0 150 150">
+        <circle cx="75" cy="75" r="64" fill="none" stroke="#e2edf5" stroke-width="11"/>
+        <circle cx="75" cy="75" r="64" fill="none" stroke="url(#g)" stroke-width="11" stroke-linecap="round"
+          stroke-dasharray="${(pct*4.02).toFixed(2)} ${(402-pct*4.02).toFixed(2)}" transform="rotate(-90 75 75)"/>
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FF3D00"/><stop offset="50%" stop-color="#FFD600"/><stop offset="100%" stop-color="#00A8E8"/>
+        </linearGradient></defs>
+        <text x="75" y="68" text-anchor="middle" class="ring-pct">${pct}%</text>
+        <text x="75" y="88" text-anchor="middle" class="ring-label">已认识</text>
+        <text x="75" y="104" text-anchor="middle" class="ring-text">${known}/${total}</text>
       </svg>
     </div>
     <div class="stats">
-      <div class="stat-card"><div class="stat-num">${total}</div><div class="stat-label">总字库</div></div>
-      <div class="stat-card"><div class="stat-num" style="color:#059669">${totalKnown}</div><div class="stat-label">已认识</div></div>
-      <div class="stat-card"><div class="stat-num" style="color:#dc2626">${untouched}</div><div class="stat-label">未学</div></div>
-      <div class="stat-card"><div class="stat-num" style="color:#7c3aed">${books}</div><div class="stat-label">书籍</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:#0073C6">${total}</div><div class="stat-label">总字库</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:#0d9e52">${known}</div><div class="stat-label">已认识</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:#FF3D00">${p.untouched??(total-known)}</div><div class="stat-label">未学</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:#9B59B6">${p.total_books||0}</div><div class="stat-label">书籍</div></div>
     </div>
-    ${dueToday > 0 ? `<div style="text-align:center;padding:0 16px 8px"><span class="tag" style="font-size:13px;padding:4px 14px">🔄 今天 ${dueToday} 字待复习</span></div>` : ''}
-    <div class="section">
-      <div class="section-title">🏆 高频未学</div>
-      <div class="card"><div class="cloud">${cloudHTML}</div></div>
-    </div>
-    <div class="section">
-      <div class="section-title">✅ 已认识 (${totalKnown})</div>
-      <div class="card"><div class="wall">${wallHTML}</div></div>
-    </div>
-    <div class="section">
-      <div class="section-title">📝 最近学习</div>
-      <div class="card">${logHTML}</div>
-    </div>
-    <div class="section">
-      <div class="section-title">📚 绘本书库</div>
-      <div class="card">${bookRows || '<div class="empty-state">暂无书籍</div>'}</div>
-    </div>
-    <div class="footer">每天 10:00 自动更新 · 数据来自息流 + 网页录入</div>
-  `;
+    <div class="section"><div class="section-title"><span class="bar"></span>高频未学</div>
+      <div class="card"><div class="cloud">${cloud||'<div class="empty-state">所有字都认识啦 🎉</div>'}</div></div></div>
+    <div class="section"><div class="section-title"><span class="bar"></span>已认识（${known}）</div>
+      <div class="card"><div class="wall">${wall}</div></div></div>
+    <div class="section"><div class="section-title"><span class="bar"></span>绘本书库</div>
+      <div class="card">${bookRows||'<div class="empty-state">暂无书籍</div>'}</div></div>
+    <div class="footer">🐾 每天 10:00 自动更新 · 数据来自息流</div>`;
 }
 
-function precomputeReview() {
-  let due = [];
-  for (const c of S.knownSet) {
-    const rv = S.reviews[c];
-    const nextReview = rv ? rv.next_review : null;
-    if (!nextReview || nextReview <= TODAY) due.push(c);
-  }
-  due.sort(() => Math.random() - 0.5);
-  if (due.length > 15) due = due.slice(0, 15);
-  S.reviewQueue = due;
-  S.reviewIdx = 0;
-  S.dueCount = calculateDueCount();
-}
+/* ===== 认字（字源） ===== */
+let etyFilter='all';
+function renderLearn(){
+  const chars=S.charMeta;
+  const entries=Object.keys(chars).sort((a,b)=>chars[b].freq-chars[a].freq);
+  const picto=entries.filter(c=>(S.ety[c]||{}).type==='pictographic');
+  const learnedArr=entries.filter(c=>S.known.has(c));
 
-function calculateDueCount() {
-  let n = 0;
-  for (const c of S.knownSet) {
-    const rv = S.reviews[c];
-    if (!rv || !rv.next_review || rv.next_review <= TODAY) n++;
-  }
-  return n;
-}
-
-function showReviewTab() {
-  const el = document.getElementById('review-content');
-  if (S.reviewing) return;
-  precomputeReview();
-  const q = S.reviewQueue;
-  if (q.length === 0) {
-    el.innerHTML = `<div class="game-summary"><h3>🎉 今天没有待复习的字</h3><p style="color:#94a3b8">所有已学字都在复习计划内</p></div>`;
-    return;
-  }
-  el.innerHTML = `
-    <div class="game-card">
-      <div class="game-due">今天待复习 ${calculateDueCount()} 字 · 本次 ${q.length} 字</div>
-      <button class="btn-start" onclick="startReview()">开始复习</button>
-    </div>
-  `;
-}
-
-function startReview() {
-  S.reviewIdx = 0;
-  S.reviewResult = {ok:0, fail:0};
-  S.reviewing = true;
-  showCard();
-}
-
-function showCard() {
-  const el = document.getElementById('review-content');
-  if (S.reviewIdx >= S.reviewQueue.length) {
-    S.reviewing = false;
-    const {ok, fail} = S.reviewResult;
-    el.innerHTML = `
-      <div class="game-summary">
-        <h3>✅ 本次复习完成</h3>
-        <p>认识 ${ok} 字 · 不认识 ${fail} 字</p>
-        <p style="font-size:13px;color:#94a3b8;margin-top:12px">明天再来复习吧</p>
+  document.getElementById('tab-learn').innerHTML=`
+    <div class="header"><h1>🔍 认字</h1><div class="sub">点一个字，看它从哪里来</div></div>
+    <div class="section" style="margin-top:14px">
+      <div class="ety-filter">
+        <button data-f="all" class="active">全部</button>
+        <button data-f="picto">🐾 象形字</button>
+        <button data-f="learned">✅ 已认识</button>
       </div>
-    `;
-    return;
-  }
-  const c = S.reviewQueue[S.reviewIdx];
-  const meta = S.charMeta[c];
-  const context = meta && meta.books && meta.books.length
-    ? (meta.books.length > 3 ? meta.books.slice(0,3).join(' · ') + ' · · ·' : meta.books.join(' · '))
-    : '';
-  const rv = S.reviews[c];
-  const stageStr = rv ? `(${rv.stage+1}/${INTERVALS.length})` : '(首次)';
-  el.innerHTML = `
-    <div class="game-card">
-      <div style="font-size:13px;color:#94a3b8;">
-        ${S.reviewIdx+1}/${S.reviewQueue.length} ${stageStr}
-      </div>
-      <div class="game-char">${c}</div>
-      <div class="game-context">${context ? '📖 ' + context : ''}</div>
-      <div class="game-btns">
-        <button class="btn-know" onclick="reviewChar(true)">认识 ✓</button>
-        <button class="btn-not" onclick="reviewChar(false)">不认识 ✗</button>
-      </div>
-    </div>
-  `;
+      <div class="card"><div class="ety-grid" id="ety-grid"></div></div>
+    </div>`;
+  document.querySelectorAll('.ety-filter button').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('.ety-filter button').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');etyFilter=b.dataset.f;fillEtyGrid();
+  }));
+  fillEtyGrid();
 }
-
-async function reviewChar(know) {
-  const c = S.reviewQueue[S.reviewIdx];
-  const now = new Date().toISOString();
-  if (know) {
-    S.reviewResult.ok++;
-    const old = S.reviews[c];
-    const stage = old ? Math.min(old.stage + 1, INTERVALS.length - 1) : 0;
-    const lastReview = TODAY;
-    const nextReview = daysLater(TODAY, INTERVALS[stage]);
-    S.reviews[c] = { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now };
-    if (sb) sb.from('reviews').upsert(
-      { char:c, stage, last_review:lastReview, next_review:nextReview, updated_by:'', updated_at:now },
-      { onConflict: 'char' }
-    ).then(() => {}).catch(() => {});
-  } else {
-    S.reviewResult.fail++;
-    S.reviews[c] = { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now };
-    if (sb) sb.from('reviews').upsert(
-      { char:c, stage:0, last_review:TODAY, next_review:daysLater(TODAY, 1), updated_by:'', updated_at:now },
-      { onConflict: 'char' }
-    ).then(() => {}).catch(() => {});
-  }
-  S.reviewIdx++;
-  showCard();
+function fillEtyGrid(){
+  const grid=document.getElementById('ety-grid');
+  const chars=S.charMeta;
+  let list=Object.keys(chars).sort((a,b)=>chars[b].freq-chars[a].freq);
+  if(etyFilter==='picto')list=list.filter(c=>(S.ety[c]||{}).type==='pictographic');
+  else if(etyFilter==='learned')list=list.filter(c=>S.known.has(c));
+  list=list.slice(0,80);
+  grid.innerHTML=list.map(c=>{
+    const t=(S.ety[c]||{}).type;
+    const cls=[S.known.has(c)?'learned':'',t==='pictographic'?'picto':''].filter(Boolean).join(' ');
+    const dot=S.known.has(c)?'<span class="dot"></span>':'';
+    return `<span class="ety-char ${cls}" data-c="${c}">${c}${dot}</span>`;
+  }).join('')||'<div class="empty-state">暂无字</div>';
+  grid.querySelectorAll('.ety-char').forEach(el=>el.addEventListener('click',()=>openModal(el.dataset.c)));
 }
-function daysLater(date, days) {
-  const d = new Date(date + 'T00:00:00');
-  d.setDate(d.getDate() + days);
-  return d.toISOString().slice(0, 10);
-}
-
-function renderEntry() {
-  document.getElementById('entry-content').innerHTML = `
-    <div class="section-title">录入 Rex 认识的字</div>
-    <div class="entry-form">
-      <input class="entry-input" id="entry-chars" placeholder="如：大 小 上 下（空格隔开）" autocomplete="off">
-      <div class="entry-options">
-        <div class="entry-opt">
-          <select id="entry-recorder">
-            <option value="爸爸">爸爸</option>
-            <option value="妈妈">妈妈</option>
-            <option value="爷爷">爷爷</option>
-            <option value="奶奶">奶奶</option>
-            <option value="姥姥">姥姥</option>
-            <option value="姥爷">姥爷</option>
-            <option value="其他">其他</option>
-          </select>
+function openModal(c){
+  const e=S.ety[c]||{};
+  const type=e.type_cn||'';
+  const tcls=e.type==='pictographic'?'picto':(e.type==='ideographic'?'ideo':'phon');
+  const hint=e.hint_cn||e.hint_en||'这个字的来源暂未收录';
+  const pinyin=(e.pinyin&&e.pinyin.length)?e.pinyin.join(', '):'';
+  const learned=S.known.has(c)?'✅ 已认识':'🌟 待认识';
+  document.body.insertAdjacentHTML('beforeend',`
+    <div class="modal open" id="ety-modal">
+      <div class="modal-card">
+        <div class="modal-char">${c}</div>
+        <div class="modal-type ${tcls}">${type||'字'}</div>
+        <div class="modal-hint">「${hint}」</div>
+        <div class="modal-meta">
+          ${learned}<br>
+          ${pinyin?'拼音：'+pinyin:'<br>'}
+          ${e.definition?'含义：'+e.definition:''}
         </div>
-        <div class="entry-opt">
-          <input id="entry-book" placeholder="书名（可选）" autocomplete="off">
-        </div>
+        <button class="modal-close" onclick="document.getElementById('ety-modal').remove()">知道啦 ✨</button>
       </div>
-      <button class="entry-submit" id="entry-submit-btn" onclick="submitEntry()">提交录入</button>
+    </div>`);
+}
+
+/* ===== 复习 ===== */
+function loadReviews(){try{return JSON.parse(localStorage.getItem('rex_reviews')||'{}');}catch(e){return {};}}
+function saveReviews(r){localStorage.setItem('rex_reviews',JSON.stringify(r));}
+function daysLater(d,n){const x=new Date(d+'T00:00:00');x.setDate(x.getDate()+n);return x.toISOString().slice(0,10);}
+function renderReview(){
+  const el=document.getElementById('tab-review');
+  if(S.reviewing)return;
+  const rev=loadReviews();
+  const due=Array.from(S.known).filter(c=>{const r=rev[c];return !r||!r.next_review||r.next_review<=TODAY;});
+  due.sort(()=>Math.random()-0.5);
+  S.reviewQueue=due.slice(0,15);S.reviewIdx=0;
+  if(due.length===0){
+    el.innerHTML=`<div class="game-summary"><h3>🎉 今天没有待复习的字</h3><p style="color:#7a8ba0">都复习完啦，明天再来吧</p></div>`;
+    return;
+  }
+  el.innerHTML=`<div class="game-card">
+    <div class="game-due">今天 ${due.length} 字待复习 · 本次 ${S.reviewQueue.length} 字</div>
+    <button class="btn-start" onclick="startReview()">开始复习 🐾</button>
+  </div>`;
+}
+function startReview(){S.reviewIdx=0;S.reviewRes={ok:0,fail:0};S.reviewing=true;showCard();}
+function showCard(){
+  const el=document.getElementById('tab-review');
+  if(S.reviewIdx>=S.reviewQueue.length){
+    S.reviewing=false;
+    const {ok,fail}=S.reviewRes;
+    el.innerHTML=`<div class="game-summary"><h3>✅ 本次复习完成</h3>
+      <p>认识 ${ok} 字 · 不认识 ${fail} 字</p><p style="font-size:13px;color:#7a8ba0;margin-top:10px">明天再来巩固吧</p></div>`;
+    return;
+  }
+  const c=S.reviewQueue[S.reviewIdx];
+  const meta=S.charMeta[c];
+  const ctx=meta&&meta.books&&meta.books.length?(meta.books.slice(0,2).join(' · ')):'';
+  el.innerHTML=`<div class="game-card">
+    <div style="font-size:13px;color:#7a8ba0">${S.reviewIdx+1}/${S.reviewQueue.length}</div>
+    <div class="game-char">${c}</div>
+    <div class="game-context">${ctx?'📖 '+ctx:''}</div>
+    <div class="game-btns">
+      <button class="btn-know" onclick="reviewChar(true)">认识 ✓</button>
+      <button class="btn-not" onclick="reviewChar(false)">不认识 ✗</button>
     </div>
-    <div class="entry-recent" id="entry-recent"><div class="section-title">📋 最近录入</div></div>
-  `;
-  renderRecentEntries();
+  </div>`;
 }
-
-async function renderRecentEntries() {
-  const el = document.getElementById('entry-recent');
-  if (!el) return;
-  if (!sb) { el.innerHTML = '<div class="section-title">📋 最近录入</div><div class="empty-state">离线模式，无法加载</div>'; return; }
-  const { data } = await sb.from('words')
-    .select('new_words,date,recorder,book_name')
-    .order('id', { ascending: false })
-    .limit(30)
-    .catch(() => ({ data: null }));
-  if (!data || data.length === 0) {
-    el.innerHTML = '<div class="section-title">📋 最近录入</div><div class="empty-state">还没有录入</div>';
-    return;
+function reviewChar(know){
+  const c=S.reviewQueue[S.reviewIdx];
+  const rev=loadReviews();
+  const old=rev[c];
+  if(know){
+    S.reviewRes.ok++;
+    const stage=old?Math.min(old.stage+1,INTERVALS.length-1):0;
+    rev[c]={stage,last_review:TODAY,next_review:daysLater(TODAY,INTERVALS[stage])};
+  }else{
+    S.reviewRes.fail++;
+    rev[c]={stage:0,last_review:TODAY,next_review:daysLater(TODAY,1)};
   }
-  el.innerHTML = '<div class="section-title">📋 最近录入</div>' +
-    data.map(r => `
-      <div class="entry-recent-item">
-        <span class="entry-rec-char">${r.new_words}</span>
-        <span class="entry-rec-meta">${r.recorder || '匿名'}${r.book_name ? ' · 《' + r.book_name + '》' : ''}</span>
-        <span class="entry-rec-date">${r.date || ''}</span>
-      </div>
-    `).join('');
-}
-
-async function submitEntry() {
-  if (!sb) { toast('录入功能暂不可用（Supabase 离线）', 'error'); return; }
-  const raw = document.getElementById('entry-chars').value.trim();
-  if (!raw) { toast('请输入汉字', 'error'); return; }
-  const chars = [...new Set(extractChars(raw))];
-  if (chars.length === 0) { toast('未识别到有效汉字', 'error'); return; }
-  const recorder = document.getElementById('entry-recorder').value || '匿名';
-  const book = document.getElementById('entry-book').value.trim();
-  const btn = document.getElementById('entry-submit-btn');
-  btn.disabled = true;
-  btn.textContent = '提交中...';
-  const rows = chars.map(c => ({ new_words: c, book_name: book || '其他', recorder, date: TODAY }));
-  const { error } = await sb.from('words').insert(rows);
-  btn.disabled = false;
-  btn.textContent = '提交录入';
-  if (error) {
-    toast('提交失败: ' + error.message, 'error');
-    return;
-  }
-  document.getElementById('entry-chars').value = '';
-  document.getElementById('entry-book').value = '';
-  toast(`✅ 已录入 ${chars.length} 字`, 'success');
-  renderRecentEntries();
-  loadFreshData();
-}
-
-async function loadFreshData() {
-  await fetchSupabase();
-  computeKnownSet();
-  precomputeReview();
-  renderDashboard();
-}
-
-function extractChars(text) {
-  return text.split('').filter(c => c >= '\u4e00' && c <= '\u9fff');
-}
-
-function hashStr(s) {
-  let h = 0;
-  for (let i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; }
-  return Math.abs(h);
-}
-
-function toast(msg, type) {
-  const el = document.createElement('div');
-  el.className = 'toast toast-' + type;
-  el.textContent = msg;
-  document.body.appendChild(el);
-  setTimeout(() => el.remove(), 2500);
+  saveReviews(rev);
+  S.reviewIdx++;showCard();
 }
 
 init();

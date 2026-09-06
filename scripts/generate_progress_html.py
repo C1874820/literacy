@@ -5,9 +5,13 @@ import json
 import os
 from datetime import datetime
 
-CHAR_BANK_PATH = "/mnt/d/rex/character_bank.json"
-OUTPUT_DIR = "/mnt/d/rex/progress"
+BASE = os.environ.get("REX_BASE", "/mnt/d/rex")
+CHAR_BANK_PATH = f"{BASE}/character_bank.json"
+OUTPUT_DIR = f"{BASE}/progress"
 OUTPUT_DATA = f"{OUTPUT_DIR}/data.json"
+
+COLORS = ['#f97316', '#8b5cf6', '#06b6d4', '#ec4899', '#10b981',
+          '#f59e0b', '#6366f1', '#14b8a6', '#ef4444', '#84cc16']
 
 
 def load_bank():

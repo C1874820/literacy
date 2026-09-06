@@ -6,9 +6,9 @@ import os
 import urllib.request
 import urllib.error
 
-CHAR_BANK_PATH = "/mnt/d/rex/character_bank.json"
+CHAR_BANK_PATH = os.environ.get("REX_BASE", "/mnt/d/rex") + "/character_bank.json"
 FLOWUS_TOKEN = os.environ.get("FLOWUS_TOKEN")
-STATE_FILE = "/mnt/d/rex/.flowus_progress_state"
+STATE_FILE = os.environ.get("REX_BASE", "/mnt/d/rex") + "/.flowus_progress_state"
 
 
 def load_bank():
