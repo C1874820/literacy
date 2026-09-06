@@ -20,7 +20,7 @@ import urllib.error
 from collections import Counter
 from datetime import datetime
 
-BASE_DIR = "/mnt/d/rex"
+BASE_DIR = os.environ.get("REX_BASE", "/mnt/d/rex" if os.name != "nt" else "D:/rex")
 CHAR_BANK_PATH = f"{BASE_DIR}/character_bank.json"
 SYNC_LOG_PATH = f"{BASE_DIR}/sync_log.txt"
 DATABASE_ID = "10df60aa-aee0-4727-adab-f4d99e1cc053"
@@ -170,11 +170,14 @@ def sync():
     log(f"字库更新完成 | {p['total_books']}本 | {p['total_unique_chars']}字 | 已学{learned}(+{sync_count})")
 
     # 生成网页进度 + 字源 + 息流页面（build_etymology 幂等，已译字跳过）
+    child_env = os.environ.copy()
+    child_env["REX_BASE"] = BASE_DIR
     for script in ["build_etymology.py", "generate_progress_html.py", "update_flowus_progress.py"]:
         try:
             result = subprocess.run(
                 [sys.executable, f"{BASE_DIR}/scripts/{script}"],
-                capture_output=True, text=True, timeout=600
+                capture_output=True, text=True, timeout=600,
+                env=child_env
             )
             if result.stdout.strip():
                 log(f"  {script}: {result.stdout.strip()}")
