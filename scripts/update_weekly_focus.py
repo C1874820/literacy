@@ -13,7 +13,7 @@
   - .env 的 FLOWUS_TOKEN
   - flowus CLI（flowus markdown put）
 """
-import json, os, sys, subprocess, datetime, urllib.request
+import json, os, sys, subprocess, datetime, shutil, urllib.request
 
 BASE = os.environ.get("REX_BASE", "/mnt/d/rex")
 BANK_PATH = f"{BASE}/character_bank.json"
@@ -145,21 +145,78 @@ def main():
         log("\nERROR: FLOWUS_TOKEN 未设置，跳过写入")
         return
 
-    # 写临时 markdown 文件，用 flowus CLI markdown put 写入
-    tmp = f"{BASE}/_weekly_focus_tmp.md"
-    open(tmp, "w", encoding="utf-8").write(md)
+    flowus_bin = shutil.which("flowus")
+    if not flowus_bin:
+        log("\nERROR: flowus CLI 未找到，请确认已安装")
+        return
+
+    # 1) 删除页面现有子 block（flowus CLI 不支持 DELETE，用 urllib 直接调 API）
     try:
-        r = subprocess.run(["flowus", "markdown", "put", "--file", tmp, PAGE_ID],
+        r = subprocess.run([flowus_bin, "--json", "block", "children", PAGE_ID, "--page-size", "100"],
+                           capture_output=True, text=True, timeout=30)
+        if r.returncode == 0:
+            data = json.loads(r.stdout)
+            children = data.get("data", {}).get("results", [])
+            for child in children:
+                bid = child.get("id", "")
+                if bid:
+                    req = urllib.request.Request(
+                        f"https://api.flowus.cn/v2/blocks/{bid}",
+                        headers={"Authorization": f"Bearer {token}"},
+                        method="DELETE"
+                    )
+                    try:
+                        urllib.request.urlopen(req, timeout=10)
+                    except Exception:
+                        pass  # 部分 block 可能删除失败，忽略
+    except Exception as e:
+        log(f"WARN: 清理旧 block 失败: {e}")
+
+    # 2) markdown → FlowUs block JSON
+    blocks = []
+    for line in md.split("\n"):
+        if line.startswith("# "):
+            blocks.append({"object": "block", "type": "heading_1",
+                           "heading_1": {"rich_text": [{"type": "text", "text": {"content": line[2:]}}]}})
+        elif line.startswith("## "):
+            blocks.append({"object": "block", "type": "heading_2",
+                           "heading_2": {"rich_text": [{"type": "text", "text": {"content": line[3:]}}]}})
+        elif line.startswith("- [x] "):
+            blocks.append({"object": "block", "type": "to_do",
+                           "to_do": {"rich_text": [{"type": "text", "text": {"content": line[6:]}}], "checked": True}})
+        elif line.startswith("- [ ] "):
+            blocks.append({"object": "block", "type": "to_do",
+                           "to_do": {"rich_text": [{"type": "text", "text": {"content": line[6:]}}], "checked": False}})
+        elif line.startswith("- "):
+            blocks.append({"object": "block", "type": "bulleted_list_item",
+                           "bulleted_list_item": {"rich_text": [{"type": "text", "text": {"content": line[2:]}}]}})
+        elif line.startswith("> "):
+            blocks.append({"object": "block", "type": "quote",
+                           "quote": {"rich_text": [{"type": "text", "text": {"content": line[2:]}}]}})
+        elif line.strip():
+            blocks.append({"object": "block", "type": "paragraph",
+                           "paragraph": {"rich_text": [{"type": "text", "text": {"content": line}}]}})
+
+    if not blocks:
+        log("\nWARN: 无 block 内容可写入")
+        return
+
+    # 3) 写临时 JSON body，用 block append 写入
+    body_file = f"{BASE}/_weekly_focus_body.json"
+    try:
+        with open(body_file, "w", encoding="utf-8") as f:
+            json.dump({"children": blocks}, f, ensure_ascii=False)
+        r = subprocess.run([flowus_bin, "--json", "block", "append", PAGE_ID, "--body", body_file],
                            capture_output=True, text=True, timeout=60)
         if r.returncode == 0:
-            log(f"\n✅ 已写入本周主力页（第{week}周）")
+            log(f"\n✅ 已写入本周主力页（第{week}周），共 {len(blocks)} 个 block")
         else:
             log(f"\n⚠ 写入可能失败: {r.stderr.strip() or r.stdout.strip()}")
-    except FileNotFoundError:
-        log("\nERROR: flowus CLI 未找到，请确认已安装")
+    except Exception as e:
+        log(f"\nERROR: 写入失败: {e}")
     finally:
-        if os.path.exists(tmp):
-            os.remove(tmp)
+        if os.path.exists(body_file):
+            os.remove(body_file)
 
 
 if __name__ == "__main__":

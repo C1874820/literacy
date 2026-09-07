@@ -169,10 +169,10 @@ def sync():
     p = bank["progress"]
     log(f"字库更新完成 | {p['total_books']}本 | {p['total_unique_chars']}字 | 已学{learned}(+{sync_count})")
 
-    # 生成网页进度 + 字源 + 息流页面（build_etymology 幂等，已译字跳过）
+    # 生成网页进度 + 字源 + 息流页面 + 本周主力（build_etymology 幂等，已译字跳过）
     child_env = os.environ.copy()
     child_env["REX_BASE"] = BASE_DIR
-    for script in ["build_etymology.py", "generate_progress_html.py", "update_flowus_progress.py"]:
+    for script in ["build_etymology.py", "generate_progress_html.py", "update_flowus_progress.py", "update_weekly_focus.py"]:
         try:
             result = subprocess.run(
                 [sys.executable, f"{BASE_DIR}/scripts/{script}"],
