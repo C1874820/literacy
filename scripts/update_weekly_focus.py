@@ -40,12 +40,20 @@ def load_token():
 
 def current_week(today=None):
     today = today or datetime.date.today()
-    return (today - WEEK1_START).days // 7 + 1
+    days = (today - WEEK1_START).days
+    # 第一周只有6天（9/1~9/6），之后每7天一周
+    return (days + 1) // 7 + 1
 
 
 def week_range(week):
-    start = WEEK1_START + datetime.timedelta(days=(week - 1) * 7)
-    return start, start + datetime.timedelta(days=6)
+    # 第一周 9/1~9/6（6天，周一~周六），之后每7天（周一~周日）
+    if week == 1:
+        start = WEEK1_START
+        end = start + datetime.timedelta(days=5)
+    else:
+        start = WEEK1_START + datetime.timedelta(days=6 + (week - 2) * 7)
+        end = start + datetime.timedelta(days=6)
+    return start, end
 
 
 def load_bank():
@@ -82,7 +90,7 @@ def pick_points(chars, learned, freq):
 def build_markdown(week, roster_items, bank, learned, ety, freq):
     start, end = week_range(week)
     lines = []
-    lines.append(f"# 本周主力 · {start} 起（第 {week} 周）")
+    lines.append(f"# 本周主力 · 第{week}周（{start.month}/{start.day}~{end.month}/{end.day}）")
     lines.append("")
     lines.append("> 💡 年度目标 300-400 字 · 每晚读 1-2 本，C 位封面朝外摆放，每周日轮换。")
     lines.append("")
