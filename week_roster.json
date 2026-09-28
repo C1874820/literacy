@@ -1,52 +1,93 @@
 {
   "roster": [
     {
-      "title": "巴巴爸爸环游世界系列",
-      "entered_week": 4,
+      "title": "猜猜我有多爱你",
+      "entered_week": 5,
       "unread_weeks": 0
     },
     {
-      "title": "猜猜我有多爱你",
-      "entered_week": 3,
-      "unread_weeks": 1
-    },
-    {
       "title": "龟兹奇妙之旅",
-      "entered_week": 3,
-      "unread_weeks": 1
+      "entered_week": 5,
+      "unread_weeks": 0
     },
     {
       "title": "中国神话故事集",
-      "entered_week": 3,
-      "unread_weeks": 1
+      "entered_week": 5,
+      "unread_weeks": 0
     },
     {
       "title": "逃家小兔",
-      "entered_week": 3,
-      "unread_weeks": 1
+      "entered_week": 5,
+      "unread_weeks": 0
     },
     {
       "title": "你为什么不开花",
-      "entered_week": 3,
-      "unread_weeks": 1
+      "entered_week": 5,
+      "unread_weeks": 0
     },
     {
       "title": "举世无双的地毯",
-      "entered_week": 3,
-      "unread_weeks": 1
+      "entered_week": 5,
+      "unread_weeks": 0
     },
     {
       "title": "我和野马王子",
-      "entered_week": 3,
-      "unread_weeks": 1
+      "entered_week": 5,
+      "unread_weeks": 0
     },
     {
       "title": "我还想去博物馆",
-      "entered_week": 3,
-      "unread_weeks": 1
+      "entered_week": 5,
+      "unread_weeks": 0
     }
   ],
-  "history": [],
-  "last_week": 4,
-  "last_updated": "2026-09-23T15:00:00Z"
+  "history": [
+    {
+      "title": "巴巴爸爸环游世界系列",
+      "week_out": 5,
+      "result": "读完"
+    },
+    {
+      "title": "猜猜我有多爱你",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    },
+    {
+      "title": "龟兹奇妙之旅",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    },
+    {
+      "title": "中国神话故事集",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    },
+    {
+      "title": "逃家小兔",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    },
+    {
+      "title": "你为什么不开花",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    },
+    {
+      "title": "举世无双的地毯",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    },
+    {
+      "title": "我和野马王子",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    },
+    {
+      "title": "我还想去博物馆",
+      "week_out": 5,
+      "result": "连续两周未读剔除"
+    }
+  ],
+  "last_week": 5,
+  "last_updated": "2026-09-28T11:52:56Z"
 }
