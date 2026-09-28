@@ -10,7 +10,7 @@ Track Rex's Chinese character literacy progress. Data flows: FlowUs (book list +
 - **Web app**: `progress/index.html` — 纯静态 SPA（进度/认字字源卡片/复习），无后端，复习进度存 localStorage
 - **Generated files**: `progress/data.json`, `progress/learned.json`, `progress/char_meta.json`（`generate_progress_html.py`）、`progress/char_etymology.json`（`build_etymology.py`，字源数据）
 - **字源数据**: Make Me a Hanzi `dictionary.txt`（MIT，存 `data/makemeahanzi/`，gitignore）→ 每字 type(象形/会意/形声) + hint_cn(造字提示，DeepSeek 翻译)
-- **每周主力**: `week_roster.json`（周次书单状态）+ `update_weekly_focus.py` 写 FlowUs 本周主力页
+- **每周主力**: `week_roster.json`（周次书单状态）+ `update_weekly_focus.py` 重写 FlowUs 本周主力页（已入 `auto_sync.py` 链，每工作日 cron 自动跑）
 - **Deployment**: GitHub Pages via `auto_sync.py` 内建 `git push origin main`
 
 ## Commands
@@ -32,8 +32,9 @@ python3 scripts/build_etymology.py
 # 每周主力书单（周次计算 + 素材池 + 顺延/剔除）
 python3 scripts/week_roster.py --apply
 
-# 写 FlowUs 本周主力页（读 week_roster.json）
+# 重写 FlowUs 本周主力页（读 week_roster.json，合并页内手工 [x] 记录后整页重写）
 python3 scripts/update_weekly_focus.py
+python3 scripts/update_weekly_focus.py --dry-run   # 只打印 markdown
 
 # Generate progress HTML + JSON files
 python3 scripts/generate_progress_html.py
@@ -50,7 +51,7 @@ python3 scripts/update_flowus_progress.py
 | `enrich_books.py` | 补全手动新加书元数据：豆瓣补作者/年份 + 本地 qwen2.5:7b 分类10类 + 填书架/系列 |
 | `build_etymology.py` | 生成 `char_etymology.json`（字源：象形/会意/形声 + 中文造字提示，DeepSeek 翻译） |
 | `week_roster.py` | 每周主力书单：周次计算 + 素材池筛选 + 顺延/连续两周未读剔除 |
-| `update_weekly_focus.py` | 读 week_roster.json → 生成 markdown → flowus markdown put 写本周主力页 |
+| `update_weekly_focus.py` | 读 week_roster.json → 生成 markdown → 合并页内手工 `[x]` → 整页重写本周主力页（append-then-delete，幂等） |
 | `generate_progress_html.py` | 生成 data/learned/char_meta JSON |
 | `update_flowus_progress.py` | 更新息流识字进度页 |
 | `fill_book_meta.py` / `fill_book_text.py` | 补全书元数据 / 提取正文文字 |
@@ -103,7 +104,7 @@ python3 scripts/update_flowus_progress.py
 
 改动内容、规划、规则的落笔记方式按系统分轨，互不混写：
 - **识字系统**（书单/识字/字库/FlowUs/字源/进度页）→ 只在 `孩子成长/识字系统-项目文档.md` 录入
-- **观察记录**（周观察/月报/情绪行为等）→ 只在 `孩子成长/Rex观察记录-项目文档.md` 录入（单独笔记，不写入识字系统文档）
+- **观察记录**（周观察/月报/情绪行为等）→ 规则以本文件「Rex 观察记录系统」章节为权威来源；`孩子成长/Rex观察记录-项目文档.md` 已于 2026-09-05 删除，**不指向该笔记**（识字系统项目文档同步说明此状态）
 
 ## Environment
 
@@ -168,6 +169,11 @@ python3 scripts/update_flowus_progress.py
 - 字源数据 `char_etymology.json` 由 `build_etymology.py` 生成（Make Me a Hanzi，MIT）；`data/makemeahanzi/dictionary.txt` 已 gitignore
 - GitHub Pages: `auto_sync.py` 内建 `git push origin main`（分支为 `main`，旧 `deploy_github.sh` 已删除）
 - FlowUs API: every property must include `type` field in requests
+- **FlowUs CLI 不可靠，本项目一律走 v2 HTTP API（stdlib urllib）**：CLI `markdown put` 服务端未实现（`PUT /v2/pages/{id}/content/markdown` → 404），且 cron 环境 PATH 不含 `~/.npm-global/bin`（2026-09-22~09-28 `update_weekly_focus.py` 连续 6 次报「flowus CLI 未找到」）。`run_sync.sh` 已 export PATH 作双保险
+- **`GET /v2/blocks/{id}/children` 首页返回空 `results` 但 `has_more: true`**，必须循环 `start_cursor` 翻页；单次请求拿不到任何子块
+- **`DELETE /v2/blocks/{id}` 可用**（返回 `in_trash: true`），但 CLI 文档/spec 里没有它，只能直连 API
+- **本周主力页每工作日整页重写**：脚本写入前读回旧页、把手工勾选的 `[x]` 记录并入新周次内容（`[x]` 记录页内手写即可，勿写脚本不认的格式），内容无变化则跳过写入
+- **周次口径统一**：`week_roster.py` 与 `update_weekly_focus.py` 共用「第1周=9/1~9/6（6天），其后每7天」，校准口径见本文件「Rex 观察记录系统」节
 - 本地 Ollama 分类用 `qwen2.5:7b`（翻译/复杂任务本地模型质量差，hint 翻译用 DeepSeek）
 
 ## 工作流（必须执行）
