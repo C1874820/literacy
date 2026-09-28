@@ -56,12 +56,19 @@ def api_v2(token, method, path, data=None):
 
 def current_week(today=None):
     today = today or datetime.date.today()
-    return (today - WEEK1_START).days // 7 + 1
+    days = (today - WEEK1_START).days
+    # 第一周只有6天（9/1~9/6），之后每7天一周（与 update_weekly_focus.py 同一校历口径）
+    return (days + 1) // 7 + 1
 
 
 def week_range(week):
-    start = WEEK1_START + datetime.timedelta(days=(week - 1) * 7)
-    end = start + datetime.timedelta(days=6)
+    # 第一周 9/1~9/6（6天，周一~周六），之后每7天（周一~周日）
+    if week == 1:
+        start = WEEK1_START
+        end = start + datetime.timedelta(days=5)
+    else:
+        start = WEEK1_START + datetime.timedelta(days=6 + (week - 2) * 7)
+        end = start + datetime.timedelta(days=6)
     return start, end
 
 

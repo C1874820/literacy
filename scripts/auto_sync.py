@@ -172,6 +172,10 @@ def sync():
     # 生成网页进度 + 字源 + 息流页面 + 本周主力（build_etymology 幂等，已译字跳过）
     child_env = os.environ.copy()
     child_env["REX_BASE"] = BASE_DIR
+    # 保险：cron 环境下补上 flowus CLI 所在目录，否则 update_weekly_focus.py 找不到
+    npm_bin = os.path.expanduser("~/.npm-global/bin")
+    if os.path.isdir(npm_bin) and npm_bin not in child_env.get("PATH", "").split(os.pathsep):
+        child_env["PATH"] = npm_bin + os.pathsep + child_env.get("PATH", "")
     for script in ["build_etymology.py", "generate_progress_html.py", "update_flowus_progress.py", "update_weekly_focus.py"]:
         try:
             result = subprocess.run(
