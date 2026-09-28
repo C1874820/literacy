@@ -1,5 +1,5 @@
 {
- "last_updated": "2026-09-23T10:01:37Z",
+ "last_updated": "2026-09-28T10:01:44Z",
  "source": "Make Me a Hanzi (MIT)",
  "total": 1789,
  "chars": {
@@ -62,7 +62,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Three  parallel lines; compare 一 (one) and 二 (two)",
-   "hint_cn": "三条平行的线；和一、二比较",
+   "hint_cn": "三条平行的线；和一（一）、二（二）比较",
    "pinyin": [
     "sān"
    ],
@@ -73,7 +73,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "One stroke on top of another; compare 下 (below)",
-   "hint_cn": "一横在另一横上面；和下比较",
+   "hint_cn": "一横在另一横上面；和下（下）比较",
    "pinyin": [
     "shàng"
    ],
@@ -84,7 +84,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "One stroke under another; compare 上 (above)",
-   "hint_cn": "一横在另一横下面；和上比较",
+   "hint_cn": "一横在另一横下面；和上（上）比较",
    "pinyin": [
     "xià"
    ],
@@ -95,7 +95,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A bird flying toward the sky 一",
-   "hint_cn": "一只鸟朝着天空飞",
+   "hint_cn": "一只鸟朝着天空一飞",
    "pinyin": [
     "bù"
    ],
@@ -128,7 +128,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A stone altar",
-   "hint_cn": "像石头做的祭坛",
+   "hint_cn": "像一座石头祭坛",
    "pinyin": [
     "qiě"
    ],
@@ -150,7 +150,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Two hills",
-   "hint_cn": "两座小山",
+   "hint_cn": "两座小山丘",
    "pinyin": [
     "qiū"
    ],
@@ -183,7 +183,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "one",
-   "hint_cn": "一丛植物",
+   "hint_cn": "一丛",
    "pinyin": [
     "cóng"
    ],
@@ -194,7 +194,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Simplified form of 東, the sun 日 rising behind a tree 木",
-   "hint_cn": "東的简体，太阳从树后面升起",
+   "hint_cn": "東的简化字，太阳日从树木木后面升起",
    "pinyin": [
     "dōng"
    ],
@@ -205,7 +205,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 絲, two threads",
-   "hint_cn": "絲的简体，两根线",
+   "hint_cn": "絲的简化字，两根线",
    "pinyin": [
     "sī"
    ],
@@ -216,7 +216,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A lost 厶 jade 玉",
-   "hint_cn": "丢失的玉",
+   "hint_cn": "丢失的厶玉玉",
    "pinyin": [
     "diū"
    ],
@@ -227,7 +227,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two people 从 together in a cart",
-   "hint_cn": "两个人一起坐在车里",
+   "hint_cn": "两个人从一起坐在车里",
    "pinyin": [
     "liǎng"
    ],
@@ -249,7 +249,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A tally 丨 of people 人",
-   "hint_cn": "数人数的小棍",
+   "hint_cn": "一个人的计数丨人",
    "pinyin": [
     "gè"
    ],
@@ -260,7 +260,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A line 丨 through the center of a box 口",
-   "hint_cn": "一根线穿过盒子的中间",
+   "hint_cn": "一条线丨穿过一个盒子口中心",
    "pinyin": [
     "zhōng"
    ],
@@ -282,7 +282,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two objects 口 strung 丨 together",
-   "hint_cn": "两个东西串在一起",
+   "hint_cn": "两个东西口被丨串在一起",
    "pinyin": [
     "chuàn"
    ],
@@ -304,7 +304,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A red pellet 丶 from a mine 井",
-   "hint_cn": "从矿井里采出的红色小珠子",
+   "hint_cn": "从矿井井里采出的红色小丸丶",
    "pinyin": [
     "dān"
    ],
@@ -326,7 +326,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A lamp 王 with a flame 丶",
-   "hint_cn": "一盏灯，上面有火苗",
+   "hint_cn": "一盏灯王带着火焰丶",
    "pinyin": [
     "zhǔ"
    ],
@@ -337,7 +337,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 麗; the antlers of a deer 鹿",
-   "hint_cn": "麗的简体；鹿的角",
+   "hint_cn": "麗的简化字；鹿鹿的鹿角",
    "pinyin": [
     "lì"
    ],
@@ -348,7 +348,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手举起",
+   "hint_cn": "手",
    "pinyin": [
     "jǔ"
    ],
@@ -381,7 +381,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sheep; simplified form of 義",
-   "hint_cn": "羊，正义的义",
+   "hint_cn": "羊",
    "pinyin": [
     "yì"
    ],
@@ -392,7 +392,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A foot meaning \"to follow\"; cursive version of 止",
-   "hint_cn": "一只脚，意思是“跟随”；止的草写",
+   "hint_cn": "一只脚，意思是“跟随”；止的草书形式",
    "pinyin": [
     "zhī"
    ],
@@ -403,7 +403,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Simplified form of 烏; a crow; compare 鸟",
-   "hint_cn": "烏的简体；一只乌鸦；和鸟比较",
+   "hint_cn": "烏的简化字；一只乌鸦；和鸟比较",
    "pinyin": [
     "wū"
    ],
@@ -425,7 +425,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A foot 之 running into a wall or barrier 丿",
-   "hint_cn": "一只脚撞到墙或障碍物",
+   "hint_cn": "一只脚之撞到墙或障碍丿",
    "pinyin": [
     "fá"
    ],
@@ -436,7 +436,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 樂, a musical instrument with wood 木, strings 幺, and a pick 白",
-   "hint_cn": "樂的简体，用木头、弦和拨子做的乐器",
+   "hint_cn": "樂的简化字，一种用木木、弦幺和拨子白做的乐器",
    "pinyin": [
     "lè"
    ],
@@ -447,7 +447,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "An elbow",
-   "hint_cn": "手肘",
+   "hint_cn": "一个手肘",
    "pinyin": [
     "jiǔ"
    ],
@@ -491,7 +491,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A mark made by a pen ⺺",
-   "hint_cn": "笔留下的痕迹",
+   "hint_cn": "用笔⺺做的一个记号",
    "pinyin": [
     "shū"
    ],
@@ -524,7 +524,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hidden",
-   "hint_cn": "妈妈喂奶",
+   "hint_cn": "隐藏",
    "pinyin": [
     "rǔ"
    ],
@@ -535,7 +535,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Rays 十 emanating from the 日; 乞 provides the pronunciation",
-   "hint_cn": "太阳发出的光芒；乞表示读音",
+   "hint_cn": "光线十从日射出；乞提供读音",
    "pinyin": [
     "gān"
    ],
@@ -546,7 +546,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A child swaddled in blanklets; compare 子",
-   "hint_cn": "用毯子裹着的婴儿；和子比较",
+   "hint_cn": "一个裹在毯子里的婴儿；和子比较",
    "pinyin": [
     "le",
     "liǎo"
@@ -558,7 +558,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 爭, two hands 爪 and 彐 fighting over 亅",
-   "hint_cn": "爭的简体，两只手在抢东西",
+   "hint_cn": "爭的简化字，两只手爪和彐争夺亅",
    "pinyin": [
     "zhēng"
    ],
@@ -580,7 +580,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two  parallel lines; compare 一 (one) and 三 (three)",
-   "hint_cn": "两条平行的线；和一、三比较",
+   "hint_cn": "两条平行的线；和一（一）、三（三）比较",
    "pinyin": [
     "èr"
    ],
@@ -635,7 +635,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Five elements (the cross with the extra stroke) between heaven 一 and earth 一 ",
-   "hint_cn": "天地之间的五行（带额外一横的十字）",
+   "hint_cn": "天（一）和地（一）之间的五行（带额外一横的十字）",
    "pinyin": [
     "wǔ"
    ],
@@ -646,7 +646,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A mine or well",
-   "hint_cn": "矿井或水井",
+   "hint_cn": "一个矿井或水井",
    "pinyin": [
     "jǐng"
    ],
@@ -668,7 +668,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "two",
-   "hint_cn": "两个东西",
+   "hint_cn": "两个",
    "pinyin": [
     "xiē"
    ],
@@ -679,7 +679,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man 人 in a coffin; see 亾",
-   "hint_cn": "人在棺材里",
+   "hint_cn": "一个人人在棺材里；参见亾",
    "pinyin": [
     "wáng"
    ],
@@ -690,7 +690,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person with crossed (intersecting) legs",
-   "hint_cn": "一个人双腿交叉",
+   "hint_cn": "一个双腿交叉（相交）的人",
    "pinyin": [
     "jiāo"
    ],
@@ -701,7 +701,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 厂)",
-   "hint_cn": "从山崖下生出",
+   "hint_cn": "（声音来自厂）",
    "pinyin": [
     "chǎn"
    ],
@@ -712,7 +712,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Children 子 living and eating 口 in the house 亠",
-   "hint_cn": "孩子们在房子里生活和吃饭",
+   "hint_cn": "孩子们子住在房子亠里并吃饭口",
    "pinyin": [
     "xiǎng"
    ],
@@ -723,7 +723,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A capital building on a hill",
-   "hint_cn": "山丘上的都城建筑",
+   "hint_cn": "山丘上的首都建筑",
    "pinyin": [
     "jīng"
    ],
@@ -734,7 +734,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A lit oil lamp",
-   "hint_cn": "点亮的油灯",
+   "hint_cn": "一盏点亮的油灯",
    "pinyin": [
     "liàng"
    ],
@@ -745,7 +745,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A tree 木 bearing fruit 立",
-   "hint_cn": "树上结着果实",
+   "hint_cn": "一棵树木结出果实立",
    "pinyin": [
     "qīn"
    ],
@@ -756,7 +756,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "The legs of a human being",
-   "hint_cn": "人的两条腿",
+   "hint_cn": "一个人的腿",
    "pinyin": [
     "rén"
    ],
@@ -767,7 +767,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "people",
-   "hint_cn": "很多人",
+   "hint_cn": "人",
    "pinyin": [
     "yì"
    ],
@@ -778,7 +778,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A file of ten 十 people 亻",
-   "hint_cn": "十个人的队伍",
+   "hint_cn": "十个十人的队列亻",
    "pinyin": [
     "shén"
    ],
@@ -789,7 +789,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人",
+   "hint_cn": "人",
    "pinyin": [
     "jǐn"
    ],
@@ -800,7 +800,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人对头",
+   "hint_cn": "人",
    "pinyin": [
     "chóu"
    ],
@@ -811,7 +811,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A mouth 亼 talking about things",
-   "hint_cn": "嘴巴在谈论事情",
+   "hint_cn": "一张嘴亼在谈论事情",
    "pinyin": [
     "jīn"
    ],
@@ -822,7 +822,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "then",
-   "hint_cn": "一个人还在",
+   "hint_cn": "然后",
    "pinyin": [
     "réng"
    ],
@@ -833,7 +833,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "One person 人 following another",
-   "hint_cn": "一个人跟着另一个人",
+   "hint_cn": "一个人人跟着另一个人",
    "pinyin": [
     "cóng"
    ],
@@ -844,7 +844,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An additional, \"also\" 也  person 亻",
-   "hint_cn": "另外一个人，也",
+   "hint_cn": "一个额外的、“也”也的人亻",
    "pinyin": [
     "tā"
    ],
@@ -855,7 +855,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "山里的人",
+   "hint_cn": "人",
    "pinyin": [
     "xiān"
    ],
@@ -866,7 +866,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man 亻 caught 弋 by the passing of time",
-   "hint_cn": "被时间抓住的人",
+   "hint_cn": "一个被人亻被时间的流逝弋抓住",
    "pinyin": [
     "dài"
    ],
@@ -877,7 +877,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person kneeling before a master 人",
-   "hint_cn": "一个人跪在主人面前",
+   "hint_cn": "一个人跪在主人人面前",
    "pinyin": [
     "lìng"
    ],
@@ -899,7 +899,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 义)",
-   "hint_cn": "人的仪表",
+   "hint_cn": "（声音来自义）",
    "pinyin": [
     "yí"
    ],
@@ -910,7 +910,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "people",
-   "hint_cn": "一群人",
+   "hint_cn": "人们",
    "pinyin": [
     "men"
    ],
@@ -921,7 +921,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To exalt 卬 a person 亻",
-   "hint_cn": "把人举高",
+   "hint_cn": "抬高卬一个人亻",
    "pinyin": [
     "yǎng"
    ],
@@ -932,7 +932,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man 亻 dividing up a cow 牛",
-   "hint_cn": "一个人把牛分开",
+   "hint_cn": "一个人亻在分割一头牛牛",
    "pinyin": [
     "jiàn"
    ],
@@ -943,7 +943,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人担当",
+   "hint_cn": "人",
    "pinyin": [
     "rèn"
    ],
@@ -954,7 +954,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The lot or portion 分 allotted to a man 亻",
-   "hint_cn": "分给一个人的份额",
+   "hint_cn": "分给一个人亻的份分",
    "pinyin": [
     "fèn"
    ],
@@ -965,7 +965,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "to imitate a person",
-   "hint_cn": "模仿一个人",
+   "hint_cn": "模仿人",
    "pinyin": [
     "fǎng"
    ],
@@ -976,7 +976,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Five 五 people 亻; 五 also provides the pronunciation",
-   "hint_cn": "五个人；五也表示读音",
+   "hint_cn": "五个五人亻；五也提供读音",
    "pinyin": [
     "wǔ"
    ],
@@ -987,7 +987,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 亻 leaning against a tree 木",
-   "hint_cn": "一个人靠在树上",
+   "hint_cn": "一个人亻靠在树朩上",
    "pinyin": [
     "xiū"
    ],
@@ -998,7 +998,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Three people 人 representing a crowd",
-   "hint_cn": "三个人表示一群人",
+   "hint_cn": "三个人人代表一群人",
    "pinyin": [
     "zhòng"
    ],
@@ -1009,7 +1009,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一群人一起",
+   "hint_cn": "人",
    "pinyin": [
     "huǒ"
    ],
@@ -1020,7 +1020,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "People 人 speaking 云",
-   "hint_cn": "人们在说话",
+   "hint_cn": "人们人说话云",
    "pinyin": [
     "huì"
    ],
@@ -1042,7 +1042,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "people",
-   "hint_cn": "一个人传递",
+   "hint_cn": "人们",
    "pinyin": [
     "chuán"
    ],
@@ -1064,7 +1064,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The logical order 仑 of human 亻 society; 仑 also provides the pronunciation",
-   "hint_cn": "人类社会的秩序；仑也表示读音",
+   "hint_cn": "人类亻社会的逻辑顺序仑；仑也提供读音",
    "pinyin": [
     "lún"
    ],
@@ -1075,7 +1075,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "meaning from 亻 (sound from 为)",
-   "hint_cn": "一个人假装",
+   "hint_cn": "意思来自亻（声音来自为）",
    "pinyin": [
     "wěi"
    ],
@@ -1086,7 +1086,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人陪伴",
+   "hint_cn": "人",
    "pinyin": [
     "bàn"
    ],
@@ -1097,7 +1097,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To extend your confidence 申 to another person 亻; 申 also provides the pronunciation",
-   "hint_cn": "把信心伸向另一个人；申也表示读音",
+   "hint_cn": "把你的信心申延伸到另一个人亻；申也提供读音",
    "pinyin": [
     "shēn"
    ],
@@ -1108,7 +1108,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "One person 亻 resembles another",
-   "hint_cn": "一个人像另一个人",
+   "hint_cn": "一个人亻像另一个人",
    "pinyin": [
     "shì"
    ],
@@ -1119,7 +1119,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 旦)",
-   "hint_cn": "一个人只是",
+   "hint_cn": "（声音来自旦）",
    "pinyin": [
     "dàn"
    ],
@@ -1130,7 +1130,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The place where a person 亻 stands 立",
-   "hint_cn": "一个人站立的地方",
+   "hint_cn": "一个人亻站立立的地方",
    "pinyin": [
     "wèi"
    ],
@@ -1141,7 +1141,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 氐)",
-   "hint_cn": "一个人低头",
+   "hint_cn": "（声音来自氐）",
    "pinyin": [
     "dī"
    ],
@@ -1185,7 +1185,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人像佛",
+   "hint_cn": "人",
    "pinyin": [
     "fú"
    ],
@@ -1229,7 +1229,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人例子",
+   "hint_cn": "人",
    "pinyin": [
     "lì"
    ],
@@ -1240,7 +1240,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人服侍",
+   "hint_cn": "人",
    "pinyin": [
     "shì"
    ],
@@ -1251,7 +1251,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 亻 making an offering with both hands 共; 共 also provides the pronunciation",
-   "hint_cn": "一个人（亻）双手（共）捧着东西献上，共也提示读音",
+   "hint_cn": "一个人（亻）用双手（共）献上东西，共也提示读音",
    "pinyin": [
     "gōng"
    ],
@@ -1262,7 +1262,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人依靠",
+   "hint_cn": "人",
    "pinyin": [
     "yī"
    ],
@@ -1306,7 +1306,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人英俊",
+   "hint_cn": "人",
    "pinyin": [
     "jùn"
    ],
@@ -1317,7 +1317,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人保护",
+   "hint_cn": "人",
    "pinyin": [
     "bǎo"
    ],
@@ -1339,7 +1339,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A couple 寿; 寿 also provides the pronunciation",
-   "hint_cn": "两个人（寿），寿也提示读音",
+   "hint_cn": "一对（寿），寿也提示读音",
    "pinyin": [
     "liǎ"
    ],
@@ -1350,7 +1350,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hair",
-   "hint_cn": "一个人修饰头发",
+   "hint_cn": "头发",
    "pinyin": [
     "xiū"
    ],
@@ -1361,7 +1361,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人俯身",
+   "hint_cn": "人",
    "pinyin": [
     "fǔ"
    ],
@@ -1372,7 +1372,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人倒下",
+   "hint_cn": "人",
    "pinyin": [
     "dào"
    ],
@@ -1383,7 +1383,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人等候",
+   "hint_cn": "人",
    "pinyin": [
     "hòu"
    ],
@@ -1394,7 +1394,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人倚靠",
+   "hint_cn": "人",
    "pinyin": [
     "yǐ"
    ],
@@ -1405,7 +1405,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人借东西",
+   "hint_cn": "人",
    "pinyin": [
     "jiè"
    ],
@@ -1416,7 +1416,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人值日",
+   "hint_cn": "人",
    "pinyin": [
     "zhí"
    ],
@@ -1427,7 +1427,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人倾斜",
+   "hint_cn": "人",
    "pinyin": [
     "qīng"
    ],
@@ -1449,7 +1449,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人偏了",
+   "hint_cn": "人",
    "pinyin": [
     "piān"
    ],
@@ -1471,7 +1471,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人停下",
+   "hint_cn": "人",
    "pinyin": [
     "tíng"
    ],
@@ -1482,7 +1482,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Someone 亻 who can build 建 things; 建 also provides the pronunciation",
-   "hint_cn": "一个人（亻）能建造（建）东西，建也提示读音",
+   "hint_cn": "一个能建（建）东西的人（亻），建也提示读音",
    "pinyin": [
     "jiàn"
    ],
@@ -1493,7 +1493,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人偶然",
+   "hint_cn": "人",
    "pinyin": [
     "ǒu"
    ],
@@ -1504,7 +1504,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人悄悄拿别人的东西",
+   "hint_cn": "一个人悄悄拿东西",
    "pinyin": [
     "tōu"
    ],
@@ -1515,7 +1515,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人把东西还给别人",
+   "hint_cn": "一个人还东西",
    "pinyin": [
     "cháng"
    ],
@@ -1526,7 +1526,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Someone 亻 who lectures 尃; 尃 also provides the pronunciation",
-   "hint_cn": "一个人（亻）在讲课（尃），尃也提示读音",
+   "hint_cn": "一个讲课（尃）的人（亻），尃也提示读音",
    "pinyin": [
     "fù"
    ],
@@ -1537,7 +1537,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Someone 亻 by your side 旁; 旁 also provides the pronunciation",
-   "hint_cn": "一个人（亻）在你旁边（旁），旁也提示读音",
+   "hint_cn": "一个在你旁边（旁）的人（亻），旁也提示读音",
    "pinyin": [
     "bàng"
    ],
@@ -1548,7 +1548,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人昂着头，很骄傲的样子",
+   "hint_cn": "一个人昂着头",
    "pinyin": [
     "ào"
    ],
@@ -1559,7 +1559,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人和另一个人长得一样",
+   "hint_cn": "一个人很像另一个人",
    "pinyin": [
     "xiàng"
    ],
@@ -1570,7 +1570,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "person",
-   "hint_cn": "一个人直挺挺地站着，动不了",
+   "hint_cn": "一个人直挺挺的",
    "pinyin": [
     "jiāng"
    ],
@@ -1581,7 +1581,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Simplified form of 兒, a picture of a child; compare 人",
-   "hint_cn": "“兒”的简化字，画的是一个小孩；可以和人比较",
+   "hint_cn": "兒的简化字，像小孩的样子；和人比较",
    "pinyin": [
     "ér"
    ],
@@ -1592,7 +1592,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A man 儿 with two lines emphasizing their head 二",
-   "hint_cn": "一个人（儿）头上画两横（二）强调头部",
+   "hint_cn": "一个人（儿）头上用两横（二）强调头部",
    "pinyin": [
     "yuán"
    ],
@@ -1625,7 +1625,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Someone stepping 止 in front of another person 儿",
-   "hint_cn": "一个人（儿）的脚（止）走在别人前面",
+   "hint_cn": "一个人（儿）用脚（止）走在别人前面",
    "pinyin": [
     "xiān"
    ],
@@ -1680,7 +1680,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man wearing a helmet, now meaning \"pouch\"",
-   "hint_cn": "一个人戴着头盔，现在指“口袋”",
+   "hint_cn": "一个人戴着头盔，现在指口袋",
    "pinyin": [
     "dōu"
    ],
@@ -1691,7 +1691,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An arrow indicating \"enter\"",
-   "hint_cn": "一个箭头表示“进入”",
+   "hint_cn": "一个箭头表示进入",
    "pinyin": [
     "rù"
    ],
@@ -1702,7 +1702,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Jade 玉 put away 入 for safe-keeping",
-   "hint_cn": "把玉（玉）收起来（入）放好",
+   "hint_cn": "把玉（玉）收起来（入）保管好",
    "pinyin": [
     "quán"
    ],
@@ -1713,7 +1713,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two bent lines meaning \"to divide\"",
-   "hint_cn": "两条弯线表示“分开”",
+   "hint_cn": "两条弯线表示分开",
    "pinyin": [
     "bā"
    ],
@@ -1834,7 +1834,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "child",
-   "hint_cn": "一个小孩在吃东西，慢慢长大",
+   "hint_cn": "照顾小孩",
    "pinyin": [
     "yǎng"
    ],
@@ -1845,7 +1845,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An animal with horns 丷, eyes 田, nose 一, and mouth 口",
-   "hint_cn": "一只有角（丷）、眼睛（田）、鼻子（一）和嘴巴（口）的动物",
+   "hint_cn": "一只动物有角（丷）、眼睛（田）、鼻子（一）和嘴巴（口）",
    "pinyin": [
     "shòu"
    ],
@@ -1867,7 +1867,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Simplified form of 岡, clouds 网 forming over a mountain 山",
-   "hint_cn": "“岡”的简化字，云（网）罩在山（山）上",
+   "hint_cn": "岡的简化字，云（网）罩在山（山）上",
    "pinyin": [
     "gāng"
    ],
@@ -1878,7 +1878,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Two fish 冉 caught on a line 一",
-   "hint_cn": "两条鱼（冉）被钓在一条线（一）上",
+   "hint_cn": "两条鱼（冉）被钓线（一）钓上来",
    "pinyin": [
     "zài"
    ],
@@ -1889,7 +1889,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "meaning from 目 (sound from 冃)",
-   "hint_cn": "眼睛上面有个帽子，表示冒出来",
+   "hint_cn": "意思来自眼睛，声音来自帽子",
    "pinyin": [
     "mào"
    ],
@@ -1922,7 +1922,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Simplified form of 農, tilling the field 田 with a hoe 辰",
-   "hint_cn": "“農”的简化字，用锄头（辰）在田（田）里耕地",
+   "hint_cn": "農的简化字，用锄头（辰）耕田（田）",
    "pinyin": [
     "nóng"
    ],
@@ -1966,7 +1966,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水快速地流过去",
+   "hint_cn": "水流冲过来",
    "pinyin": [
     "chōng"
    ],
@@ -2010,7 +2010,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ice",
-   "hint_cn": "水结成了冰，很冷",
+   "hint_cn": "冰很冷",
    "pinyin": [
     "lěng"
    ],
@@ -2021,7 +2021,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ice",
-   "hint_cn": "水结冰了，冻住了",
+   "hint_cn": "冰把东西冻住",
    "pinyin": [
     "dòng"
    ],
@@ -2032,7 +2032,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水很干净，没有脏东西",
+   "hint_cn": "水洗得干净",
    "pinyin": [
     "jìng"
    ],
@@ -2043,7 +2043,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water in a spirit level",
-   "hint_cn": "水在一个水平仪里，表示准确",
+   "hint_cn": "水平仪里的水",
    "pinyin": [
     "zhǔn"
    ],
@@ -2054,7 +2054,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ice",
-   "hint_cn": "冰化了，水有点凉",
+   "hint_cn": "冰很凉",
    "pinyin": [
     "liáng"
    ],
@@ -2065,7 +2065,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ice",
-   "hint_cn": "冰很冷，像冰凌一样",
+   "hint_cn": "冰凌",
    "pinyin": [
     "líng"
    ],
@@ -2076,7 +2076,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ice",
-   "hint_cn": "冰碰到一起，凑在一起",
+   "hint_cn": "冰凑在一起",
    "pinyin": [
     "còu"
    ],
@@ -2087,7 +2087,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A small table; compare 丌",
-   "hint_cn": "一张小桌子；可以和不比较",
+   "hint_cn": "一张小桌子；和丌比较",
    "pinyin": [
     "jǐ"
    ],
@@ -2098,7 +2098,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "simplified form of 鳥 bird",
-   "hint_cn": "鸟的简化写法，像一只凤凰",
+   "hint_cn": "鸟的简化字",
    "pinyin": [
     "fèng"
    ],
@@ -2131,7 +2131,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A sprout 屮 growing out of a container 凵",
-   "hint_cn": "一棵小芽（屮）从容器（凵）里长出来",
+   "hint_cn": "一棵芽（屮）从容器（凵）里长出来",
    "pinyin": [
     "chū"
    ],
@@ -2142,7 +2142,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 擊; 手 provides the meaning",
-   "hint_cn": "“擊”的简化字；手提供意思",
+   "hint_cn": "擊的简化字；手表示意思",
    "pinyin": [
     "jī"
    ],
@@ -2175,7 +2175,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀把东西切开",
+   "hint_cn": "用刀切东西",
    "pinyin": [
     "qiè"
    ],
@@ -2197,7 +2197,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "line",
-   "hint_cn": "排成一条线，像队列",
+   "hint_cn": "排成一行",
    "pinyin": [
     "liè"
    ],
@@ -2208,7 +2208,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Laws inscribed 刂 on a slate 贝",
-   "hint_cn": "在石板（贝）上刻法律（刂）",
+   "hint_cn": "法律刻（刂）在石板（贝）上",
    "pinyin": [
     "zé"
    ],
@@ -2219,7 +2219,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "刀很锋利，很刚硬",
+   "hint_cn": "刀很刚硬",
    "pinyin": [
     "gāng"
    ],
@@ -2230,7 +2230,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀开始做东西，创造",
+   "hint_cn": "用刀创造",
    "pinyin": [
     "chuàng"
    ],
@@ -2241,7 +2241,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Cutting 刀 the cloth 衤 is the first step in making clothes",
-   "hint_cn": "用刀（刀）裁布（衤）是做衣服的第一步",
+   "hint_cn": "用刀（刀）剪布（衤）是做衣服的第一步",
    "pinyin": [
     "chū"
    ],
@@ -2252,7 +2252,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀把东西分开，判断",
+   "hint_cn": "用刀判断",
    "pinyin": [
     "pàn"
    ],
@@ -2274,7 +2274,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To draw boundaries 刂 between classes 另",
-   "hint_cn": "用刀（刂）在另（另）外的地方划界限",
+   "hint_cn": "用刀（刂）在另（另）的东西之间划界限",
    "pinyin": [
     "bié"
    ],
@@ -2296,7 +2296,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "arrive",
-   "hint_cn": "到达了某个地方",
+   "hint_cn": "到达",
    "pinyin": [
     "dào"
    ],
@@ -2318,7 +2318,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀尖刺进去",
+   "hint_cn": "用刀刺",
    "pinyin": [
     "cì"
    ],
@@ -2329,7 +2329,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀在东西上刻字",
+   "hint_cn": "用刀刻",
    "pinyin": [
     "kè"
    ],
@@ -2340,7 +2340,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀把东西剁碎",
+   "hint_cn": "用刀剁",
    "pinyin": [
     "duò"
    ],
@@ -2362,7 +2362,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "像一把刀一样的武器",
+   "hint_cn": "刀剑",
    "pinyin": [
     "jiàn"
    ],
@@ -2373,7 +2373,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀切后剩下的东西",
+   "hint_cn": "用刀剩下",
    "pinyin": [
     "shèng"
    ],
@@ -2384,7 +2384,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀把东西分成两份",
+   "hint_cn": "用刀剖开",
    "pinyin": [
     "fù"
    ],
@@ -2395,7 +2395,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀把东西割开",
+   "hint_cn": "用刀割",
    "pinyin": [
     "gē"
    ],
@@ -2406,7 +2406,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "knife",
-   "hint_cn": "用刀把东西劈开",
+   "hint_cn": "用刀劈开",
    "pinyin": [
     "pī"
    ],
@@ -2428,7 +2428,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "用力气去做事情",
+   "hint_cn": "用力办事",
    "pinyin": [
     "bàn"
    ],
@@ -2439,7 +2439,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Results produced by capable 力 labor 工; 工 also provides the pronunciation",
-   "hint_cn": "有能力的（力）劳动（工）产生的结果；工也提示读音",
+   "hint_cn": "有能力的（力）劳动（工）产生的结果，工也提示读音",
    "pinyin": [
     "gōng"
    ],
@@ -2450,7 +2450,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Supporting a cause with the strength 力 of one's words 口",
-   "hint_cn": "用言语（口）的力量（力）支持一件事",
+   "hint_cn": "用言语（口）的力量（力）支持某件事",
    "pinyin": [
     "jiā"
    ],
@@ -2472,7 +2472,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "用力气让东西动起来",
+   "hint_cn": "用力动",
    "pinyin": [
     "dòng"
    ],
@@ -2483,7 +2483,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "用力气帮助别人",
+   "hint_cn": "用力帮助",
    "pinyin": [
     "zhù"
    ],
@@ -2494,7 +2494,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "用力气努力做事",
+   "hint_cn": "用力努力",
    "pinyin": [
     "nǔ"
    ],
@@ -2505,7 +2505,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "力气很大，有劲",
+   "hint_cn": "用力气",
    "pinyin": [
     "jìn"
    ],
@@ -2527,7 +2527,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "用力气做出一种姿势",
+   "hint_cn": "用力气",
    "pinyin": [
     "shì"
    ],
@@ -2538,7 +2538,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "有力气，很勇敢",
+   "hint_cn": "有力气勇敢",
    "pinyin": [
     "yǒng"
    ],
@@ -2549,7 +2549,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "用力气拉紧绳子",
+   "hint_cn": "用力勒住",
    "pinyin": [
     "lēi"
    ],
@@ -2560,7 +2560,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strength",
-   "hint_cn": "用力气勤劳地做事",
+   "hint_cn": "用力勤劳",
    "pinyin": [
     "qín"
    ],
@@ -2582,7 +2582,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To swaddle 勹 a baby 巳; 勹 also provides the pronunciation",
-   "hint_cn": "把婴儿（巳）裹起来（勹）；勹也提示读音",
+   "hint_cn": "用布（勹）把婴儿（巳）裹起来，勹也提示读音",
    "pinyin": [
     "bāo"
    ],
@@ -2604,7 +2604,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Two people 匕 sitting back-to-back; phonetic loan for \"north\"",
-   "hint_cn": "两个人（匕）背靠背坐着；借来表示“北方”",
+   "hint_cn": "两个人（匕）背靠背坐着；借来表示北方",
    "pinyin": [
     "běi"
    ],
@@ -2615,7 +2615,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "spoon",
-   "hint_cn": "像一把小勺子",
+   "hint_cn": "勺子",
    "pinyin": [
     "chí",
     "shī"
@@ -2638,7 +2638,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A place 匸 under a lord's control 乂",
-   "hint_cn": "领主（乂）控制的地方（匸）",
+   "hint_cn": "一个地方（匸）在领主控制（乂）下",
    "pinyin": [
     "qū"
    ],
@@ -2649,7 +2649,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "arrow",
-   "hint_cn": "用箭来治病，像医生",
+   "hint_cn": "用箭治病",
    "pinyin": [
     "yī"
    ],
@@ -2726,7 +2726,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "buy",
-   "hint_cn": "把东西卖给别人",
+   "hint_cn": "买东西",
    "pinyin": [
     "mài"
    ],
@@ -2748,7 +2748,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ten",
-   "hint_cn": "十个人一起，表示很多",
+   "hint_cn": "十个人博学",
    "pinyin": [
     "bó"
    ],
@@ -2792,7 +2792,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 㔾 at the edge of a cliff 厃; 厃 also provides the pronunciation",
-   "hint_cn": "一个人（㔾）在悬崖边（厃）；厃也提示读音",
+   "hint_cn": "一个人（㔾）在悬崖（厃）边上，厃也提示读音",
    "pinyin": [
     "wēi"
    ],
@@ -2814,7 +2814,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "seal",
-   "hint_cn": "像印章一样，表示退却",
+   "hint_cn": "印章",
    "pinyin": [
     "què"
    ],
@@ -2836,7 +2836,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "stop",
-   "hint_cn": "停下来，把东西卸下来",
+   "hint_cn": "停下来卸货",
    "pinyin": [
     "xiè"
    ],
@@ -2858,7 +2858,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "spacious",
-   "hint_cn": "宽敞的大房间",
+   "hint_cn": "宽敞的厅",
    "pinyin": [
     "tīng"
    ],
@@ -2869,7 +2869,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "calendar",
-   "hint_cn": "像日历一样，记录时间",
+   "hint_cn": "日历",
    "pinyin": [
     "lì"
    ],
@@ -2902,7 +2902,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cliff",
-   "hint_cn": "像山崖一样，表示压住",
+   "hint_cn": "悬崖边",
    "pinyin": [
     "yàn"
    ],
@@ -2924,7 +2924,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cliff",
-   "hint_cn": "像山崖下的泉水，表示源头",
+   "hint_cn": "悬崖下的平原",
    "pinyin": [
     "yuán"
    ],
@@ -2935,7 +2935,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "building",
-   "hint_cn": "像房子旁边的房间",
+   "hint_cn": "房子里的厢房",
    "pinyin": [
     "xiāng"
    ],
@@ -2946,7 +2946,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "building",
-   "hint_cn": "像马住的房子",
+   "hint_cn": "马厩",
    "pinyin": [
     "jiù"
    ],
@@ -2968,7 +2968,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 彡)",
-   "hint_cn": "像三颗星星，表示参加",
+   "hint_cn": "声音来自三撇",
    "pinyin": [
     "cān"
    ],
@@ -2979,7 +2979,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A right hand, representing a pair; compare 左",
-   "hint_cn": "一只右手，代表一对；比较“左”",
+   "hint_cn": "一只右手，代表一对；和“左”相对",
    "pinyin": [
     "yòu"
    ],
@@ -3078,7 +3078,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Something 冖 passed from one hand 爫 to another 又",
-   "hint_cn": "东西从一只手递到另一只手",
+   "hint_cn": "东西从一只手传到另一只手",
    "pinyin": [
     "shòu"
    ],
@@ -3155,7 +3155,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "用嘴巴大声叫",
+   "hint_cn": "用嘴叫",
    "pinyin": [
     "jiào"
    ],
@@ -3166,7 +3166,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "用嘴巴召唤别人",
+   "hint_cn": "用嘴召唤",
    "pinyin": [
     "zhào"
    ],
@@ -3177,7 +3177,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "用嘴巴发出叮的声音",
+   "hint_cn": "用嘴叮",
    "pinyin": [
     "dīng"
    ],
@@ -3188,7 +3188,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "vigorous",
-   "hint_cn": "有力气，可以做到",
+   "hint_cn": "有力气可以",
    "pinyin": [
     "kě"
    ],
@@ -3243,7 +3243,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "用嘴巴大声喊号",
+   "hint_cn": "用嘴号叫",
    "pinyin": [
     "hào"
    ],
@@ -3276,7 +3276,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "用嘴巴发出叽叽的声音",
+   "hint_cn": "用嘴叽叽",
    "pinyin": [
     "jī"
    ],
@@ -3287,7 +3287,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "用嘴巴吃东西",
+   "hint_cn": "用嘴吃",
    "pinyin": [
     "chī"
    ],
@@ -3309,7 +3309,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "张大嘴巴喊叫",
+   "hint_cn": "张大嘴巴喊",
    "pinyin": [
     "yāo"
    ],
@@ -3375,7 +3375,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴把东西吐出来",
+   "hint_cn": "嘴巴把东西送出来",
    "pinyin": [
     "tǔ"
    ],
@@ -3397,7 +3397,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴发出大声",
+   "hint_cn": "嘴巴大声喊",
    "pinyin": [
     "zhà"
    ],
@@ -3408,7 +3408,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "张大嘴巴吓人",
+   "hint_cn": "嘴巴发出吓人的声音",
    "pinyin": [
     "xià"
    ],
@@ -3485,7 +3485,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴发出吱吱声",
+   "hint_cn": "嘴巴发出小小的声音",
    "pinyin": [
     "zhī"
    ],
@@ -3496,7 +3496,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴吵吵闹闹",
+   "hint_cn": "嘴巴发出吵闹声",
    "pinyin": [
     "chǎo"
    ],
@@ -3518,7 +3518,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴吹气",
+   "hint_cn": "嘴巴把气吹出去",
    "pinyin": [
     "chuī"
    ],
@@ -3529,7 +3529,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "张大嘴巴大声吼",
+   "hint_cn": "嘴巴大声吼叫",
    "pinyin": [
     "hǒu"
    ],
@@ -3584,7 +3584,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To speak 口 with the force of an ox 牛",
-   "hint_cn": "像牛一样用力地说出来",
+   "hint_cn": "像牛一样用力地说话",
    "pinyin": [
     "gào"
    ],
@@ -3595,7 +3595,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴大声喊",
+   "hint_cn": "嘴巴大声喊叫",
    "pinyin": [
     "nà"
    ],
@@ -3662,7 +3662,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴吐口水",
+   "hint_cn": "嘴巴把东西吐出来",
    "pinyin": [
     "pēi"
    ],
@@ -3673,7 +3673,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴呼气",
+   "hint_cn": "嘴巴把气呼出来",
    "pinyin": [
     "hū"
    ],
@@ -3761,7 +3761,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴咪咪叫",
+   "hint_cn": "嘴巴发出咪咪声",
    "pinyin": [
     "mī"
    ],
@@ -3783,7 +3783,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴说咱们",
+   "hint_cn": "嘴巴说我们",
    "pinyin": [
     "zán"
    ],
@@ -3794,7 +3794,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴把东西咽下",
+   "hint_cn": "嘴巴把食物咽下",
    "pinyin": [
     "yàn"
    ],
@@ -3805,7 +3805,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴发出哀伤声",
+   "hint_cn": "嘴巴发出悲伤声",
    "pinyin": [
     "āi"
    ],
@@ -3893,7 +3893,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴学牛哞哞叫",
+   "hint_cn": "嘴巴学牛叫",
    "pinyin": [
     "mōu"
    ],
@@ -3926,7 +3926,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴发出哦声",
+   "hint_cn": "嘴巴明白了",
    "pinyin": [
     "ó"
    ],
@@ -3937,7 +3937,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴吹口哨",
+   "hint_cn": "嘴巴吹哨子",
    "pinyin": [
     "shào"
    ],
@@ -3948,7 +3948,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴发出哩哩声",
+   "hint_cn": "嘴巴轻轻说",
    "pinyin": [
     "lī"
    ],
@@ -3981,7 +3981,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴大声哮叫",
+   "hint_cn": "嘴巴大声喘叫",
    "pinyin": [
     "xiāo"
    ],
@@ -4003,7 +4003,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴哼哼声",
+   "hint_cn": "嘴巴哼一声",
    "pinyin": [
     "hēng"
    ],
@@ -4025,7 +4025,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴大声呼唤",
+   "hint_cn": "嘴巴叫人来",
    "pinyin": [
     "huàn"
    ],
@@ -4069,7 +4069,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴吐唾沫",
+   "hint_cn": "嘴巴吐口水",
    "pinyin": [
     "tuò"
    ],
@@ -4080,7 +4080,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴像鸟啄东西",
+   "hint_cn": "嘴巴像鸟啄食",
    "pinyin": [
     "zhuó"
    ],
@@ -4091,7 +4091,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bright",
-   "hint_cn": "明亮的星星在商量",
+   "hint_cn": "明亮的火光下商量",
    "pinyin": [
     "shāng"
    ],
@@ -4102,7 +4102,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴发出啊啊声",
+   "hint_cn": "嘴巴张大啊一声",
    "pinyin": [
     "a"
    ],
@@ -4113,7 +4113,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴啐一口",
+   "hint_cn": "嘴巴吐口水的声音",
    "pinyin": [
     "cuì"
    ],
@@ -4146,7 +4146,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴大声呼啸",
+   "hint_cn": "嘴巴长长地呼啸",
    "pinyin": [
     "xiào"
    ],
@@ -4168,7 +4168,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mouth",
-   "hint_cn": "嘴巴喊喂喂",
+   "hint_cn": "嘴巴喊人喂",
    "pinyin": [
     "wèi"
    ],
@@ -4388,7 +4388,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A happy 喜 sound 口; 喜 also provides the pronunciation",
-   "hint_cn": "开心地笑出声",
+   "hint_cn": "高兴时发出的笑声",
    "pinyin": [
     "xī"
    ],
@@ -4476,7 +4476,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Originally, a spiral signifying return",
-   "hint_cn": "像螺旋一样转回来",
+   "hint_cn": "像漩涡一样转回来",
    "pinyin": [
     "huí"
    ],
@@ -4597,7 +4597,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 聖; a king 王 of listening 耳  and speaking口",
-   "hint_cn": "会听会说的国王",
+   "hint_cn": "又听又说的国王",
    "pinyin": [
     "shèng"
    ],
@@ -4839,7 +4839,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Earthen 土 walls built for defense 保; 保 also provides the meaning",
-   "hint_cn": "用泥土筑墙来保护",
+   "hint_cn": "用泥土筑成的防御墙",
    "pinyin": [
     "bǎo"
    ],
@@ -5026,7 +5026,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Night-time 夕 divinations 卜; the supernatural, the foreign",
-   "hint_cn": "晚上占卜，表示神秘、外来",
+   "hint_cn": "晚上占卜，表示神秘、外来的",
    "pinyin": [
     "wài"
    ],
@@ -5048,7 +5048,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 亻 sneaking by under cover 亠 of night 夕",
-   "hint_cn": "一个人偷偷在夜里走",
+   "hint_cn": "一个人趁夜色偷偷走",
    "pinyin": [
     "yè"
    ],
@@ -5070,7 +5070,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man 人 with outstretched arms",
-   "hint_cn": "一个人张开双臂",
+   "hint_cn": "一个张开双臂的人",
    "pinyin": [
     "dà"
    ],
@@ -5180,7 +5180,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man 大 working on the farm 田",
-   "hint_cn": "一个人在田里劳动",
+   "hint_cn": "一个人在田里干活",
    "pinyin": [
     "fèn"
    ],
@@ -5202,7 +5202,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A contract signed by cutting 刀 notches 丰 in wood 木 (now changed to 大)",
-   "hint_cn": "在木头上刻刀痕签合同",
+   "hint_cn": "在木头上刻刀痕做记号签合同",
    "pinyin": [
     "qì"
    ],
@@ -5345,7 +5345,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示小女孩",
+   "hint_cn": "女子",
    "pinyin": [
     "nī"
    ],
@@ -5356,7 +5356,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示妹妹",
+   "hint_cn": "女子",
    "pinyin": [
     "mèi"
    ],
@@ -5378,7 +5378,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示开始",
+   "hint_cn": "女子",
    "pinyin": [
     "shǐ"
    ],
@@ -5389,7 +5389,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示姐姐",
+   "hint_cn": "女子",
    "pinyin": [
     "jiě"
    ],
@@ -5400,7 +5400,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An older 古 woman 女; 古 also provides the pronunciation",
-   "hint_cn": "年长的女人",
+   "hint_cn": "年纪大的女人",
    "pinyin": [
     "gū"
    ],
@@ -5411,7 +5411,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示姓氏",
+   "hint_cn": "女子",
    "pinyin": [
     "xìng"
    ],
@@ -5433,7 +5433,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示连襟",
+   "hint_cn": "女子",
    "pinyin": [
     "yà"
    ],
@@ -5444,7 +5444,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示妈妈",
+   "hint_cn": "女子",
    "pinyin": [
     "niáng"
    ],
@@ -5455,7 +5455,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示女子名字",
+   "hint_cn": "女子",
    "pinyin": [
     "nà"
    ],
@@ -5466,7 +5466,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示女娲",
+   "hint_cn": "女子",
    "pinyin": [
     "wā"
    ],
@@ -5488,7 +5488,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示结婚",
+   "hint_cn": "女子",
    "pinyin": [
     "hūn"
    ],
@@ -5499,7 +5499,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示女婿",
+   "hint_cn": "女子",
    "pinyin": [
     "xù"
    ],
@@ -5510,7 +5510,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示出嫁",
+   "hint_cn": "女子",
    "pinyin": [
     "jià"
    ],
@@ -5521,7 +5521,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示嫌弃",
+   "hint_cn": "女子",
    "pinyin": [
     "xián"
    ],
@@ -5532,7 +5532,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示柔嫩",
+   "hint_cn": "女子",
    "pinyin": [
     "nèn"
    ],
@@ -5543,7 +5543,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "woman",
-   "hint_cn": "一个女子，表示嬉戏",
+   "hint_cn": "女子",
    "pinyin": [
     "xī"
    ],
@@ -5554,7 +5554,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A child in a wrap, with outstretched arms but bundled legs",
-   "hint_cn": "裹在襁褓里的孩子，手臂张开腿被包着",
+   "hint_cn": "裹在襁褓里的孩子，手伸着腿裹着",
    "pinyin": [
     "zi"
    ],
@@ -5576,7 +5576,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "seed",
-   "hint_cn": "一颗种子，表示存在",
+   "hint_cn": "种子",
    "pinyin": [
     "cún"
    ],
@@ -5587,7 +5587,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "script",
-   "hint_cn": "手拿工具，表示勤勉",
+   "hint_cn": "文字",
    "pinyin": [
     "zī"
    ],
@@ -5598,7 +5598,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The time for planting seeds 子 of grain 禾",
-   "hint_cn": "种谷子的时节",
+   "hint_cn": "禾苗结籽的时候",
    "pinyin": [
     "jì"
    ],
@@ -5609,7 +5609,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A building 冖 where children 子 study; ⺍ provides the pronunciation",
-   "hint_cn": "孩子们学习的房子",
+   "hint_cn": "孩子们在屋子里学习",
    "pinyin": [
     "xué"
    ],
@@ -5620,7 +5620,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "child",
-   "hint_cn": "一个小孩，表示孩子",
+   "hint_cn": "小孩",
    "pinyin": [
     "hái"
    ],
@@ -5631,7 +5631,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To brood 孚 over eggs 卵",
-   "hint_cn": "鸟妈妈趴在蛋上孵小鸟",
+   "hint_cn": "鸟趴在蛋上孵小鸟",
    "pinyin": [
     "fū"
    ],
@@ -5642,7 +5642,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示安宁",
+   "hint_cn": "屋顶",
    "pinyin": [
     "níng"
    ],
@@ -5664,7 +5664,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "building",
-   "hint_cn": "一座建筑，表示房屋",
+   "hint_cn": "房屋",
    "pinyin": [
     "yǔ"
    ],
@@ -5697,7 +5697,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示完成",
+   "hint_cn": "屋顶",
    "pinyin": [
     "wán"
    ],
@@ -5708,7 +5708,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An altar 示 to the ancestor spirits found in one's home 宀",
-   "hint_cn": "家里供奉祖先的祭台",
+   "hint_cn": "屋里供奉祖先的祭台",
    "pinyin": [
     "zōng"
    ],
@@ -5730,7 +5730,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof - the sky",
-   "hint_cn": "屋顶下的天空，表示宇宙",
+   "hint_cn": "屋顶——天空",
    "pinyin": [
     "zhòu"
    ],
@@ -5752,7 +5752,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Jade 玉 kept in one's house 宀",
-   "hint_cn": "家里珍藏的玉石",
+   "hint_cn": "屋里藏着美玉",
    "pinyin": [
     "bǎo"
    ],
@@ -5785,7 +5785,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A palace, where proclamations are made",
-   "hint_cn": "宣布政令的宫殿",
+   "hint_cn": "发布公告的宫殿",
    "pinyin": [
     "xuān"
    ],
@@ -5796,7 +5796,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示房间",
+   "hint_cn": "屋顶",
    "pinyin": [
     "shì"
    ],
@@ -5807,7 +5807,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示宫殿",
+   "hint_cn": "屋顶",
    "pinyin": [
     "gōng"
    ],
@@ -5840,7 +5840,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示家庭",
+   "hint_cn": "屋顶",
    "pinyin": [
     "jiā"
    ],
@@ -5851,7 +5851,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示容纳",
+   "hint_cn": "屋顶",
    "pinyin": [
     "róng"
    ],
@@ -5873,7 +5873,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示富有",
+   "hint_cn": "屋顶",
    "pinyin": [
     "fù"
    ],
@@ -5895,7 +5895,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "roof",
-   "hint_cn": "一个屋顶，表示观察",
+   "hint_cn": "屋顶",
    "pinyin": [
     "chá"
    ],
@@ -5906,7 +5906,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A pair 又 of hands 寸",
-   "hint_cn": "一双手成对",
+   "hint_cn": "两只手成一对",
    "pinyin": [
     "duì"
    ],
@@ -5917,7 +5917,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "snout",
-   "hint_cn": "一个鼻子，表示寻找",
+   "hint_cn": "鼻子",
    "pinyin": [
     "xún"
    ],
@@ -5939,7 +5939,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To seal 寸 something with a handful of mortar 土",
-   "hint_cn": "用手捧土把东西封起来",
+   "hint_cn": "用手把土封起来",
    "pinyin": [
     "fēng"
    ],
@@ -5972,7 +5972,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 寸 making an offering of wine 酋",
-   "hint_cn": "用手献上美酒",
+   "hint_cn": "用手捧着酒献上",
    "pinyin": [
     "zūn"
    ],
@@ -5983,7 +5983,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Dividing 八 by a line 亅",
-   "hint_cn": "用一条线把东西分开成小份",
+   "hint_cn": "用线把东西分开成小份",
    "pinyin": [
     "xiǎo"
    ],
@@ -5994,7 +5994,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Grains of sand; 小 provides the pronunciation and meaning",
-   "hint_cn": "像沙粒一样细小",
+   "hint_cn": "像沙粒一样少",
    "pinyin": [
     "shǎo"
    ],
@@ -6016,7 +6016,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "small",
-   "hint_cn": "小小的，表示小",
+   "hint_cn": "小",
    "pinyin": [
     "gǎ"
    ],
@@ -6027,7 +6027,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A point, small 小 over big 大",
-   "hint_cn": "上小下大，形成尖尖的头",
+   "hint_cn": "上小下大，尖尖的",
    "pinyin": [
     "jiān"
    ],
@@ -6049,7 +6049,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 尢)",
-   "hint_cn": "声音从尢来，表示尤其",
+   "hint_cn": "（来自尢的声音）",
    "pinyin": [
     "yóu"
    ],
@@ -6060,7 +6060,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "specialty",
-   "hint_cn": "专门做某事，表示成就",
+   "hint_cn": "专长",
    "pinyin": [
     "jiù"
    ],
@@ -6104,7 +6104,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "body",
-   "hint_cn": "一个身体，表示屁股",
+   "hint_cn": "身体",
    "pinyin": [
     "pì"
    ],
@@ -6126,7 +6126,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "door",
-   "hint_cn": "一扇门，表示居住",
+   "hint_cn": "门",
    "pinyin": [
     "jū"
    ],
@@ -6148,7 +6148,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "body",
-   "hint_cn": "一个身体，表示碎屑",
+   "hint_cn": "身体",
    "pinyin": [
     "xiè"
    ],
@@ -6170,7 +6170,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "body",
-   "hint_cn": "一个身体，表示属于",
+   "hint_cn": "身体",
    "pinyin": [
     "shǔ"
    ],
@@ -6225,7 +6225,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The space between 夹 two mountains 山; 夹 also provides the pronunciation",
-   "hint_cn": "两座山之间的窄缝",
+   "hint_cn": "两座山之间的缝隙",
    "pinyin": [
     "xiá"
    ],
@@ -6236,7 +6236,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mountain",
-   "hint_cn": "一座山，表示高耸",
+   "hint_cn": "山",
    "pinyin": [
     "é"
    ],
@@ -6247,7 +6247,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mountain",
-   "hint_cn": "一座山，表示陡峭",
+   "hint_cn": "山",
    "pinyin": [
     "qiào"
    ],
@@ -6258,7 +6258,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mountain",
-   "hint_cn": "一座山，表示高大",
+   "hint_cn": "山",
    "pinyin": [
     "wēi"
    ],
@@ -6291,7 +6291,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A spade or other workman's tool",
-   "hint_cn": "工人用的铲子或工具",
+   "hint_cn": "工人用的铲子",
    "pinyin": [
     "gōng"
    ],
@@ -6313,7 +6313,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "work",
-   "hint_cn": "做工，表示巧妙",
+   "hint_cn": "做工",
    "pinyin": [
     "qiǎo"
    ],
@@ -6401,7 +6401,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cloth",
-   "hint_cn": "一块布，表示船帆",
+   "hint_cn": "布",
    "pinyin": [
     "fān"
    ],
@@ -6412,7 +6412,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To skillfully wield 帀 a knife 刂",
-   "hint_cn": "熟练地拿刀",
+   "hint_cn": "熟练地用刀",
    "pinyin": [
     "shī"
    ],
@@ -6456,7 +6456,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A belt, creasing one's robe above 卅 but not below 巾",
-   "hint_cn": "一条腰带，在卅上方束紧长袍，在巾下方不束",
+   "hint_cn": "一条腰带，在卅上、巾下系紧长袍",
    "pinyin": [
     "dài"
    ],
@@ -6467,7 +6467,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A cloth 巾 or straw 艹 mat in the house 广",
-   "hint_cn": "屋里广铺的布巾或草席艹",
+   "hint_cn": "屋里广用草艹或布巾编的垫子",
    "pinyin": [
     "xí"
    ],
@@ -6489,7 +6489,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cloth",
-   "hint_cn": "一块布，表示经常",
+   "hint_cn": "布",
    "pinyin": [
     "cháng"
    ],
@@ -6500,7 +6500,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "towel",
-   "hint_cn": "一块布，表示帽子",
+   "hint_cn": "毛巾",
    "pinyin": [
     "mào"
    ],
@@ -6566,7 +6566,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two men, one alive 土 and one dead 干; the living one is lucky",
-   "hint_cn": "两个人，一个活人土和一个死人干；活着的人很幸运",
+   "hint_cn": "两个人，一个活人土和一个死人干；活着的那个很幸运",
    "pinyin": [
     "xìng"
    ],
@@ -6577,7 +6577,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Sunlight 龺 suggests \"dry\"; a club 人干 suggests \"invade\"",
-   "hint_cn": "阳光龺表示“干燥”；人干棍棒表示“侵犯”",
+   "hint_cn": "阳光龺表示干燥；人干棍棒表示入侵",
    "pinyin": [
     "gàn"
    ],
@@ -6588,7 +6588,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An inversion of 予, \"to give\"",
-   "hint_cn": "予（“给予”）的倒写",
+   "hint_cn": "予（给予）的倒写",
    "pinyin": [
     "huàn"
    ],
@@ -6599,7 +6599,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "One with little 幺 strength 力; 幺 also provides the pronunciation",
-   "hint_cn": "一个力气力很小幺的人；幺也提示读音",
+   "hint_cn": "力气力很小幺的人；幺也提示读音",
    "pinyin": [
     "yòu"
    ],
@@ -6610,7 +6610,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A lean-to 厂, suggesting a building",
-   "hint_cn": "一个单坡棚厂，表示一座建筑",
+   "hint_cn": "一个棚子厂，表示房屋",
    "pinyin": [
     "guǎng"
    ],
@@ -6621,7 +6621,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "house",
-   "hint_cn": "一座房子，表示村庄",
+   "hint_cn": "房子",
    "pinyin": [
     "zhuāng"
    ],
@@ -6643,7 +6643,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "house",
-   "hint_cn": "一座房子，表示庇护",
+   "hint_cn": "房子",
    "pinyin": [
     "bì"
    ],
@@ -6654,7 +6654,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A house 广 made out of wood 木; 广 also provides the pronunciation",
-   "hint_cn": "用木头木做成的房屋广；广也提示读音",
+   "hint_cn": "用木头木做的房屋广；广也提示读音",
    "pinyin": [
     "chuáng"
    ],
@@ -6687,7 +6687,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "building",
-   "hint_cn": "一座建筑，表示底部",
+   "hint_cn": "建筑",
    "pinyin": [
     "dǐ"
    ],
@@ -6698,7 +6698,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "building",
-   "hint_cn": "一座建筑，表示店铺",
+   "hint_cn": "建筑",
    "pinyin": [
     "diàn"
    ],
@@ -6709,7 +6709,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wide",
-   "hint_cn": "宽敞的地方，表示官府",
+   "hint_cn": "宽阔",
    "pinyin": [
     "fǔ"
    ],
@@ -6720,7 +6720,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Twenty 廿 people 又 meeting inside a building 广 to deliberate",
-   "hint_cn": "二十廿个人又在建筑广里会面商议",
+   "hint_cn": "二十廿个人又在大屋广里开会商量",
    "pinyin": [
     "dù"
    ],
@@ -6731,7 +6731,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A wide 广 seat 坐; 坐 also provides the pronunciation",
-   "hint_cn": "一个宽大的广座位坐；坐也提示读音",
+   "hint_cn": "宽大的广座位坐；坐也提示读音",
    "pinyin": [
     "zuò"
    ],
@@ -6742,7 +6742,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A wide 广 couryard 廷; 廷 also provides the pronunciation",
-   "hint_cn": "一个宽大的广庭院廷；廷也提示读音",
+   "hint_cn": "宽大的广庭院廷；廷也提示读音",
    "pinyin": [
     "tíng"
    ],
@@ -6753,7 +6753,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A home 广 with a servant 隶",
-   "hint_cn": "一个有仆人隶的家广",
+   "hint_cn": "有仆人隶的家广",
    "pinyin": [
     "kāng"
    ],
@@ -6764,7 +6764,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wide",
-   "hint_cn": "宽敞的地方，表示走廊",
+   "hint_cn": "宽阔",
    "pinyin": [
     "láng"
    ],
@@ -6775,7 +6775,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "action",
-   "hint_cn": "一个动作，表示建立",
+   "hint_cn": "动作",
    "pinyin": [
     "jiàn"
    ],
@@ -6786,7 +6786,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 開; hands 廾 lifting the latch 一 of a door",
-   "hint_cn": "開的简化字；双手廾抬起门的一一插销",
+   "hint_cn": "開的简化字；双手廾抬起门的一横闩",
    "pinyin": [
     "kāi"
    ],
@@ -6797,7 +6797,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two hands 廾 discarding a dead, swaddled baby 亠厶",
-   "hint_cn": "双手廾丢弃一个裹着襁褓的死婴亠厶",
+   "hint_cn": "双手廾丢弃一个裹着的死婴亠厶",
    "pinyin": [
     "qì"
    ],
@@ -6808,7 +6808,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two hands 廾 playing with a piece of jade 玉; 廾 also provides the pronunciation",
-   "hint_cn": "双手廾把玩一块玉玉；廾也提示读音",
+   "hint_cn": "双手廾玩一块玉；廾也提示读音",
    "pinyin": [
     "nòng"
    ],
@@ -6819,7 +6819,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A craftsman using an awl 弋 and a measuring square 工",
-   "hint_cn": "工匠使用锥子弋和量角尺工",
+   "hint_cn": "工匠用锥子弋和矩尺工",
    "pinyin": [
     "shì"
    ],
@@ -6852,7 +6852,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two arrows 丨 pulled across a bow",
-   "hint_cn": "两支箭丨被拉过一张弓",
+   "hint_cn": "两支箭丨被拉过弓",
    "pinyin": [
     "fú"
    ],
@@ -6874,7 +6874,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bow",
-   "hint_cn": "一把弓，表示张开",
+   "hint_cn": "弓",
    "pinyin": [
     "zhāng"
    ],
@@ -6885,7 +6885,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bow",
-   "hint_cn": "一把弓，表示弓弦",
+   "hint_cn": "弓",
    "pinyin": [
     "xián"
    ],
@@ -6907,7 +6907,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bow",
-   "hint_cn": "一把弓，表示弹射",
+   "hint_cn": "弓",
    "pinyin": [
     "dàn"
    ],
@@ -6918,7 +6918,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bow",
-   "hint_cn": "一把弓，表示强壮",
+   "hint_cn": "弓",
    "pinyin": [
     "qiáng"
    ],
@@ -6940,7 +6940,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Sunlight 彡 streaming through a window 开",
-   "hint_cn": "阳光彡透过窗户开照射进来",
+   "hint_cn": "阳光彡从窗户开照进来",
    "pinyin": [
     "xíng"
    ],
@@ -6951,7 +6951,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hair",
-   "hint_cn": "毛发，表示彩色",
+   "hint_cn": "毛发",
    "pinyin": [
     "cǎi"
    ],
@@ -6962,7 +6962,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cut",
-   "hint_cn": "切割，表示彻底",
+   "hint_cn": "切割",
    "pinyin": [
     "chè"
    ],
@@ -6973,7 +6973,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "step",
-   "hint_cn": "脚步，表示前往",
+   "hint_cn": "脚步",
    "pinyin": [
     "wǎng"
    ],
@@ -6984,7 +6984,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "step",
-   "hint_cn": "脚步，表示征途",
+   "hint_cn": "脚步",
    "pinyin": [
     "zhēng"
    ],
@@ -6995,7 +6995,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To welcome someone arriving 彳 at the royal court 寺",
-   "hint_cn": "迎接来到朝廷寺的人彳",
+   "hint_cn": "在朝廷寺迎接来人彳",
    "pinyin": [
     "dài"
    ],
@@ -7006,7 +7006,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "step",
-   "hint_cn": "脚步，表示很",
+   "hint_cn": "脚步",
    "pinyin": [
     "hěn"
    ],
@@ -7017,7 +7017,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To walk 彳 as required by law 聿",
-   "hint_cn": "按照法律聿的要求行走彳",
+   "hint_cn": "按照法律聿行走彳",
    "pinyin": [
     "lǜ"
    ],
@@ -7028,7 +7028,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To walk 走 in someone's footsteps 彳",
-   "hint_cn": "沿着某人的足迹彳行走走",
+   "hint_cn": "踩着别人的脚步彳走",
    "pinyin": [
     "tú"
    ],
@@ -7039,7 +7039,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 寸 grabbing a shell 旦",
-   "hint_cn": "一只手寸抓住一个贝壳旦",
+   "hint_cn": "一只手寸抓住贝壳旦",
    "pinyin": [
     "dé"
    ],
@@ -7061,7 +7061,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心，表示品德",
+   "hint_cn": "心",
    "pinyin": [
     "dé"
    ],
@@ -7094,7 +7094,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A knife 刃 piercing the heart 心; 刃 also provides the pronunciation",
-   "hint_cn": "一把刀刃刺穿心脏心；刃也提示读音",
+   "hint_cn": "刀刃刺穿心脏心；刃也提示读音",
    "pinyin": [
     "rěn"
    ],
@@ -7105,7 +7105,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The mind 心 of a scholar 士; 士 also provides the pronunciation",
-   "hint_cn": "一个学者士的心心；士也提示读音",
+   "hint_cn": "读书人土的心心；士也提示读音",
    "pinyin": [
     "zhì"
    ],
@@ -7127,7 +7127,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A heart 忄 faced with death 亡; 亡 also provides the pronunciation",
-   "hint_cn": "一颗心忄面对死亡亡；亡也提示读音",
+   "hint_cn": "心忄面对死亡亡；亡也提示读音",
    "pinyin": [
     "máng"
    ],
@@ -7138,7 +7138,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被小虫咬，有点担心",
+   "hint_cn": "心里像小鼓在敲，有点不安",
    "pinyin": [
     "chōng"
    ],
@@ -7149,7 +7149,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像有块石头，愁愁的",
+   "hint_cn": "心里挂着事，愁愁的",
    "pinyin": [
     "yōu"
    ],
@@ -7171,7 +7171,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里一上一下，没注意就过去了",
+   "hint_cn": "心里一溜烟，没留意就过去了",
    "pinyin": [
     "hū"
    ],
@@ -7182,7 +7182,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里抱着一个小宝宝，藏着心事",
+   "hint_cn": "心里抱着一个小宝贝",
    "pinyin": [
     "huái"
    ],
@@ -7193,7 +7193,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里想的样子，表现出来",
+   "hint_cn": "心里想的样子，露在脸上",
    "pinyin": [
     "tài"
    ],
@@ -7215,7 +7215,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像有火在烧，生气啦",
+   "hint_cn": "心里像有火在烧，气鼓鼓",
    "pinyin": [
     "nù"
    ],
@@ -7226,7 +7226,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里吓得发白，害怕",
+   "hint_cn": "心里白白的，吓得直发抖",
    "pinyin": [
     "pà"
    ],
@@ -7237,7 +7237,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里觉得别人可怜，心疼",
+   "hint_cn": "心里疼惜别人，软软的",
    "pinyin": [
     "lián"
    ],
@@ -7248,7 +7248,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Weighing something with your mind 囟 (altered) and heart 心",
-   "hint_cn": "用头脑囟（变形）和心心来衡量某事",
+   "hint_cn": "用脑囟（变形）和心心衡量事情",
    "pinyin": [
     "sī"
    ],
@@ -7259,7 +7259,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被绳子勒紧，着急",
+   "hint_cn": "心里像被揪住，等不及了",
    "pinyin": [
     "jí"
    ],
@@ -7270,7 +7270,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里生来就有的脾气",
+   "hint_cn": "心里生出来的小脾气",
    "pinyin": [
     "xìng"
    ],
@@ -7281,7 +7281,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里觉得委屈，埋怨",
+   "hint_cn": "心里藏着一点小委屈",
    "pinyin": [
     "yuàn"
    ],
@@ -7303,7 +7303,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Many mouths 口 speaking with one mind 心",
-   "hint_cn": "许多嘴巴口同心心地说",
+   "hint_cn": "许多嘴巴口同心心说话",
    "pinyin": [
     "zǒng"
    ],
@@ -7314,7 +7314,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里吓得发抖，恐惧",
+   "hint_cn": "心里像有只小鹿乱撞，好害怕",
    "pinyin": [
     "kǒng"
    ],
@@ -7325,7 +7325,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像火一样散开，恢复",
+   "hint_cn": "心里像火苗慢慢散开，变宽了",
    "pinyin": [
     "huī"
    ],
@@ -7336,7 +7336,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像有根刺，恨恨的",
+   "hint_cn": "心里像有根刺，扎得难受",
    "pinyin": [
     "hèn"
    ],
@@ -7347,7 +7347,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里感受到别人的好，感恩",
+   "hint_cn": "心里记着别人的好，暖暖的",
    "pinyin": [
     "ēn"
    ],
@@ -7369,7 +7369,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To breathe (life, 心) through one's nose 自; 心 also provides the pronunciation",
-   "hint_cn": "通过鼻子自呼吸（生命，心）；心也提示读音",
+   "hint_cn": "用鼻子自呼吸（生命心）；心也提示读音",
    "pinyin": [
     "xī"
    ],
@@ -7380,7 +7380,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里觉得不好，讨厌",
+   "hint_cn": "心里像压了块石头，讨厌它",
    "pinyin": [
     "è"
    ],
@@ -7391,7 +7391,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像有东西堵着，烦恼",
+   "hint_cn": "心里像有团乱麻，烦烦的",
    "pinyin": [
     "nǎo"
    ],
@@ -7402,7 +7402,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里静悄悄，没声音",
+   "hint_cn": "心里像小火苗，轻轻的不出声",
    "pinyin": [
     "qiāo"
    ],
@@ -7413,7 +7413,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "You 你 said with affection 心",
-   "hint_cn": "带着感情心说“你你”",
+   "hint_cn": "带着感情心说你你",
    "pinyin": [
     "nín"
    ],
@@ -7424,7 +7424,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被分开，悲伤",
+   "hint_cn": "心里像压着大石头，好难过",
    "pinyin": [
     "bēi"
    ],
@@ -7435,7 +7435,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里青翠的感情，心情",
+   "hint_cn": "心里长出的青苗，有感情啦",
    "pinyin": [
     "qíng"
    ],
@@ -7446,7 +7446,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被马撞了一下，吃惊",
+   "hint_cn": "心里像被小马撞了一下，吓一跳",
    "pinyin": [
     "jīng"
    ],
@@ -7457,7 +7457,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An uncertain 或 heart 心; 或 also provides the pronunciation",
-   "hint_cn": "一颗不确定或的心心；或也提示读音",
+   "hint_cn": "不确定或的心心；或也提示读音",
    "pinyin": [
     "huò"
    ],
@@ -7468,7 +7468,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被刀割，悲惨",
+   "hint_cn": "心里像被刀割，好凄惨",
    "pinyin": [
     "cǎn"
    ],
@@ -7479,7 +7479,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里习惯了，像穿惯的鞋",
+   "hint_cn": "心里像穿惯了的鞋，习惯了",
    "pinyin": [
     "guàn"
    ],
@@ -7490,7 +7490,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mind",
-   "hint_cn": "心里相中一个样子，想念",
+   "hint_cn": "心里相中一棵树，在想念",
    "pinyin": [
     "xiǎng"
    ],
@@ -7501,7 +7501,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像有草在动，招惹",
+   "hint_cn": "心里像有根小绳子，招惹上了",
    "pinyin": [
     "rě"
    ],
@@ -7512,7 +7512,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A brilliant 星 mind 忄; 星 also provides the pronunciation",
-   "hint_cn": "一颗明亮星星的心忄；星也提示读音",
+   "hint_cn": "明亮星星般的心忄；星也提示读音",
    "pinyin": [
     "xīng"
    ],
@@ -7523,7 +7523,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像秋天一样，愁愁的",
+   "hint_cn": "心里像秋天落叶，愁眉苦脸",
    "pinyin": [
     "chóu"
    ],
@@ -7534,7 +7534,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像小船一样轻快，愉快",
+   "hint_cn": "心里像小船轻轻摇，好开心",
    "pinyin": [
     "yú"
    ],
@@ -7545,7 +7545,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里发出的声音，意思",
+   "hint_cn": "心里发出的声音，是心意",
    "pinyin": [
     "yì"
    ],
@@ -7556,7 +7556,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像猴子一样笨，愚笨",
+   "hint_cn": "心里像被堵住，有点笨笨的",
    "pinyin": [
     "yú"
    ],
@@ -7578,7 +7578,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里原来的愿望，心愿",
+   "hint_cn": "心里原本的愿望，像泉水",
    "pinyin": [
     "yuàn"
    ],
@@ -7589,7 +7589,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像荒草一样乱，慌张",
+   "hint_cn": "心里像荒草乱长，慌慌张张",
    "pinyin": [
     "huāng"
    ],
@@ -7600,7 +7600,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被布盖住，慢吞吞",
+   "hint_cn": "心里像慢慢拉开的幕，不急",
    "pinyin": [
     "màn"
    ],
@@ -7611,7 +7611,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被熨斗烫平，安慰",
+   "hint_cn": "心里像被轻轻抚摸，安慰了",
    "pinyin": [
     "wèi"
    ],
@@ -7622,7 +7622,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mind",
-   "hint_cn": "心里明白，像重的东西落地",
+   "hint_cn": "心里像有棵草，明白了",
    "pinyin": [
     "dǒng"
    ],
@@ -7633,7 +7633,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "heart",
-   "hint_cn": "心里像被赖住，懒洋洋",
+   "hint_cn": "心里像赖着不动，懒洋洋",
    "pinyin": [
     "lǎn"
    ],
@@ -7644,7 +7644,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Arms 戈 surrounding the country 丶",
-   "hint_cn": "手臂戈环绕国家丶",
+   "hint_cn": "武器戈保卫国家丶",
    "pinyin": [
     "shù"
    ],
@@ -7655,7 +7655,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 又 doing tricks with a spear 戈",
-   "hint_cn": "一只手又用长矛戈耍把戏",
+   "hint_cn": "手又拿矛戈耍把戏",
    "pinyin": [
     "xì"
    ],
@@ -7677,7 +7677,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 扌 holding a weapon 戈",
-   "hint_cn": "一只手扌握着一件武器戈",
+   "hint_cn": "手扌拿着武器戈",
    "pinyin": [
     "wǒ"
    ],
@@ -7688,7 +7688,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To defend yourself 口 with a spear 戈; \"or else\"",
-   "hint_cn": "用长矛戈保护自己口；“或者”",
+   "hint_cn": "用矛戈保卫自己口；或者",
    "pinyin": [
     "huò"
    ],
@@ -7699,7 +7699,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "spear",
-   "hint_cn": "拿着长矛打仗，战斗",
+   "hint_cn": "手里拿着长矛，在打仗",
    "pinyin": [
     "zhàn"
    ],
@@ -7732,7 +7732,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "door",
-   "hint_cn": "一扇门里住人的地方，房子",
+   "hint_cn": "一扇门里，是住人的房子",
    "pinyin": [
     "fáng"
    ],
@@ -7743,7 +7743,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An axe 斤 swung at a door 户",
-   "hint_cn": "一把斧头斤砍向一扇门户",
+   "hint_cn": "斧头斤砍向门户",
    "pinyin": [
     "suǒ"
    ],
@@ -7754,7 +7754,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A feathered 羽 fan in the shape of a folding door 户",
-   "hint_cn": "一把羽毛羽做的、像折叠门户的扇子",
+   "hint_cn": "像折叠门户户形状的羽毛羽扇",
    "pinyin": [
     "shàn"
    ],
@@ -7765,7 +7765,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A hand with the fingers splayed",
-   "hint_cn": "一只手指张开的手",
+   "hint_cn": "手指张开的一只手",
    "pinyin": [
     "shǒu"
    ],
@@ -7776,7 +7776,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A sprout growing in the ground, representing a budding talent",
-   "hint_cn": "一株从地里长出的小苗，表示崭露头角的才能",
+   "hint_cn": "地里长出的小芽，代表初露的才华",
    "pinyin": [
     "cái"
    ],
@@ -7787,7 +7787,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 扌 tying a bundle with string 乚",
-   "hint_cn": "一只手扌用绳子乚捆一捆东西",
+   "hint_cn": "手扌用绳子乚捆一捆东西",
    "pinyin": [
     "zhā"
    ],
@@ -7798,7 +7798,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手轻轻拍打，扑过去",
+   "hint_cn": "用手轻轻拍一下，扑过去",
    "pinyin": [
     "pū"
    ],
@@ -7809,7 +7809,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手敲敲打打，打一下",
+   "hint_cn": "用手敲敲打打，像钉钉子",
    "pinyin": [
     "dǎ"
    ],
@@ -7820,7 +7820,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手把东西丢出去，扔掉",
+   "hint_cn": "用手把东西丢出去",
    "pinyin": [
     "rēng"
    ],
@@ -7831,7 +7831,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Using one's hands 扌 for support 乇; 乇 also provides the pronunciation",
-   "hint_cn": "用双手扌来支撑乇；乇也提示读音",
+   "hint_cn": "用手扌支撑乇；乇也提示读音",
    "pinyin": [
     "tuō"
    ],
@@ -7842,7 +7842,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 扌 clutching a pebble 丸",
-   "hint_cn": "一只手扌紧握一颗小石子丸",
+   "hint_cn": "手扌紧握一颗小石子丸",
    "pinyin": [
     "zhí"
    ],
@@ -7853,7 +7853,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手把东西举高，扬起",
+   "hint_cn": "用手把东西往上举，扬起来",
    "pinyin": [
     "yáng"
    ],
@@ -7864,7 +7864,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手打扮，装扮",
+   "hint_cn": "用手打扮，像分东西一样",
    "pinyin": [
     "bàn"
    ],
@@ -7875,7 +7875,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手拉拉扯扯，扯开",
+   "hint_cn": "用手拉住，扯一扯",
    "pinyin": [
     "chě"
    ],
@@ -7908,7 +7908,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手抓住东西，一把",
+   "hint_cn": "用手抓住，握在手里",
    "pinyin": [
     "bǎ"
    ],
@@ -7930,7 +7930,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手抖一抖，抖掉",
+   "hint_cn": "用手抖一抖，像抖掉水",
    "pinyin": [
     "dǒu"
    ],
@@ -7963,7 +7963,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手把东西扔出去，抛球",
+   "hint_cn": "用手把东西扔得高高的",
    "pinyin": [
     "pāo"
    ],
@@ -7974,7 +7974,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手争抢东西，抢过来",
+   "hint_cn": "用手去抓，抢过来",
    "pinyin": [
     "qiǎng"
    ],
@@ -7996,7 +7996,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 扌 cuffing 又 a criminal 卩, representing sentencing",
-   "hint_cn": "用手铐抓住犯人，表示判罪",
+   "hint_cn": "用手铐抓住犯人，表示判决",
    "pinyin": [
     "bào"
    ],
@@ -8007,7 +8007,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手把东西举起来，抬起来",
+   "hint_cn": "用手把东西举起来",
    "pinyin": [
     "tái"
    ],
@@ -8018,7 +8018,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To wrap 包 in one's arms 扌; 包 also provides the pronunciation",
-   "hint_cn": "用双臂把包裹抱在怀里",
+   "hint_cn": "用双臂把东西包在怀里",
    "pinyin": [
     "bào"
    ],
@@ -8029,7 +8029,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手挡住，抵抗",
+   "hint_cn": "用手挡住，顶住它",
    "pinyin": [
     "dǐ"
    ],
@@ -8040,7 +8040,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手从里面拉出来，抽出来",
+   "hint_cn": "用手从里面拉出来，抽一抽",
    "pinyin": [
     "chōu"
    ],
@@ -8051,7 +8051,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手轻轻擦过，拂去",
+   "hint_cn": "用手轻轻扫过，像拂灰尘",
    "pinyin": [
     "fú"
    ],
@@ -8062,7 +8062,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手挑着担子，担心",
+   "hint_cn": "用手挑着担子，扛起来",
    "pinyin": [
     "dān"
    ],
@@ -8073,7 +8073,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手拉过来，拉手",
+   "hint_cn": "用手用力拉，拉过来",
    "pinyin": [
     "lā"
    ],
@@ -8084,7 +8084,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手搅一搅，搅拌",
+   "hint_cn": "用手搅一搅，拌一拌",
    "pinyin": [
     "bàn"
    ],
@@ -8095,7 +8095,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手拍一拍，拍手",
+   "hint_cn": "用手轻轻拍，啪啪响",
    "pinyin": [
     "pāi"
    ],
@@ -8106,7 +8106,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手把东西拔出来，拔草",
+   "hint_cn": "用手把东西拔出来",
    "pinyin": [
     "bá"
    ],
@@ -8117,7 +8117,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手拉着走，拖地",
+   "hint_cn": "用手拉着走，拖在后面",
    "pinyin": [
     "tuō"
    ],
@@ -8128,7 +8128,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A call 召 to arms 扌; 召 also provides the pronunciation",
-   "hint_cn": "用手召唤大家集合",
+   "hint_cn": "用手召唤大家来",
    "pinyin": [
     "zhāo"
    ],
@@ -8458,7 +8458,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手推动",
+   "hint_cn": "用手推开",
    "pinyin": [
     "tuī"
    ],
@@ -8557,7 +8557,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手搭起",
+   "hint_cn": "用手搭起来",
    "pinyin": [
     "dā"
    ],
@@ -8623,7 +8623,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hand",
-   "hint_cn": "用手抚摸",
+   "hint_cn": "用手轻轻摸",
    "pinyin": [
     "mō"
    ],
@@ -8766,7 +8766,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "strike",
-   "hint_cn": "用力敲打",
+   "hint_cn": "用力打击",
    "pinyin": [
     "dí"
    ],
@@ -9030,7 +9030,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An army 方 marching under a flag 疋",
-   "hint_cn": "军队在旗帜下行进",
+   "hint_cn": "军队在旗下行进",
    "pinyin": [
     "xuán"
    ],
@@ -9041,7 +9041,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A group of people that swear by 矢 a single flag 方",
-   "hint_cn": "一群人对着同一面旗帜发誓",
+   "hint_cn": "一群人对着同一面旗发誓",
    "pinyin": [
     "zú"
    ],
@@ -9096,7 +9096,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Older than 丨 the sun 日",
-   "hint_cn": "比太阳还古老",
+   "hint_cn": "比太阳还久远",
    "pinyin": [
     "jiù"
    ],
@@ -9118,7 +9118,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The first rays 十 of the sun 日",
-   "hint_cn": "太阳刚露出第一道光芒",
+   "hint_cn": "太阳刚露出第一道光",
    "pinyin": [
     "zǎo"
    ],
@@ -9206,7 +9206,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Twenty 廿 days ago 日",
-   "hint_cn": "二十天前",
+   "hint_cn": "二十天以前",
    "pinyin": [
     "xī"
    ],
@@ -9261,7 +9261,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳光一闪一闪",
+   "hint_cn": "太阳晃眼睛",
    "pinyin": [
     "huǎng"
    ],
@@ -9272,7 +9272,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳把东西晒一晒",
+   "hint_cn": "太阳晒一晒",
    "pinyin": [
     "shài"
    ],
@@ -9283,7 +9283,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳晒得头有点昏",
+   "hint_cn": "太阳晒得头晕",
    "pinyin": [
     "yūn"
    ],
@@ -9305,7 +9305,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳下见面说话",
+   "hint_cn": "太阳下见面",
    "pinyin": [
     "wù"
    ],
@@ -9316,7 +9316,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳刚升起的早上",
+   "hint_cn": "太阳刚升起",
    "pinyin": [
     "chén"
    ],
@@ -9349,7 +9349,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳出来天气好",
+   "hint_cn": "太阳出来天晴了",
    "pinyin": [
     "qíng"
    ],
@@ -9371,7 +9371,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳一会儿就过去",
+   "hint_cn": "太阳一会儿就落",
    "pinyin": [
     "zàn"
    ],
@@ -9393,7 +9393,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sun",
-   "hint_cn": "太阳被挡住变黑了",
+   "hint_cn": "太阳被挡住变黑",
    "pinyin": [
     "àn"
    ],
@@ -9415,7 +9415,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man with head 日 and hands 共 tormenting a deer 水",
-   "hint_cn": "一个人手舞足蹈地折磨鹿",
+   "hint_cn": "一个人用手和头欺负小鹿",
    "pinyin": [
     "bào"
    ],
@@ -9492,7 +9492,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 月)",
-   "hint_cn": "手里拿着月亮",
+   "hint_cn": "像手拿着月亮",
    "pinyin": [
     "yǒu"
    ],
@@ -9514,7 +9514,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 卩 putting on 又 a coat 月",
-   "hint_cn": "人穿上外套",
+   "hint_cn": "人穿上衣服",
    "pinyin": [
     "fú"
    ],
@@ -9525,7 +9525,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "moon",
-   "hint_cn": "月亮亮亮的",
+   "hint_cn": "月亮很明亮",
    "pinyin": [
     "lǎng"
    ],
@@ -9547,7 +9547,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "moon",
-   "hint_cn": "月亮还在，天快亮了",
+   "hint_cn": "月亮还在，太阳刚出",
    "pinyin": [
     "cháo"
    ],
@@ -9558,7 +9558,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "moon",
-   "hint_cn": "月亮圆缺一轮的时间",
+   "hint_cn": "月亮圆缺一轮",
    "pinyin": [
     "qī"
    ],
@@ -9591,7 +9591,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A tree 木 with its roots highlighted",
-   "hint_cn": "树根被特别标出的树",
+   "hint_cn": "树根被特别标出来",
    "pinyin": [
     "běn"
    ],
@@ -9613,7 +9613,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The color of the sap 一 of some trees 木",
-   "hint_cn": "某些树汁的颜色",
+   "hint_cn": "树汁的颜色",
    "pinyin": [
     "zhū"
    ],
@@ -9657,7 +9657,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头做的长棍子",
+   "hint_cn": "木头做的长棍",
    "pinyin": [
     "gān"
    ],
@@ -9679,7 +9679,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头有用的材料",
+   "hint_cn": "木头材料",
    "pinyin": [
     "cái"
    ],
@@ -9690,7 +9690,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树多的地方住着人",
+   "hint_cn": "树多的地方住人",
    "pinyin": [
     "cūn"
    ],
@@ -9701,7 +9701,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Lumber 木 bound by rope 口",
-   "hint_cn": "用绳子把木头捆起来",
+   "hint_cn": "用绳子捆住木头",
    "pinyin": [
     "shù"
    ],
@@ -9734,7 +9734,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树旁的小地方",
+   "hint_cn": "树多的地方",
    "pinyin": [
     "háng"
    ],
@@ -9756,7 +9756,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树上的松枝",
+   "hint_cn": "树上的松树",
    "pinyin": [
     "sōng"
    ],
@@ -9767,7 +9767,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头切成片",
+   "hint_cn": "木头做的板子",
    "pinyin": [
     "bǎn"
    ],
@@ -9800,7 +9800,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two trees 木 representing a forest",
-   "hint_cn": "两棵树表示树林",
+   "hint_cn": "两棵树代表树林",
    "pinyin": [
     "lín"
    ],
@@ -9822,7 +9822,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树上分出的枝条",
+   "hint_cn": "树上的枝条",
    "pinyin": [
     "zhī"
    ],
@@ -9833,7 +9833,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头做的长兵器",
+   "hint_cn": "木头做的长枪",
    "pinyin": [
     "qiāng"
    ],
@@ -9855,7 +9855,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头搭成的架子",
+   "hint_cn": "木头搭的架子",
    "pinyin": [
     "jià"
    ],
@@ -9866,7 +9866,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树上做的把手",
+   "hint_cn": "树做的把手",
    "pinyin": [
     "bǐng"
    ],
@@ -9910,7 +9910,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树一样立着的柱子",
+   "hint_cn": "树做的柱子",
    "pinyin": [
     "zhù"
    ],
@@ -9921,7 +9921,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头劈成烧火的柴",
+   "hint_cn": "木头当柴烧",
    "pinyin": [
     "chái"
    ],
@@ -9932,7 +9932,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头做的记号",
+   "hint_cn": "木头做的标记",
    "pinyin": [
     "biāo"
    ],
@@ -9976,7 +9976,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头做的学堂",
+   "hint_cn": "木头做的学校",
    "pinyin": [
     "xiào"
    ],
@@ -10020,7 +10020,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头分成一格一格",
+   "hint_cn": "木头做的格子",
    "pinyin": [
     "gé"
    ],
@@ -10042,7 +10042,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "船上高高的木杆",
+   "hint_cn": "木头做的船桅",
    "pinyin": [
     "wéi"
    ],
@@ -10086,7 +10086,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "白白的桦树",
+   "hint_cn": "树上的桦树",
    "pinyin": [
     "huà"
    ],
@@ -10097,7 +10097,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头做的圆桶",
+   "hint_cn": "木头做的桶",
    "pinyin": [
     "tǒng"
    ],
@@ -10119,7 +10119,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树上结的梨子",
+   "hint_cn": "树上结的梨",
    "pinyin": [
     "lí"
    ],
@@ -10130,7 +10130,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头做的织布梭",
+   "hint_cn": "木头做的梭子",
    "pinyin": [
     "suō"
    ],
@@ -10163,7 +10163,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头做的棍棒",
+   "hint_cn": "木头做的棒子",
    "pinyin": [
     "bàng"
    ],
@@ -10174,7 +10174,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "棕树的毛",
+   "hint_cn": "树上的棕树",
    "pinyin": [
     "zōng"
    ],
@@ -10185,7 +10185,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thorn",
-   "hint_cn": "带刺的小树",
+   "hint_cn": "带刺的树",
    "pinyin": [
     "jí"
    ],
@@ -10196,7 +10196,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Many trees 木 forming a forest",
-   "hint_cn": "很多树组成大森林",
+   "hint_cn": "很多树组成森林",
    "pinyin": [
     "sēn"
    ],
@@ -10240,7 +10240,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头搭的高楼",
+   "hint_cn": "木头盖的楼",
    "pinyin": [
     "lóu"
    ],
@@ -10251,7 +10251,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "榉树",
+   "hint_cn": "树上的榉树",
    "pinyin": [
     "jǔ"
    ],
@@ -10273,7 +10273,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "槐树",
+   "hint_cn": "树上的槐树",
    "pinyin": [
     "huái"
    ],
@@ -10295,7 +10295,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "树上开的樱花",
+   "hint_cn": "树上结的樱桃",
    "pinyin": [
     "yīng"
    ],
@@ -10317,7 +10317,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tree",
-   "hint_cn": "橡树",
+   "hint_cn": "像一棵树",
    "pinyin": [
     "xiàng"
    ],
@@ -10328,7 +10328,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wood",
-   "hint_cn": "木头",
+   "hint_cn": "像木头做的屋檐",
    "pinyin": [
     "yán"
    ],
@@ -10361,7 +10361,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "lack",
-   "hint_cn": "缺少",
+   "hint_cn": "像人张口打哈欠",
    "pinyin": [
     "xīn"
    ],
@@ -10372,7 +10372,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "lack",
-   "hint_cn": "缺少",
+   "hint_cn": "像人张口想要东西",
    "pinyin": [
     "yù"
    ],
@@ -10383,7 +10383,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "lack",
-   "hint_cn": "缺少",
+   "hint_cn": "像人张口说大话骗人",
    "pinyin": [
     "qī"
    ],
@@ -10394,7 +10394,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "yawn",
-   "hint_cn": "打哈欠",
+   "hint_cn": "像人张口打哈欠休息",
    "pinyin": [
     "xiē"
    ],
@@ -10405,7 +10405,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "lack",
-   "hint_cn": "缺少",
+   "hint_cn": "像人张口说抱歉",
    "pinyin": [
     "qiàn"
    ],
@@ -10416,7 +10416,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "breath",
-   "hint_cn": "呼吸",
+   "hint_cn": "像人张口唱歌出气",
    "pinyin": [
     "gē"
    ],
@@ -10449,7 +10449,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "sitting man",
-   "hint_cn": "坐着的人",
+   "hint_cn": "像一个人坐着",
    "pinyin": [
     "cǐ"
    ],
@@ -10493,7 +10493,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand using a chisel 殳 to cut stone",
-   "hint_cn": "手拿凿子雕刻石头",
+   "hint_cn": "手拿凿子凿石头",
    "pinyin": [
     "duàn"
    ],
@@ -10537,7 +10537,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 母)",
-   "hint_cn": "（来自“母”的读音）",
+   "hint_cn": "像母亲的声音",
    "pinyin": [
     "měi"
    ],
@@ -10548,7 +10548,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "a poisonous plant",
-   "hint_cn": "有毒的草",
+   "hint_cn": "像一棵有毒的草",
    "pinyin": [
     "dú"
    ],
@@ -10559,7 +10559,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two spoons 匕 side-by-side; 匕 also provides the pronunciation",
-   "hint_cn": "两把勺子并排",
+   "hint_cn": "两把勺子并排放",
    "pinyin": [
     "bǐ"
    ],
@@ -10581,7 +10581,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hair",
-   "hint_cn": "毛发",
+   "hint_cn": "像细细的毛发",
    "pinyin": [
     "háo"
    ],
@@ -10592,7 +10592,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fur",
-   "hint_cn": "毛皮",
+   "hint_cn": "像毛皮做的毯子",
    "pinyin": [
     "tǎn"
    ],
@@ -10636,7 +10636,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "gas",
-   "hint_cn": "气体",
+   "hint_cn": "像一种气体",
    "pinyin": [
     "yǎng"
    ],
@@ -10669,7 +10669,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的汁液",
    "pinyin": [
     "zhī"
    ],
@@ -10702,7 +10702,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的汗水",
    "pinyin": [
     "hàn"
    ],
@@ -10713,7 +10713,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的大江",
    "pinyin": [
     "jiāng"
    ],
@@ -10724,7 +10724,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的池塘",
    "pinyin": [
     "chí"
    ],
@@ -10735,7 +10735,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的汪汪水",
    "pinyin": [
     "wāng"
    ],
@@ -10746,7 +10746,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样汹涌",
    "pinyin": [
     "xiōng"
    ],
@@ -10757,7 +10757,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样浇灌",
    "pinyin": [
     "wò"
    ],
@@ -10779,7 +10779,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样混沌",
    "pinyin": [
     "dùn"
    ],
@@ -10790,7 +10790,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样淹没",
    "pinyin": [
     "méi"
    ],
@@ -10801,7 +10801,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水边的小沙子",
    "pinyin": [
     "shā"
    ],
@@ -10812,7 +10812,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的小沟",
    "pinyin": [
     "gōu"
    ],
@@ -10823,7 +10823,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样淹没",
    "pinyin": [
     "méi"
    ],
@@ -10834,7 +10834,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的泡沫",
    "pinyin": [
     "mò"
    ],
@@ -10845,7 +10845,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的小河",
    "pinyin": [
     "hé"
    ],
@@ -10856,7 +10856,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的油",
    "pinyin": [
     "yóu"
    ],
@@ -10878,7 +10878,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的沼泽",
    "pinyin": [
     "zhǎo"
    ],
@@ -10889,7 +10889,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样沾湿",
    "pinyin": [
     "zhān"
    ],
@@ -10900,7 +10900,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样沿着流",
    "pinyin": [
     "yán"
    ],
@@ -10933,7 +10933,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的水泡",
    "pinyin": [
     "pào"
    ],
@@ -10944,7 +10944,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的水波",
    "pinyin": [
     "bō"
    ],
@@ -10955,7 +10955,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的泥巴",
    "pinyin": [
     "ní"
    ],
@@ -10966,7 +10966,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样注入",
    "pinyin": [
     "zhù"
    ],
@@ -10999,7 +10999,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样游泳",
    "pinyin": [
     "yǒng"
    ],
@@ -11021,7 +11021,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的沼泽",
    "pinyin": [
     "zé"
    ],
@@ -11032,7 +11032,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样干净",
    "pinyin": [
     "jié"
    ],
@@ -11043,7 +11043,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的大海",
    "pinyin": [
     "yáng"
    ],
@@ -11054,7 +11054,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样洗东西",
    "pinyin": [
     "xǐ"
    ],
@@ -11065,7 +11065,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的山洞",
    "pinyin": [
     "dòng"
    ],
@@ -11076,7 +11076,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "All 共 the water 氵; 共 also provides the pronunciation",
-   "hint_cn": "所有的水都涌来",
+   "hint_cn": "所有的水一起涌来",
    "pinyin": [
     "hóng"
    ],
@@ -11087,7 +11087,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A state 州 surrounded by water 氵; 州 also provides the pronunciation",
-   "hint_cn": "水环绕着陆地",
+   "hint_cn": "水包围着陆地",
    "pinyin": [
     "zhōu"
    ],
@@ -11098,7 +11098,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的活水",
    "pinyin": [
     "huó"
    ],
@@ -11120,7 +11120,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样流动",
    "pinyin": [
     "liú"
    ],
@@ -11131,7 +11131,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样浇花",
    "pinyin": [
     "jiāo"
    ],
@@ -11142,7 +11142,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A pond 氵 growing scum 虫",
-   "hint_cn": "池塘里长了小虫",
+   "hint_cn": "池塘里长了小虫，水变浑了",
    "pinyin": [
     "zhuó"
    ],
@@ -11153,7 +11153,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样浑浊",
    "pinyin": [
     "hún"
    ],
@@ -11164,7 +11164,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的波浪",
    "pinyin": [
     "làng"
    ],
@@ -11175,7 +11175,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样洗澡",
    "pinyin": [
     "yù"
    ],
@@ -11186,7 +11186,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的大海",
    "pinyin": [
     "hǎi"
    ],
@@ -11197,7 +11197,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样浸泡",
    "pinyin": [
     "jìn"
    ],
@@ -11208,7 +11208,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样消失",
    "pinyin": [
     "xiāo"
    ],
@@ -11230,7 +11230,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样涌出",
    "pinyin": [
     "yǒng"
    ],
@@ -11241,7 +11241,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的大浪",
    "pinyin": [
     "tāo"
    ],
@@ -11252,7 +11252,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样滋润",
    "pinyin": [
     "rùn"
    ],
@@ -11263,7 +11263,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的液体",
    "pinyin": [
     "yè"
    ],
@@ -11274,7 +11274,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样的淇水",
    "pinyin": [
     "qí"
    ],
@@ -11285,7 +11285,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样淋雨",
    "pinyin": [
     "lín"
    ],
@@ -11296,7 +11296,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样流淌",
    "pinyin": [
     "tǎng"
    ],
@@ -11318,7 +11318,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样混合",
    "pinyin": [
     "hùn"
    ],
@@ -11329,7 +11329,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水",
+   "hint_cn": "像水一样淹没",
    "pinyin": [
     "yān"
    ],
@@ -11384,7 +11384,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A ditch 洰 made of wood 木; 洰 also provides the pronunciation",
-   "hint_cn": "木头做成的水沟",
+   "hint_cn": "木头做成的沟渠",
    "pinyin": [
     "qú"
    ],
@@ -11417,7 +11417,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To swim freely 斿 through the seas 氵",
-   "hint_cn": "自由自在地在水里游",
+   "hint_cn": "自由自在地在水里游泳",
    "pinyin": [
     "yóu"
    ],
@@ -11450,7 +11450,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水滑滑地流",
+   "hint_cn": "水滑走",
    "pinyin": [
     "liū"
    ],
@@ -11527,7 +11527,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水翻滚",
+   "hint_cn": "水翻腾",
    "pinyin": [
     "gǔn"
    ],
@@ -11549,7 +11549,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Difficult 难 waters 氵 to navigate; 难 also provides the pronunciation",
-   "hint_cn": "难以航行的水域",
+   "hint_cn": "难以航行的水滩",
    "pinyin": [
     "tān"
    ],
@@ -11571,7 +11571,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "在水上漂",
+   "hint_cn": "水上漂",
    "pinyin": [
     "piào"
    ],
@@ -11593,7 +11593,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水慢慢渗",
+   "hint_cn": "水滤过",
    "pinyin": [
     "lù"
    ],
@@ -11604,7 +11604,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水长长地流",
+   "hint_cn": "水长流",
    "pinyin": [
     "yǎn"
    ],
@@ -11637,7 +11637,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水轻轻响",
+   "hint_cn": "水声潺潺",
    "pinyin": [
     "chán"
    ],
@@ -11648,7 +11648,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "水清亮亮",
+   "hint_cn": "水清见底",
    "pinyin": [
     "chè"
    ],
@@ -11681,7 +11681,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "water",
-   "hint_cn": "用水浇",
+   "hint_cn": "浇水",
    "pinyin": [
     "guàn"
    ],
@@ -11714,7 +11714,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "火苗照亮",
+   "hint_cn": "火照亮",
    "pinyin": [
     "dēng"
    ],
@@ -11758,7 +11758,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "火光闪闪",
+   "hint_cn": "火光灿烂",
    "pinyin": [
     "càn"
    ],
@@ -11769,7 +11769,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A fire 火 in one's home 户",
-   "hint_cn": "家里生火的地方",
+   "hint_cn": "家里的火炉",
    "pinyin": [
     "lú"
    ],
@@ -11780,7 +11780,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two fires 火 burning",
-   "hint_cn": "两团火在燃烧",
+   "hint_cn": "两把火一起烧",
    "pinyin": [
     "yán"
    ],
@@ -11813,7 +11813,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "小火苗",
+   "hint_cn": "小火点",
    "pinyin": [
     "diǎn"
    ],
@@ -11824,7 +11824,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "用火锻炼",
+   "hint_cn": "用火炼",
    "pinyin": [
     "liàn"
    ],
@@ -11857,7 +11857,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "心里像火",
+   "hint_cn": "心里像着火",
    "pinyin": [
     "fán"
    ],
@@ -11879,7 +11879,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "火很烫",
+   "hint_cn": "火很热",
    "pinyin": [
     "rè"
    ],
@@ -11890,7 +11890,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "跳动的火",
+   "hint_cn": "火苗",
    "pinyin": [
     "yàn"
    ],
@@ -11956,7 +11956,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "火煮熟了",
+   "hint_cn": "火煮熟",
    "pinyin": [
     "shú"
    ],
@@ -11978,7 +11978,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fire",
-   "hint_cn": "火烤得干",
+   "hint_cn": "火烤干",
    "pinyin": [
     "zào"
    ],
@@ -12022,7 +12022,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To bring a friend 友 into one's house 冖",
-   "hint_cn": "把朋友请进家里",
+   "hint_cn": "把朋友带进家里",
    "pinyin": [
     "ài"
    ],
@@ -12033,7 +12033,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 寸 holding a goblet 良 of wine 罒",
-   "hint_cn": "一只手拿着装满酒的酒杯",
+   "hint_cn": "一只手拿着装满酒的杯子",
    "pinyin": [
     "jué"
    ],
@@ -12088,7 +12088,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Half of a tree trunk; compare 爿",
-   "hint_cn": "半截树干；和“爿”相对",
+   "hint_cn": "半截树干",
    "pinyin": [
     "piàn"
    ],
@@ -12121,7 +12121,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "An ox's horned head",
-   "hint_cn": "长着角的牛头",
+   "hint_cn": "长角的牛头",
    "pinyin": [
     "niú"
    ],
@@ -12154,7 +12154,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 大 pulling an ox 牛 by a rope 冖",
-   "hint_cn": "一个人用绳子拉着牛",
+   "hint_cn": "一个人用绳子拉牛",
    "pinyin": [
     "qiān"
    ],
@@ -12176,7 +12176,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To use an ox 牛 to harvest 刂 grain 禾; 利 also provides the pronunciation",
-   "hint_cn": "用牛收割庄稼；“利”也表示读音",
+   "hint_cn": "用牛收割庄稼",
    "pinyin": [
     "lí"
    ],
@@ -12187,7 +12187,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "dog",
-   "hint_cn": "狗扑过来",
+   "hint_cn": "狗扑人",
    "pinyin": [
     "fàn"
    ],
@@ -12231,7 +12231,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "dog",
-   "hint_cn": "狗凶凶的",
+   "hint_cn": "狗凶凶",
    "pinyin": [
     "níng"
    ],
@@ -12253,7 +12253,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "dog",
-   "hint_cn": "一只狗",
+   "hint_cn": "狗单独",
    "pinyin": [
     "dú"
    ],
@@ -12275,7 +12275,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "dog",
-   "hint_cn": "像狗的野兽",
+   "hint_cn": "像狗的狼",
    "pinyin": [
     "láng"
    ],
@@ -12352,7 +12352,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A string 幺 vibrating in an instrument 亠十",
-   "hint_cn": "琴弦在乐器里振动",
+   "hint_cn": "琴弦在乐器中振动",
    "pinyin": [
     "lǜ"
    ],
@@ -12363,7 +12363,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A necklace 丨 adorned with three pieces of jade",
-   "hint_cn": "一根绳子上串着三块玉",
+   "hint_cn": "一串三块玉的项链",
    "pinyin": [
     "yù"
    ],
@@ -12374,7 +12374,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man 十 bridging heaven and earth (both 一)",
-   "hint_cn": "一个人连接天和地",
+   "hint_cn": "一个人连接天地",
    "pinyin": [
     "wáng"
    ],
@@ -12429,7 +12429,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To see 见 jade 王; 见 also provides the pronunciation",
-   "hint_cn": "看见玉石；“见”也表示读音",
+   "hint_cn": "看见玉石",
    "pinyin": [
     "xiàn"
    ],
@@ -12506,7 +12506,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "Vines growing with a melon at their base",
-   "hint_cn": "藤蔓下面长着一个瓜",
+   "hint_cn": "藤上结着一个瓜",
    "pinyin": [
     "guā"
    ],
@@ -12517,7 +12517,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "An interlocking roof tile",
-   "hint_cn": "一片片互相扣住的屋顶瓦",
+   "hint_cn": "一片扣一片的屋顶瓦",
    "pinyin": [
     "wǎ"
    ],
@@ -12550,7 +12550,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Picture of a tongue with 一 marking the sweet spot",
-   "hint_cn": "舌头上一横标出最甜的地方",
+   "hint_cn": "舌头上的甜点",
    "pinyin": [
     "gān"
    ],
@@ -12572,7 +12572,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Something tasty 甘 to the tongue 舌",
-   "hint_cn": "舌头尝到的好味道",
+   "hint_cn": "舌头尝到的甜味",
    "pinyin": [
     "tián"
    ],
@@ -12583,7 +12583,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": " A shoot 屮 growing in the soil 土",
-   "hint_cn": "小草从土里长出来",
+   "hint_cn": "小芽从土里长出来",
    "pinyin": [
     "shēng"
    ],
@@ -12605,7 +12605,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The opposite of \"to use\" 用",
-   "hint_cn": "“用”的反面",
+   "hint_cn": "和“用”相反的动作",
    "pinyin": [
     "shuǎi"
    ],
@@ -12627,7 +12627,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Road 丨 leading to the farm 田",
-   "hint_cn": "一条路通向农田",
+   "hint_cn": "通往农田的路",
    "pinyin": [
     "yóu"
    ],
@@ -12649,7 +12649,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 電; lightning 申 from a storm cloud 雨",
-   "hint_cn": "云里闪出的闪电",
+   "hint_cn": "乌云里闪出的闪电",
    "pinyin": [
     "diàn"
    ],
@@ -12660,7 +12660,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Someone who can work 力 the farm 田",
-   "hint_cn": "在田里出力干活的人",
+   "hint_cn": "在田里干活的人",
    "pinyin": [
     "nán"
    ],
@@ -12682,7 +12682,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A painting on an easel; compare 畫, which includes the brush",
-   "hint_cn": "画架上的画；和“畫”相比，少了画笔",
+   "hint_cn": "画架上的画",
    "pinyin": [
     "huà"
    ],
@@ -12704,7 +12704,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A farm 田 divided in half 半; 半 also provides the pronunciation",
-   "hint_cn": "把田地分成两半；“半”也表示读音",
+   "hint_cn": "田地被分成两半",
    "pinyin": [
     "pàn"
    ],
@@ -12726,7 +12726,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Sowing seeds 米 on the farm 田",
-   "hint_cn": "在田里播撒种子",
+   "hint_cn": "在田里播种",
    "pinyin": [
     "fān"
    ],
@@ -12737,7 +12737,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A bow 弓 and arrow 土 used to defend a border 畺; 畺 also provides the pronunciation",
-   "hint_cn": "用弓箭守卫的边界；“畺”也表示读音",
+   "hint_cn": "用弓箭保卫边界",
    "pinyin": [
     "jiāng"
    ],
@@ -12858,7 +12858,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A burning candle; the rays of the sun",
-   "hint_cn": "燃烧的蜡烛；太阳的光芒",
+   "hint_cn": "燃烧的蜡烛或太阳的光芒",
    "pinyin": [
     "bái"
    ],
@@ -12902,7 +12902,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A crown 白 on the head of the emperor 王",
-   "hint_cn": "皇帝头上戴着皇冠",
+   "hint_cn": "皇帝头上的皇冠",
    "pinyin": [
     "huáng"
    ],
@@ -12913,7 +12913,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A hand using a tool 攴 to strip the hide from a carcass",
-   "hint_cn": "用手拿工具剥下兽皮",
+   "hint_cn": "用手拿工具剥兽皮",
    "pinyin": [
     "pí"
    ],
@@ -12979,7 +12979,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "An eye drawn on its side",
-   "hint_cn": "侧着画的一只眼睛",
+   "hint_cn": "侧着画的眼睛",
    "pinyin": [
     "mù"
    ],
@@ -12990,7 +12990,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Losing 亡 one's sight 目; 亡 also provides the pronunciation",
-   "hint_cn": "眼睛失去了视力；“亡”也表示读音",
+   "hint_cn": "眼睛失去了视力",
    "pinyin": [
     "máng"
    ],
@@ -13001,7 +13001,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To look someone in the eye 目",
-   "hint_cn": "直直地看着别人的眼睛",
+   "hint_cn": "直视对方的眼睛",
    "pinyin": [
     "zhí"
    ],
@@ -13012,7 +13012,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To stare 目 at a tree 木, meaning to observe",
-   "hint_cn": "盯着树看，表示观察",
+   "hint_cn": "盯着树看",
    "pinyin": [
     "xiāng"
    ],
@@ -13045,7 +13045,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An eye 目 peering from behind a shield 厂",
-   "hint_cn": "从盾牌后面看出去的眼睛",
+   "hint_cn": "从盾牌后面看",
    "pinyin": [
     "dùn"
    ],
@@ -13067,7 +13067,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Shielding one's eyes 目 with a hand 手 to look to the distance",
-   "hint_cn": "用手搭在眼睛上往远处看",
+   "hint_cn": "用手遮着眼睛看远处",
    "pinyin": [
     "kàn"
    ],
@@ -13078,7 +13078,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A straight 直 (that is, level) table 几",
-   "hint_cn": "一张平直（也就是水平）的桌子",
+   "hint_cn": "平直的小桌子",
    "pinyin": [
     "zhēn"
    ],
@@ -13210,7 +13210,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A rock 口 at the base of a cliff 厂",
-   "hint_cn": "山崖底下的一块石头",
+   "hint_cn": "悬崖下的一块石头",
    "pinyin": [
     "shí"
    ],
@@ -13364,7 +13364,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An earth 土 spirit 礻; 礻 also provides the pronunciation",
-   "hint_cn": "土地神；“礻”也表示读音",
+   "hint_cn": "土地神",
    "pinyin": [
     "shè"
    ],
@@ -13386,7 +13386,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 兄 praying before an altar 礻",
-   "hint_cn": "一个人在祭坛前祈祷",
+   "hint_cn": "人在祭坛前祈祷",
    "pinyin": [
     "zhù"
    ],
@@ -13397,7 +13397,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "spirit",
-   "hint_cn": "像闪电一样神奇的力量",
+   "hint_cn": "像闪电一样，是天上神奇的力量",
    "pinyin": [
     "shén"
    ],
@@ -13408,7 +13408,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Flames 覀 over an altar 示, referring to a Chinese tradition of burning fake money as an offering",
-   "hint_cn": "祭坛上冒出的火焰，指烧纸钱祭拜的习俗",
+   "hint_cn": "祭坛上烧纸钱的火苗",
    "pinyin": [
     "piào"
    ],
@@ -13419,7 +13419,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "spirit",
-   "hint_cn": "像神灵降下的灾祸",
+   "hint_cn": "像祭坛上的骨头，表示灾祸",
    "pinyin": [
     "huò"
    ],
@@ -13430,7 +13430,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "altar",
-   "hint_cn": "像祭坛前不能乱动",
+   "hint_cn": "像祭坛上的供品，表示禁止",
    "pinyin": [
     "jìn"
    ],
@@ -13441,7 +13441,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "spirit",
-   "hint_cn": "像神灵赐下的好运",
+   "hint_cn": "像用酒祭神，祈求福气",
    "pinyin": [
     "fú"
    ],
@@ -13452,7 +13452,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "An animal standing straight; 亠 is the head",
-   "hint_cn": "一只站得直直的动物；“亠”是它的头",
+   "hint_cn": "站直的动物",
    "pinyin": [
     "lí"
    ],
@@ -13463,7 +13463,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Grains of hair 禾 on a person's head 几",
-   "hint_cn": "一个人头上只有几根头发",
+   "hint_cn": "头上只有几根头发",
    "pinyin": [
     "tū"
    ],
@@ -13474,7 +13474,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The time of year when farmers would burn 禾 crops 火",
-   "hint_cn": "农民烧庄稼的季节",
+   "hint_cn": "秋天烧庄稼",
    "pinyin": [
     "qiū"
    ],
@@ -13485,7 +13485,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像把谷子埋进土里",
+   "hint_cn": "像禾苗长在土里，表示种子",
    "pinyin": [
     "zhǒng"
    ],
@@ -13496,7 +13496,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand measuring 斗 grain 禾",
-   "hint_cn": "用手量谷物的斗",
+   "hint_cn": "用手量谷物",
    "pinyin": [
     "kē"
    ],
@@ -13507,7 +13507,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像藏在谷堆里的秘密",
+   "hint_cn": "像禾苗被藏起来，表示秘密",
    "pinyin": [
     "mì"
    ],
@@ -13518,7 +13518,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像把谷子堆起来",
+   "hint_cn": "像把禾苗堆起来，表示积累",
    "pinyin": [
     "jī"
    ],
@@ -13540,7 +13540,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像量谷子的长短",
+   "hint_cn": "像用斗量禾苗，表示路程",
    "pinyin": [
     "chéng"
    ],
@@ -13551,7 +13551,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Resembling 肖 grain 禾; 肖 also provides the pronunciation",
-   "hint_cn": "像谷物一样；“肖”也表示读音",
+   "hint_cn": "像谷物一样小",
    "pinyin": [
     "shāo"
    ],
@@ -13562,7 +13562,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像谷子挤得密密麻麻",
+   "hint_cn": "像禾苗长得密，表示稠密",
    "pinyin": [
     "chóu"
    ],
@@ -13573,7 +13573,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像谷子稳稳堆着",
+   "hint_cn": "像禾苗稳稳地长，表示安稳",
    "pinyin": [
     "wěn"
    ],
@@ -13584,7 +13584,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像田里长出的庄稼",
+   "hint_cn": "像禾苗在田里，表示庄稼",
    "pinyin": [
     "jià"
    ],
@@ -13595,7 +13595,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "The mouth of a cave",
-   "hint_cn": "山洞的洞口",
+   "hint_cn": "山洞的口",
    "pinyin": [
     "xué"
    ],
@@ -13617,7 +13617,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cave",
-   "hint_cn": "像山洞里空空的",
+   "hint_cn": "像洞穴里面空空的",
    "pinyin": [
     "kōng"
    ],
@@ -13628,7 +13628,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "tooth",
-   "hint_cn": "像牙齿咬出一个洞",
+   "hint_cn": "像牙齿咬穿东西",
    "pinyin": [
     "chuān"
    ],
@@ -13639,7 +13639,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A dog 犬 rushing out of a cave 穴",
-   "hint_cn": "一只狗从山洞里冲出来",
+   "hint_cn": "狗从山洞里冲出来",
    "pinyin": [
     "tū"
    ],
@@ -13650,7 +13650,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cave",
-   "hint_cn": "像山洞又小又窄",
+   "hint_cn": "像洞穴很窄小",
    "pinyin": [
     "zhǎi"
    ],
@@ -13661,7 +13661,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "An oven 穴 where pots 缶 are fired; 缶 also provides the pronunciation",
-   "hint_cn": "烧陶罐的窑洞；“缶”也表示读音",
+   "hint_cn": "烧陶罐的窑洞",
    "pinyin": [
     "yáo"
    ],
@@ -13683,7 +13683,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cave",
-   "hint_cn": "像小动物住的山洞",
+   "hint_cn": "像动物住的洞穴",
    "pinyin": [
     "wō"
    ],
@@ -13694,7 +13694,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cave",
-   "hint_cn": "像山里的洞穴",
+   "hint_cn": "像洞穴，表示窟窿",
    "pinyin": [
     "kū"
    ],
@@ -13705,7 +13705,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hole",
-   "hint_cn": "像地上一个大洞",
+   "hint_cn": "像洞穴里的小孔",
    "pinyin": [
     "lóng"
    ],
@@ -13716,7 +13716,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A man standing on the ground 一",
-   "hint_cn": "一个人站在地上",
+   "hint_cn": "人站在地上",
    "pinyin": [
     "lì"
    ],
@@ -13727,7 +13727,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 又 standing 立 as straight as a knife 刂",
-   "hint_cn": "一个人站得像刀一样直",
+   "hint_cn": "人站得像刀一样直",
    "pinyin": [
     "shù"
    ],
@@ -13738,7 +13738,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "stand",
-   "hint_cn": "像人两脚立在地上",
+   "hint_cn": "像人立在地上，表示站立",
    "pinyin": [
     "zhàn"
    ],
@@ -13749,7 +13749,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 儿 finishing a musical piece 音",
-   "hint_cn": "一个人把乐曲演奏完",
+   "hint_cn": "人演奏完音乐",
    "pinyin": [
     "jìng"
    ],
@@ -13771,7 +13771,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "stand",
-   "hint_cn": "像人站不住倒下了",
+   "hint_cn": "像人站得直直的，表示用尽",
    "pinyin": [
     "jié"
    ],
@@ -13782,7 +13782,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "stand",
-   "hint_cn": "像人站得直直的",
+   "hint_cn": "像人站得端正",
    "pinyin": [
     "duān"
    ],
@@ -13793,7 +13793,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person 夭 with a big grin ⺮",
-   "hint_cn": "一个人咧着嘴大笑",
+   "hint_cn": "人咧嘴大笑",
    "pinyin": [
     "xiào"
    ],
@@ -13804,7 +13804,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A bamboo rod ⺮ tipped with hair 毛",
-   "hint_cn": "竹竿头上装着毛",
+   "hint_cn": "竹竿头上装毛",
    "pinyin": [
     "bǐ"
    ],
@@ -13815,7 +13815,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Bamboo strips ⺮ arrayed in sequence; 弟 provides the pronunciation",
-   "hint_cn": "按顺序排好的竹片；“弟”表示读音",
+   "hint_cn": "按顺序排好的竹简",
    "pinyin": [
     "dì"
    ],
@@ -13837,7 +13837,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Bamboo strips ⺮ laid before a court 寺",
-   "hint_cn": "摆在官署前的竹片",
+   "hint_cn": "放在官府前的竹简",
    "pinyin": [
     "děng"
    ],
@@ -13848,7 +13848,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A strong  巩 bamboo ⺮ building; ⺮ also provides the pronunciation",
-   "hint_cn": "用竹子搭起的坚固建筑；“⺮”也表示读音",
+   "hint_cn": "用竹子建造",
    "pinyin": [
     "zhù"
    ],
@@ -13859,7 +13859,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bamboo",
-   "hint_cn": "像一截竹筒",
+   "hint_cn": "像竹子做的圆筒",
    "pinyin": [
     "tǒng"
    ],
@@ -13881,7 +13881,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bamboo",
-   "hint_cn": "像一片竹简",
+   "hint_cn": "像竹片上写字，表示简单",
    "pinyin": [
     "jiǎn"
    ],
@@ -13892,7 +13892,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A bamboo ⺮ abacus 具",
-   "hint_cn": "竹子做的算盘",
+   "hint_cn": "竹制的算盘",
    "pinyin": [
     "suàn"
    ],
@@ -13903,7 +13903,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bamboo",
-   "hint_cn": "像一根竹管",
+   "hint_cn": "像竹管做的乐器",
    "pinyin": [
     "guǎn"
    ],
@@ -13914,7 +13914,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bamboo",
-   "hint_cn": "像竹子做的箭",
+   "hint_cn": "像竹子做的箭杆",
    "pinyin": [
     "jiàn"
    ],
@@ -13936,7 +13936,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bamboo",
-   "hint_cn": "像竹子搭的火堆",
+   "hint_cn": "像竹子做的笼子，表示篝火",
    "pinyin": [
     "gōu"
    ],
@@ -13969,7 +13969,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像把谷子磨成粉",
+   "hint_cn": "像把米磨成粉末",
    "pinyin": [
     "fěn"
    ],
@@ -13980,7 +13980,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像一颗小谷粒",
+   "hint_cn": "像米粒一样小",
    "pinyin": [
     "lì"
    ],
@@ -13991,7 +13991,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像谷子粗粗的",
+   "hint_cn": "像米粒粗大",
    "pinyin": [
     "cū"
    ],
@@ -14002,7 +14002,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像挑出最好的谷子",
+   "hint_cn": "像米粒挑选得精细",
    "pinyin": [
     "jīng"
    ],
@@ -14013,7 +14013,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像谷子煮成糊糊",
+   "hint_cn": "像米煮成糊糊",
    "pinyin": [
     "hú"
    ],
@@ -14035,7 +14035,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "rice",
-   "hint_cn": "像米熬出的甜糖",
+   "hint_cn": "像米做的甜糖",
    "pinyin": [
     "táng"
    ],
@@ -14046,7 +14046,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grain",
-   "hint_cn": "像谷子做坏了",
+   "hint_cn": "像米酒渣，表示糟糕",
    "pinyin": [
     "zāo"
    ],
@@ -14057,7 +14057,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "rice",
-   "hint_cn": "像米外面的皮",
+   "hint_cn": "像米的外皮，表示米糠",
    "pinyin": [
     "kāng"
    ],
@@ -14079,7 +14079,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A silken thread 糸 hanging off a tree 龶",
-   "hint_cn": "挂在树上的一根丝线",
+   "hint_cn": "树上挂着的丝线",
    "pinyin": [
     "sù"
    ],
@@ -14090,7 +14090,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A rope 糸 hanging from the ceiling 冖",
-   "hint_cn": "绳子从屋顶垂下来",
+   "hint_cn": "一根绳子从屋顶垂下来",
    "pinyin": [
     "suǒ"
    ],
@@ -14112,7 +14112,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 纍; growing silk 糸 in the fields 畾; 畾 also provides the pronunciation",
-   "hint_cn": "田里长丝，越积越多",
+   "hint_cn": "在田里种丝，丝越积越多",
    "pinyin": [
     "lèi"
    ],
@@ -14123,7 +14123,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像染了色的丝线",
+   "hint_cn": "像丝线染成红色",
    "pinyin": [
     "hóng"
    ],
@@ -14134,7 +14134,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像一级一级的丝线",
+   "hint_cn": "像丝线的等级",
    "pinyin": [
     "jí"
    ],
@@ -14145,7 +14145,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像纯白的丝线",
+   "hint_cn": "像丝线纯正不杂",
    "pinyin": [
     "chún"
    ],
@@ -14156,7 +14156,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像把丝线收进来",
+   "hint_cn": "像丝线收进来",
    "pinyin": [
     "nà"
    ],
@@ -14167,7 +14167,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像丝线直直放开",
+   "hint_cn": "像丝线放松，表示放纵",
    "pinyin": [
     "zòng"
    ],
@@ -14178,7 +14178,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像丝线乱乱飘",
+   "hint_cn": "像丝线乱纷纷",
    "pinyin": [
     "fēn"
    ],
@@ -14189,7 +14189,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像丝絮压成的纸",
+   "hint_cn": "像丝线做的纸",
    "pinyin": [
     "zhǐ"
    ],
@@ -14200,7 +14200,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像丝线织出的花纹",
+   "hint_cn": "像丝线的花纹",
    "pinyin": [
     "wén"
    ],
@@ -14211,7 +14211,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像把丝线纺成线",
+   "hint_cn": "像丝线纺成线",
    "pinyin": [
     "fǎng"
    ],
@@ -14222,7 +14222,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像一根细细的丝线",
+   "hint_cn": "像丝线细细的",
    "pinyin": [
     "xiàn"
    ],
@@ -14233,7 +14233,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像把丝线煮软",
+   "hint_cn": "像丝线煮练得柔软",
    "pinyin": [
     "liàn"
    ],
@@ -14244,7 +14244,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像把丝线编成一组",
+   "hint_cn": "像丝线编织成组",
    "pinyin": [
     "zǔ"
    ],
@@ -14255,7 +14255,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像丝线织的腰带",
+   "hint_cn": "像丝线做的腰带",
    "pinyin": [
     "shēn"
    ],
@@ -14288,7 +14288,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像丝线到头了",
+   "hint_cn": "像丝线到头了，表示终点",
    "pinyin": [
     "zhōng"
    ],
@@ -14299,7 +14299,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像织布时拉直的线",
+   "hint_cn": "像丝线直直的，表示经过",
    "pinyin": [
     "jīng"
    ],
@@ -14310,7 +14310,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像用丝线绑住",
+   "hint_cn": "像丝线绑住东西",
    "pinyin": [
     "bǎng"
    ],
@@ -14321,7 +14321,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像软软的细丝",
+   "hint_cn": "像丝线细细软软的绒毛",
    "pinyin": [
     "róng"
    ],
@@ -14332,7 +14332,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像丝线打个结",
+   "hint_cn": "像丝线打结",
    "pinyin": [
     "jié"
    ],
@@ -14343,7 +14343,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像把丝线递给别人",
+   "hint_cn": "像丝线给出去",
    "pinyin": [
     "gěi"
    ],
@@ -14431,7 +14431,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像拧成的丝线",
+   "hint_cn": "像用丝线搓成的绳子",
    "pinyin": [
     "shéng"
    ],
@@ -14442,7 +14442,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像系住丝线的绳子",
+   "hint_cn": "像把丝线系住",
    "pinyin": [
     "wéi"
    ],
@@ -14453,7 +14453,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A continuous thread 纟 of silk 帛",
-   "hint_cn": "丝线连成一片，绵绵不断",
+   "hint_cn": "丝线连成一片，又长又软",
    "pinyin": [
     "mián"
    ],
@@ -14464,7 +14464,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "silk",
-   "hint_cn": "像柔软的丝线",
+   "hint_cn": "像丝线织成的布",
    "pinyin": [
     "chóu"
    ],
@@ -14497,7 +14497,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "thread",
-   "hint_cn": "像丝线慢慢松开",
+   "hint_cn": "像丝线慢慢拉",
    "pinyin": [
     "huǎn"
    ],
@@ -14596,7 +14596,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Stuck in a net 罒, unable to leave 去",
-   "hint_cn": "被网困住，走不掉",
+   "hint_cn": "被网困住，走不掉了",
    "pinyin": [
     "bà"
    ],
@@ -14607,7 +14607,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "net",
-   "hint_cn": "像网子罩住",
+   "hint_cn": "像用网罩住",
    "pinyin": [
     "zhào"
    ],
@@ -14706,7 +14706,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A peacock 翟 with a brilliant 光 tail",
-   "hint_cn": "孔雀尾巴闪闪发光",
+   "hint_cn": "孔雀的尾巴闪闪发光",
    "pinyin": [
     "yào"
    ],
@@ -14717,7 +14717,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A person bent over with long hair 匕 and a crutch; compare 耂",
-   "hint_cn": "弯腰拄拐、头发长长的老人",
+   "hint_cn": "弯腰驼背、拄着拐杖的老人",
    "pinyin": [
     "lǎo"
    ],
@@ -14728,7 +14728,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "old",
-   "hint_cn": "像拄拐杖的老人",
+   "hint_cn": "像长胡子的老人",
    "pinyin": [
     "kǎo"
    ],
@@ -14761,7 +14761,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A woman 女 wearing a beard 而 for disguise",
-   "hint_cn": "女人戴上胡子玩变装",
+   "hint_cn": "女人戴上假胡子玩变装",
    "pinyin": [
     "shuǎ"
    ],
@@ -14783,7 +14783,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plow",
-   "hint_cn": "像用耙子耙地",
+   "hint_cn": "像用耙子整地",
    "pinyin": [
     "bà"
    ],
@@ -14805,7 +14805,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ear",
-   "hint_cn": "像用耳朵听",
+   "hint_cn": "像用耳朵仔细听",
    "pinyin": [
     "líng"
    ],
@@ -14816,7 +14816,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ear",
-   "hint_cn": "像用耳朵聊天",
+   "hint_cn": "像耳朵听人说话",
    "pinyin": [
     "liáo"
    ],
@@ -14849,7 +14849,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "ear",
-   "hint_cn": "像耳朵很灵",
+   "hint_cn": "像耳朵很会听",
    "pinyin": [
     "cōng"
    ],
@@ -14959,7 +14959,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To stop 止 flexing one's muscles ⺼",
-   "hint_cn": "停下肌肉的动作",
+   "hint_cn": "停下来不再绷紧肌肉",
    "pinyin": [
     "kěn"
    ],
@@ -15014,7 +15014,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A heart ⺼ in the chest 匈; 匈 also provides the pronunciation",
-   "hint_cn": "胸口里的心脏",
+   "hint_cn": "胸口里有一颗心",
    "pinyin": [
     "xiōng"
    ],
@@ -15080,7 +15080,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "flesh",
-   "hint_cn": "像肉掉下来",
+   "hint_cn": "像肉离开骨头",
    "pinyin": [
     "tuō"
    ],
@@ -15102,7 +15102,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "flesh",
-   "hint_cn": "像肚子里的肉",
+   "hint_cn": "像身体里的肉",
    "pinyin": [
     "pí"
    ],
@@ -15113,7 +15113,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Meat ⺼ left 奄 in salt; 奄 also provides the pronunciation",
-   "hint_cn": "肉放在盐里腌着",
+   "hint_cn": "把肉放在盐里泡着",
    "pinyin": [
     "yān"
    ],
@@ -15157,7 +15157,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "horse",
-   "hint_cn": "像马奔跑",
+   "hint_cn": "像马奔跑跳跃",
    "pinyin": [
     "téng"
    ],
@@ -15234,7 +15234,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A bird alighting on the ground 土",
-   "hint_cn": "小鸟落到地上",
+   "hint_cn": "小鸟落在地上",
    "pinyin": [
     "zhì"
    ],
@@ -15366,7 +15366,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Lush 丰 and sexy 色",
-   "hint_cn": "又茂盛又好看",
+   "hint_cn": "又茂盛又漂亮",
    "pinyin": [
     "yàn"
    ],
@@ -15400,7 +15400,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 節; sections of bamboo ⺮",
-   "hint_cn": "竹子的节",
+   "hint_cn": "竹子一节一节的",
    "pinyin": [
     "jié"
    ],
@@ -15422,7 +15422,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A flower 艹 in bloom 化; 化 also provides the pronunciation",
-   "hint_cn": "草开花",
+   "hint_cn": "草开花了",
    "pinyin": [
     "huā"
    ],
@@ -15433,7 +15433,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小草长出来",
+   "hint_cn": "像植物长出来",
    "pinyin": [
     "sū"
    ],
@@ -15444,7 +15444,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小草",
+   "hint_cn": "像植物",
    "pinyin": [
     "tái"
    ],
@@ -15466,7 +15466,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grass",
-   "hint_cn": "像苦草",
+   "hint_cn": "像小草",
    "pinyin": [
     "kǔ"
    ],
@@ -15488,7 +15488,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小草",
+   "hint_cn": "像植物",
    "pinyin": [
     "píng"
    ],
@@ -15532,7 +15532,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小树叶",
+   "hint_cn": "像植物",
    "pinyin": [
     "chá"
    ],
@@ -15565,7 +15565,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A perennial; grass 艹 that survives 存 year-after-year",
-   "hint_cn": "年年都活着的草",
+   "hint_cn": "年年都能活下来的草",
    "pinyin": [
     "jiàn"
    ],
@@ -15609,7 +15609,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小草",
+   "hint_cn": "像植物",
    "pinyin": [
     "yào"
    ],
@@ -15620,7 +15620,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "flower",
-   "hint_cn": "像一朵荷花",
+   "hint_cn": "像一朵花",
    "pinyin": [
     "hé"
    ],
@@ -15686,7 +15686,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小蘑菇",
+   "hint_cn": "像植物",
    "pinyin": [
     "gū"
    ],
@@ -15697,7 +15697,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小青菜",
+   "hint_cn": "像植物",
    "pinyin": [
     "cài"
    ],
@@ -15708,7 +15708,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小藤蔓",
+   "hint_cn": "像植物",
    "pinyin": [
     "táo"
    ],
@@ -15719,7 +15719,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小藤蔓",
+   "hint_cn": "像植物",
    "pinyin": [
     "luó"
    ],
@@ -15741,7 +15741,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像叶子落下",
+   "hint_cn": "像植物",
    "pinyin": [
     "luò"
    ],
@@ -15752,7 +15752,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小藤蔓",
+   "hint_cn": "像植物",
    "pinyin": [
     "pú"
    ],
@@ -15763,7 +15763,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A corpse 死 laid 廾 to rest under the grass 艹",
-   "hint_cn": "尸体埋在草下面",
+   "hint_cn": "把尸体埋在草地下",
    "pinyin": [
     "zàng"
    ],
@@ -15774,7 +15774,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像一朵大花",
+   "hint_cn": "像植物",
    "pinyin": [
     "kuí"
    ],
@@ -15785,7 +15785,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小草",
+   "hint_cn": "像植物",
    "pinyin": [
     "lán"
    ],
@@ -15796,7 +15796,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小蕨叶",
+   "hint_cn": "像植物",
    "pinyin": [
     "jué"
    ],
@@ -15807,7 +15807,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小草",
+   "hint_cn": "像植物",
    "pinyin": [
     "wēi"
    ],
@@ -15818,7 +15818,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小植物",
+   "hint_cn": "像植物",
    "pinyin": [
     "shǔ"
    ],
@@ -15840,7 +15840,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "grass",
-   "hint_cn": "像小草藏起来",
+   "hint_cn": "像小草",
    "pinyin": [
     "cáng"
    ],
@@ -15851,7 +15851,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小植物",
+   "hint_cn": "像植物",
    "pinyin": [
     "ǒu"
    ],
@@ -15862,7 +15862,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小藤蔓",
+   "hint_cn": "像植物",
    "pinyin": [
     "téng"
    ],
@@ -15873,7 +15873,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "plant",
-   "hint_cn": "像小蘑菇",
+   "hint_cn": "像植物",
    "pinyin": [
     "mó"
    ],
@@ -15917,7 +15917,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": " (sound from 中)",
-   "hint_cn": "像一条小虫",
+   "hint_cn": "像小虫的样子",
    "pinyin": [
     "chóng"
    ],
@@ -15961,7 +15961,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蚂蚁",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "yǐ"
    ],
@@ -15972,7 +15972,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蚂蚁",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "mǎ"
    ],
@@ -15983,7 +15983,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小虫咬木头",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "zhù"
    ],
@@ -15994,7 +15994,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "worm",
-   "hint_cn": "像一条长虫",
+   "hint_cn": "像长长的虫子",
    "pinyin": [
     "shé"
    ],
@@ -16005,7 +16005,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小虫卵",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "dàn"
    ],
@@ -16016,7 +16016,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小青蛙",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "wā"
    ],
@@ -16027,7 +16027,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蜘蛛",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "zhū"
    ],
@@ -16038,7 +16038,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蜜蜂",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "fēng"
    ],
@@ -16049,7 +16049,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mollusk",
-   "hint_cn": "像小虫",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "chú"
    ],
@@ -16060,7 +16060,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蜻蜓",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "tíng"
    ],
@@ -16071,7 +16071,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "mollusk",
-   "hint_cn": "像小蜗牛",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "wō"
    ],
@@ -16082,7 +16082,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蜘蛛",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "zhī"
    ],
@@ -16093,7 +16093,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蜜蜂",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "mì"
    ],
@@ -16104,7 +16104,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蜻蜓",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "qīng"
    ],
@@ -16115,7 +16115,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蝗虫",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "huáng"
    ],
@@ -16126,7 +16126,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蝴蝶",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "hú"
    ],
@@ -16137,7 +16137,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蝴蝶",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "dié"
    ],
@@ -16148,7 +16148,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "cauldron",
-   "hint_cn": "像大锅冒热气",
+   "hint_cn": "像一口大锅",
    "pinyin": [
     "róng"
    ],
@@ -16159,7 +16159,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像大蛇",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "mǎng"
    ],
@@ -16170,7 +16170,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小螃蟹",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "xiè"
    ],
@@ -16181,7 +16181,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "insect",
-   "hint_cn": "像小蟾蜍",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "chán"
    ],
@@ -16192,7 +16192,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "worm",
-   "hint_cn": "像小虫在动",
+   "hint_cn": "像小虫子",
    "pinyin": [
     "chǔn"
    ],
@@ -16214,7 +16214,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To take small steps 亍 with one's feet 彳",
-   "hint_cn": "脚一步一步走",
+   "hint_cn": "双脚小步走路",
    "pinyin": [
     "xíng"
    ],
@@ -16236,7 +16236,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走在路上",
+   "hint_cn": "在路上走",
    "pinyin": [
     "jiē"
    ],
@@ -16258,7 +16258,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A big 大 horn 角; 行 provides the pronunciation",
-   "hint_cn": "大角，用来称量",
+   "hint_cn": "用大角称重",
    "pinyin": [
     "héng"
    ],
@@ -16401,7 +16401,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A bird settling into its nest, representing sunset; compare 東",
-   "hint_cn": "小鸟回巢，太阳落山",
+   "hint_cn": "小鸟回巢，太阳下山了",
    "pinyin": [
     "xī"
    ],
@@ -16434,7 +16434,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 見; a man 儿 with the eye 目 emphasized",
-   "hint_cn": "人突出眼睛看",
+   "hint_cn": "人睁大眼睛看",
    "pinyin": [
     "jiàn"
    ],
@@ -16445,7 +16445,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To see 见 again 又",
-   "hint_cn": "又看一次",
+   "hint_cn": "又看一遍",
    "pinyin": [
     "guān"
    ],
@@ -16467,7 +16467,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "see",
-   "hint_cn": "用眼睛看",
+   "hint_cn": "看",
    "pinyin": [
     "shì"
    ],
@@ -16489,7 +16489,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A rhinoceros or other animal horn",
-   "hint_cn": "犀牛或动物的角",
+   "hint_cn": "犀牛或其他动物的角",
    "pinyin": [
     "jiǎo"
    ],
@@ -16566,7 +16566,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "speech",
-   "hint_cn": "用话说明",
+   "hint_cn": "用话讲",
    "pinyin": [
     "jiǎng"
    ],
@@ -16610,7 +16610,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "speech",
-   "hint_cn": "用话安排",
+   "hint_cn": "用话设立",
    "pinyin": [
     "shè"
    ],
@@ -16687,7 +16687,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A spoken 讠 tongue 舌; 舌 also provides the pronunciation",
-   "hint_cn": "舌头说话",
+   "hint_cn": "舌头说出来的话",
    "pinyin": [
     "huà"
    ],
@@ -16753,7 +16753,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To show off 卖 one's literacy 讠",
-   "hint_cn": "卖弄自己识字",
+   "hint_cn": "炫耀自己识字",
    "pinyin": [
     "dú"
    ],
@@ -16885,7 +16885,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A sea shell, once used as currency",
-   "hint_cn": "海边的贝壳，古时候当钱用",
+   "hint_cn": "海边的贝壳，古人当钱用",
    "pinyin": [
     "bèi"
    ],
@@ -16951,7 +16951,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "money",
-   "hint_cn": "贪图钱财",
+   "hint_cn": "贪钱财",
    "pinyin": [
     "tān"
    ],
@@ -16962,7 +16962,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Money 贝 that must be split 分; 分 also provides the pronunciation",
-   "hint_cn": "钱被分开了，就变少了",
+   "hint_cn": "钱要分出去，越分越少",
    "pinyin": [
     "pín"
    ],
@@ -16973,7 +16973,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "money",
-   "hint_cn": "贴上钱",
+   "hint_cn": "贴钱",
    "pinyin": [
     "tiē"
    ],
@@ -16984,7 +16984,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "money",
-   "hint_cn": "钱财贵重",
+   "hint_cn": "钱很贵",
    "pinyin": [
     "guì"
    ],
@@ -16995,7 +16995,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "money",
-   "hint_cn": "花费钱财",
+   "hint_cn": "花钱",
    "pinyin": [
     "fèi"
    ],
@@ -17006,7 +17006,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "money",
-   "hint_cn": "赏给钱财",
+   "hint_cn": "赏钱",
    "pinyin": [
     "shǎng"
    ],
@@ -17017,7 +17017,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "money",
-   "hint_cn": "用钱比赛",
+   "hint_cn": "比钱财",
    "pinyin": [
     "sài"
    ],
@@ -17039,7 +17039,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Someone 土 stepping with their foot 止",
-   "hint_cn": "一个人用脚在地上踏步",
+   "hint_cn": "一个人用脚在地上走",
    "pinyin": [
     "zǒu"
    ],
@@ -17072,7 +17072,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走着趁机",
+   "hint_cn": "走着趁早",
    "pinyin": [
     "chèn"
    ],
@@ -17204,7 +17204,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "foot",
-   "hint_cn": "脚走的路",
+   "hint_cn": "脚下走的路",
    "pinyin": [
     "lù"
    ],
@@ -17281,7 +17281,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A pregnant woman",
-   "hint_cn": "肚子里有小宝宝的妈妈",
+   "hint_cn": "肚子里怀着宝宝的妈妈",
    "pinyin": [
     "shēn"
    ],
@@ -17292,7 +17292,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To bow 弓 one's body 身; 弓 also provides the pronunciation",
-   "hint_cn": "弯下身子，像鞠躬一样",
+   "hint_cn": "弯下身子像弓一样",
    "pinyin": [
     "gōng"
    ],
@@ -17424,7 +17424,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A lofty 乔 carriage 车; 乔 also provides the pronunciation",
-   "hint_cn": "高高的、有车厢的轿子",
+   "hint_cn": "高高的、让人抬着的车",
    "pinyin": [
     "jiào"
    ],
@@ -17479,7 +17479,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Bitter 辛 words 舌",
-   "hint_cn": "说出来的话像苦味一样",
+   "hint_cn": "说出来的话又苦又辣",
    "pinyin": [
     "cí"
    ],
@@ -17490,7 +17490,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A body 尸 decapitated 口 by a sword 辛 , representing the law",
-   "hint_cn": "一个人被刀砍头，代表法律",
+   "hint_cn": "人被刀砍头，代表法律",
    "pinyin": [
     "pì"
    ],
@@ -17501,7 +17501,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To separate 刂 two alternatives 辛",
-   "hint_cn": "用刀把两个东西分开",
+   "hint_cn": "用刀把两样东西分开",
    "pinyin": [
     "biàn"
    ],
@@ -17512,7 +17512,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A bitter 辛 exchange of words 讠",
-   "hint_cn": "你一句我一句地争论",
+   "hint_cn": "你一句我一句，争得很辛苦",
    "pinyin": [
     "biàn"
    ],
@@ -17556,7 +17556,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To walk 辶 quickly 卂; 卂 also provides the pronunciation",
-   "hint_cn": "走路走得飞快",
+   "hint_cn": "走得飞快",
    "pinyin": [
     "xùn"
    ],
@@ -17578,7 +17578,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走过去迎接",
+   "hint_cn": "走上前迎接",
    "pinyin": [
     "yíng"
    ],
@@ -17611,7 +17611,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To walk 辶 backwards 反; 反 also provides the pronunciation",
-   "hint_cn": "走回头路，往回走",
+   "hint_cn": "走回去，往回走",
    "pinyin": [
     "fǎn"
    ],
@@ -17622,7 +17622,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Not 不 moving 辶",
-   "hint_cn": "没有动，还在原地",
+   "hint_cn": "没有走，还在原地",
    "pinyin": [
     "hái"
    ],
@@ -17666,7 +17666,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A cart 车 moving 辶 goods between cities",
-   "hint_cn": "车把货物从一个城市运到另一个城市",
+   "hint_cn": "车走来走去，把东西运到城里",
    "pinyin": [
     "lián"
    ],
@@ -17677,7 +17677,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To walk 辶 with purpose 由",
-   "hint_cn": "带着目标走路",
+   "hint_cn": "带着目标往前走",
    "pinyin": [
     "dí"
    ],
@@ -17721,7 +17721,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走追赶",
+   "hint_cn": "追着走",
    "pinyin": [
     "zhuī"
    ],
@@ -17732,7 +17732,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走后退",
+   "hint_cn": "往后退着走",
    "pinyin": [
     "tuì"
    ],
@@ -17743,7 +17743,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A person waving 关 to someone walking away 辶",
-   "hint_cn": "一个人挥手，送别人走远",
+   "hint_cn": "挥手送别走远的人",
    "pinyin": [
     "sòng"
    ],
@@ -17765,7 +17765,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走逃跑",
+   "hint_cn": "逃走",
    "pinyin": [
     "táo"
    ],
@@ -17776,7 +17776,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走挑选",
+   "hint_cn": "挑着走",
    "pinyin": [
     "xuǎn"
    ],
@@ -17787,7 +17787,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走穿透",
+   "hint_cn": "走透过去",
    "pinyin": [
     "tòu"
    ],
@@ -17798,7 +17798,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走追逐",
+   "hint_cn": "追着走",
    "pinyin": [
     "zhú"
    ],
@@ -17820,7 +17820,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走通了",
+   "hint_cn": "走得通",
    "pinyin": [
     "tōng"
    ],
@@ -17831,7 +17831,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走逛街",
+   "hint_cn": "到处走走",
    "pinyin": [
     "guàng"
    ],
@@ -17864,7 +17864,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走建造",
+   "hint_cn": "走到做成",
    "pinyin": [
     "zào"
    ],
@@ -17875,7 +17875,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走遇到",
+   "hint_cn": "走着遇到",
    "pinyin": [
     "yù"
    ],
@@ -17908,7 +17908,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To leave 辶 something valuable 贵 behind",
-   "hint_cn": "走路时把贵重的东西落下了",
+   "hint_cn": "走的时候把贵重东西落下了",
    "pinyin": [
     "yí"
    ],
@@ -17930,7 +17930,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "walk",
-   "hint_cn": "走遮挡",
+   "hint_cn": "走挡住",
    "pinyin": [
     "zhē"
    ],
@@ -17941,7 +17941,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "foot",
-   "hint_cn": "脚避开",
+   "hint_cn": "脚躲开",
    "pinyin": [
     "bì"
    ],
@@ -17952,7 +17952,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "foot",
-   "hint_cn": "脚邀请",
+   "hint_cn": "脚请人来",
    "pinyin": [
     "yāo"
    ],
@@ -17974,7 +17974,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man from a good 良 place 阝;  良 also provides the pronunciation",
-   "hint_cn": "来自好地方的男子",
+   "hint_cn": "来自好地方的男人",
    "pinyin": [
     "láng"
    ],
@@ -18062,7 +18062,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Wine 酉 aged too long 夋; 夋 also provides the pronunciation",
-   "hint_cn": "酒放得太久，变酸了",
+   "hint_cn": "酒放太久，变酸了",
    "pinyin": [
     "suān"
    ],
@@ -18073,7 +18073,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Aged 昔 wine 酉; wine gone sour",
-   "hint_cn": "放久了的酒，变成了醋",
+   "hint_cn": "放久了的酒，变成了酸醋",
    "pinyin": [
     "cù"
    ],
@@ -18106,7 +18106,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "collect",
-   "hint_cn": "用手收集",
+   "hint_cn": "用手捡起",
    "pinyin": [
     "shì"
    ],
@@ -18117,7 +18117,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Unit of measure for farm 田 land 土",
-   "hint_cn": "丈量田地的单位",
+   "hint_cn": "量田地的单位，一里又一里",
    "pinyin": [
     "lǐ"
    ],
@@ -18128,7 +18128,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A burden carried for a thousand 千 miles 里",
-   "hint_cn": "背着很重的东西走千里路",
+   "hint_cn": "背着很重的东西走一千里",
    "pinyin": [
     "zhòng"
    ],
@@ -18216,7 +18216,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "metal",
-   "hint_cn": "金属炼成的钢",
+   "hint_cn": "金属做的硬钢",
    "pinyin": [
     "gāng"
    ],
@@ -18260,7 +18260,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "metal",
-   "hint_cn": "金属铁",
+   "hint_cn": "金属做的铁块",
    "pinyin": [
     "tiě"
    ],
@@ -18271,7 +18271,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "metal",
-   "hint_cn": "金属铅",
+   "hint_cn": "金属做的铅块",
    "pinyin": [
     "qiān"
    ],
@@ -18282,7 +18282,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "metal",
-   "hint_cn": "金属铜",
+   "hint_cn": "金属做的铜块",
    "pinyin": [
     "tóng"
    ],
@@ -18293,7 +18293,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "money",
-   "hint_cn": "金属银子",
+   "hint_cn": "金属做的银子",
    "pinyin": [
     "yín"
    ],
@@ -18315,7 +18315,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Metal 钅 that joins 连; 连 also provides the pronunciation",
-   "hint_cn": "金属做的链子，把东西连起来",
+   "hint_cn": "金属一环扣一环连起来",
    "pinyin": [
     "liàn"
    ],
@@ -18337,7 +18337,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "metal",
-   "hint_cn": "金属生锈",
+   "hint_cn": "金属生的锈",
    "pinyin": [
     "xiù"
    ],
@@ -18381,7 +18381,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "metal",
-   "hint_cn": "金属做的手镯",
+   "hint_cn": "金属做的镯子",
    "pinyin": [
     "zhuó"
    ],
@@ -18403,7 +18403,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "An open doorway or gate",
-   "hint_cn": "打开的门或大门",
+   "hint_cn": "一扇打开的门",
    "pinyin": [
     "mén"
    ],
@@ -18414,7 +18414,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man 人 just glimpsed through a door 门",
-   "hint_cn": "从门缝里飞快地看到一个人",
+   "hint_cn": "从门缝里一闪而过的人",
    "pinyin": [
     "shǎn"
    ],
@@ -18480,7 +18480,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "As busy as the market 市 gate 门",
-   "hint_cn": "像市场门口一样热闹",
+   "hint_cn": "门口像集市一样热闹",
    "pinyin": [
     "nào"
    ],
@@ -18524,7 +18524,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wall",
-   "hint_cn": "墙挡着",
+   "hint_cn": "用墙挡住",
    "pinyin": [
     "fáng"
    ],
@@ -18546,7 +18546,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A formation 阝of soldiers 车",
-   "hint_cn": "士兵排成车一样的队形",
+   "hint_cn": "战车排成队，摆开阵势",
    "pinyin": [
     "zhèn"
    ],
@@ -18590,7 +18590,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "To place 阝 facing east 东",
-   "hint_cn": "把东西朝东摆好",
+   "hint_cn": "把东西朝东摆开",
    "pinyin": [
     "chén"
    ],
@@ -18612,7 +18612,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "place",
-   "hint_cn": "一个地方的边界",
+   "hint_cn": "一个地方",
    "pinyin": [
     "xiàn"
    ],
@@ -18623,7 +18623,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "hill",
-   "hint_cn": "山一样的台阶",
+   "hint_cn": "山上的台阶",
    "pinyin": [
     "bì"
    ],
@@ -18656,7 +18656,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The waste 余 produced by a city 阝",
-   "hint_cn": "城市里清理出来的垃圾",
+   "hint_cn": "城里清出来的废物",
    "pinyin": [
     "chú"
    ],
@@ -18689,7 +18689,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A mound 阝 of clay 匋; 匋 also provides the pronunciation",
-   "hint_cn": "用泥土堆成的小山包",
+   "hint_cn": "土堆上做陶器",
    "pinyin": [
     "táo"
    ],
@@ -18733,7 +18733,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A hand 又 trying to grasp at a bird 隹",
-   "hint_cn": "用手去抓小鸟，很难抓到",
+   "hint_cn": "用手去抓小鸟，真难抓",
    "pinyin": [
     "nán"
    ],
@@ -18766,7 +18766,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "rain",
-   "hint_cn": "雨变成雪",
+   "hint_cn": "天上下的雨",
    "pinyin": [
     "xuě"
    ],
@@ -18777,7 +18777,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "raindrop",
-   "hint_cn": "小雨滴",
+   "hint_cn": "一滴雨",
    "pinyin": [
     "líng"
    ],
@@ -18788,7 +18788,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A storm 雨 over the fields 田",
-   "hint_cn": "田地上空打雷下雨",
+   "hint_cn": "田野上空下着雨，轰隆隆打雷",
    "pinyin": [
     "léi"
    ],
@@ -18810,7 +18810,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "rain",
-   "hint_cn": "雨打雷震",
+   "hint_cn": "下雨打雷",
    "pinyin": [
     "zhèn"
    ],
@@ -18821,7 +18821,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "rain",
-   "hint_cn": "雨后的彩霞",
+   "hint_cn": "雨后的彩云",
    "pinyin": [
     "xiá"
    ],
@@ -18832,7 +18832,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "rain",
-   "hint_cn": "雨变成露水",
+   "hint_cn": "雨后的水珠",
    "pinyin": [
     "lù"
    ],
@@ -18843,7 +18843,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "rain",
-   "hint_cn": "雨很大",
+   "hint_cn": "下雨的天气",
    "pinyin": [
     "bà"
    ],
@@ -18887,7 +18887,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Two bird's wings opposed; two people back-to-back",
-   "hint_cn": "两只鸟翅膀相对，或两个人背对背",
+   "hint_cn": "两只鸟翅膀对着飞；两个人背靠背",
    "pinyin": [
     "fēi"
    ],
@@ -18898,7 +18898,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "people back-to-back",
-   "hint_cn": "人背靠背",
+   "hint_cn": "两个人背靠背",
    "pinyin": [
     "kào"
    ],
@@ -18909,7 +18909,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A person's face",
-   "hint_cn": "一个人的脸",
+   "hint_cn": "人的脸",
    "pinyin": [
     "miàn"
    ],
@@ -18931,7 +18931,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "leather",
-   "hint_cn": "皮做的鞋",
+   "hint_cn": "皮做的鞋子",
    "pinyin": [
     "xié"
    ],
@@ -18997,7 +18997,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "head",
-   "hint_cn": "磕头",
+   "hint_cn": "点头",
    "pinyin": [
     "dùn"
    ],
@@ -19019,7 +19019,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "head",
-   "hint_cn": "衣领头",
+   "hint_cn": "衣领在头边",
    "pinyin": [
     "lǐng"
    ],
@@ -19063,7 +19063,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "head",
-   "hint_cn": "脸上的颜色",
+   "hint_cn": "脸的颜色",
    "pinyin": [
     "yán"
    ],
@@ -19096,7 +19096,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "wind",
-   "hint_cn": "风吹飘起来",
+   "hint_cn": "风吹着飘",
    "pinyin": [
     "piāo"
    ],
@@ -19173,7 +19173,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "food",
-   "hint_cn": "像好多好多食物堆在一起",
+   "hint_cn": "像锅里有很多好吃的食物",
    "pinyin": [
     "ráo"
    ],
@@ -19261,7 +19261,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "horse",
-   "hint_cn": "像马拉着车飞快地跑",
+   "hint_cn": "像马拉着车快速前进",
    "pinyin": [
     "shǐ"
    ],
@@ -19272,7 +19272,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "horse",
-   "hint_cn": "像马儿跟在旁边一起走",
+   "hint_cn": "像副马拉着的车",
    "pinyin": [
     "fù"
    ],
@@ -19283,7 +19283,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "horse",
-   "hint_cn": "像背上有大驼峰的骆驼",
+   "hint_cn": "像背上有驼峰的骆驼",
    "pinyin": [
     "tuó"
    ],
@@ -19305,7 +19305,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "horse",
-   "hint_cn": "像一匹高高的黑鬃马",
+   "hint_cn": "像一匹高大的黑鬃马",
    "pinyin": [
     "luò"
    ],
@@ -19316,7 +19316,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "horse",
-   "hint_cn": "像马儿在仔细检查身体",
+   "hint_cn": "像检查马匹的样子",
    "pinyin": [
     "yàn"
    ],
@@ -19327,7 +19327,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "horse",
-   "hint_cn": "像一匹跑得飞快的好马",
+   "hint_cn": "像一匹跑得飞快的良马",
    "pinyin": [
     "jùn"
    ],
@@ -19382,7 +19382,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "demon",
-   "hint_cn": "像吓人的大妖怪",
+   "hint_cn": "像树林里吓人的妖怪",
    "pinyin": [
     "mó"
    ],
@@ -19415,7 +19415,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fish",
-   "hint_cn": "像一条活蹦乱跳的鱼",
+   "hint_cn": "像鱼和羊一起煮出鲜味",
    "pinyin": [
     "xiān"
    ],
@@ -19426,7 +19426,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fish",
-   "hint_cn": "像张着大嘴的鳄鱼",
+   "hint_cn": "像长着大嘴的鳄鱼",
    "pinyin": [
     "è"
    ],
@@ -19437,7 +19437,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "fish",
-   "hint_cn": "像水里游的一条鱼",
+   "hint_cn": "像一条带花纹的鱼",
    "pinyin": [
     "zūn"
    ],
@@ -19470,7 +19470,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "The sound 口 a bird 鸟 makes",
-   "hint_cn": "鸟用嘴巴叫",
+   "hint_cn": "鸟嘴里发出的声音",
    "pinyin": [
     "míng"
    ],
@@ -19492,7 +19492,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bird",
-   "hint_cn": "像一只咕咕叫的小鸟",
+   "hint_cn": "像一只咕咕叫的鸟",
    "pinyin": [
     "gū"
    ],
@@ -19514,7 +19514,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bird",
-   "hint_cn": "像一只嘎嘎叫的鸭子",
+   "hint_cn": "像一只扁嘴的鸭子",
    "pinyin": [
     "yā"
    ],
@@ -19525,7 +19525,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bird",
-   "hint_cn": "像一只喳喳叫的喜鹊",
+   "hint_cn": "像一只报喜的喜鹊",
    "pinyin": [
     "què"
    ],
@@ -19536,7 +19536,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "bird",
-   "hint_cn": "像一只胖胖的小鸟",
+   "hint_cn": "像一只花羽毛的鸟",
    "pinyin": [
     "zhè"
    ],
@@ -19547,7 +19547,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "Simplified form of 麦; grains 來 ready to be harvested 夂",
-   "hint_cn": "成熟的麦子",
+   "hint_cn": "成熟的麦子等着收割",
    "pinyin": [
     "mài"
    ],
@@ -19602,7 +19602,7 @@
    "type": "ideographic",
    "type_cn": "会意字",
    "hint_en": "A man's face blacked by soot from a fire 灬",
-   "hint_cn": "被火熏黑的脸",
+   "hint_cn": "被火烟熏黑的脸",
    "pinyin": [
     "hēi"
    ],
@@ -19624,7 +19624,7 @@
    "type": "pictographic",
    "type_cn": "象形字",
    "hint_en": "A mouse, with two paws to the left and the tail to the right",
-   "hint_cn": "一只老鼠，左边两只爪，右边尾巴",
+   "hint_cn": "一只老鼠，左边两只爪子，右边尾巴",
    "pinyin": [
     "shǔ"
    ],
@@ -19657,7 +19657,7 @@
    "type": "pictophonetic",
    "type_cn": "形声字",
    "hint_en": "teeth",
-   "hint_cn": "像露出牙齿咧嘴笑",
+   "hint_cn": "像露出牙齿的样子",
    "pinyin": [
     "zī"
    ],
